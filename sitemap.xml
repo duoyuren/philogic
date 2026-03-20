@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://duoyu.ren/logic/index.html</loc>
-    <lastmod>2023-04-12T08:12:46.000Z</lastmod>
+    <loc>https://duoyu.ren/cn_literature/index.html</loc>
+    <lastmod>2023-04-18T16:02:20.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-zz/intro.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-zz/intro.html</loc>
     <lastmod>2023-04-03T17:13:09.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-propositional/welcome-to-command-line.html</loc>
-    <lastmod>2023-03-22T11:45:16.000Z</lastmod>
+    <loc>https://duoyu.ren/cn_literature/chs-propositional/001.html</loc>
+    <lastmod>2023-04-18T15:18:59.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-propositional/git-and-github.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-propositional/002.html</loc>
+    <lastmod>2023-04-18T15:00:51.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://duoyu.ren/cn_literature/chs-predicate/algorithm-thinking.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-predicate/algorithm-thinking.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-modal/introduction-to-sequence-analysis.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-modal/introduction-to-sequence-analysis.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-intuitionistic/phylogenetic-reconstructions.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-intuitionistic/phylogenetic-reconstructions.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-meta/genome-assembly.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-meta/genome-assembly.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-application/metagenomic-sequencing.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-application/metagenomic-sequencing.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-zz/HISTORY.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://duoyu.ren/logic/chs-zz/HISTORY.html</loc>
+    <loc>https://duoyu.ren/cn_literature/chs-zz/references.html</loc>
     <lastmod>2023-01-19T18:10:51.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://duoyu.ren/logic/chs-zz/references.html</loc>
-    <lastmod>2023-01-19T18:10:51.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://duoyu.ren/logic/Baby-Logic.pdf</loc>
-    <lastmod>2024-08-22T14:16:05.658Z</lastmod>
   </url>
 </urlset>

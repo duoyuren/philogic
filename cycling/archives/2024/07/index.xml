@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024/07 on 騎遊記</title>
+    <link>https://duoyu.ren/cycling/archives/2024/07/</link>
+    <description>Recent content in 2024/07 on 騎遊記</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 20 Jan 2026 08:52:37 +0800</lastBuildDate>
+    <atom:link href="https://duoyu.ren/cycling/archives/2024/07/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>長沙橘子洲頭</title>
+      <link>https://duoyu.ren/cycling/2024_07_24_changsha_juzizhou/</link>
+      <pubDate>Wed, 24 Jul 2024 18:00:00 +0800</pubDate>
+      <guid>https://duoyu.ren/cycling/2024_07_24_changsha_juzizhou/</guid>
+      <description>&lt;p&gt;&lt;style&gt;&#xA;    #map-container {&#xA;        width: 100%;&#xA;        height: 350px;&#xA;        margin: -0.7em 0em 0em 0em;&#xA;    }&#xA;  .gaodemap {&#xA;  margin: 1em 0em 1.5em 0em;&#xA;  position: relative;&#xA;  align-items: center;&#xA;  margin-left: auto;&#xA;  margin-right: auto;&#xA;  width: 90%;&#xA;  height: 100%;&#xA;  box-shadow: 0 0px 15px 2px rgb(32, 94, 22);&#xA;  border-top-right-radius: 4px;&#xA;  border-top-left-radius: 4px;&#xA;  border-bottom-right-radius: 18px;&#xA;  border-bottom-left-radius: 18px;&#xA;}&#xA;&#xA;.gaodemap-title {&#xA;  display: block;&#xA;  text-align: center;&#xA;  color: white;&#xA;  background-color: rgb( 21, 56, 16 );&#xA;  padding: 1.25%;&#xA;  border-top-right-radius: 4px;&#xA;  border-top-left-radius: 4px;&#xA;  font-size: 135%;&#xA;  line-height: 1.1;&#xA;  text-transform: uppercase;&#xA;  font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, Frutiger, &#34;SYHei Heavy&#34;, sans-serif;&#xA;  font-weight:bold;&#xA;} &#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;gaodemap&#34;&gt;&#xA;&lt;p class=&#34;gaodemap-title&#34;&gt;Precise Location&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>贛州鬱孤臺</title>
+      <link>https://duoyu.ren/cycling/2024_07_15_ganzhou_yugutai/</link>
+      <pubDate>Mon, 15 Jul 2024 11:00:00 +0800</pubDate>
+      <guid>https://duoyu.ren/cycling/2024_07_15_ganzhou_yugutai/</guid>
+      <description>&lt;p&gt;&lt;style&gt;&#xA;    #map-container {&#xA;        width: 100%;&#xA;        height: 350px;&#xA;        margin: -0.7em 0em 0em 0em;&#xA;    }&#xA;  .gaodemap {&#xA;  margin: 1em 0em 1.5em 0em;&#xA;  position: relative;&#xA;  align-items: center;&#xA;  margin-left: auto;&#xA;  margin-right: auto;&#xA;  width: 90%;&#xA;  height: 100%;&#xA;  box-shadow: 0 0px 15px 2px rgb(32, 94, 22);&#xA;  border-top-right-radius: 4px;&#xA;  border-top-left-radius: 4px;&#xA;  border-bottom-right-radius: 18px;&#xA;  border-bottom-left-radius: 18px;&#xA;}&#xA;&#xA;.gaodemap-title {&#xA;  display: block;&#xA;  text-align: center;&#xA;  color: white;&#xA;  background-color: rgb( 21, 56, 16 );&#xA;  padding: 1.25%;&#xA;  border-top-right-radius: 4px;&#xA;  border-top-left-radius: 4px;&#xA;  font-size: 135%;&#xA;  line-height: 1.1;&#xA;  text-transform: uppercase;&#xA;  font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, Frutiger, &#34;SYHei Heavy&#34;, sans-serif;&#xA;  font-weight:bold;&#xA;} &#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;gaodemap&#34;&gt;&#xA;&lt;p class=&#34;gaodemap-title&#34;&gt;Precise Location&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

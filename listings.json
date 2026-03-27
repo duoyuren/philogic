@@ -1,0 +1,35 @@
+[
+  {
+    "listing": "/teaching/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html",
+      "/research/working-papers/chaudhry-heiss-ngos-aid/index.html",
+      "/research/working-papers/chaudhry-heiss-derogations/index.html",
+      "/research/chapters/chaudhry-heiss-closing-space/index.html",
+      "/research/reviews/heiss-death-idealism/index.html",
+      "/research/dormant-working-papers/heiss-rogerson-discourse/index.html",
+      "/research/seminar-papers/heiss-ngo-cooperation/index.html",
+      "/research/seminar-papers/heiss-undemocratic-leaders/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/2026/02/25/tikz-quarto-svg-fun/index.html",
+      "/blog/2026/01/13/dsl-positron-workflow/index.html",
+      "/blog/2025/07/03/open-files-external-programs-positron/index.html"
+    ]
+  },
+  {
+    "listing": "/atom.html",
+    "items": [
+      "/blog/2026/02/25/tikz-quarto-svg-fun/index.html",
+      "/blog/2026/01/13/dsl-positron-workflow/index.html",
+      "/blog/2025/07/03/open-files-external-programs-positron/index.html"
+    ]
+  }
+]

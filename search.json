@@ -1,590 +1,317 @@
 [
   {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Philogic",
+    "section": "",
+    "text": "With the power of OJS and Quarto, I’ve created a few interactive websites to illustrate trickier statistical concepts when teaching. Check them out (and adapt and copy as much as you want!):\n\n\n\n\nPlay with different variables until you get the p-value you want!\n Site  Source\n\nRecreation of FiveThirtyEight’s now-disappeared original “Hack Your Way To Scientific Glory”\n\n\n\n\n\n\nLearn the intuition behind p-values through simulation\n Site  Source\n\nBased on {infer} and Allen Downey’s philosophy that there is only one statistical test\n\n\n\n\n\n\nA practical field guide to causal graphs, do‑calculus, and identification\n Site  Source"
+  },
+  {
+    "objectID": "teaching/index.html#interactive-resources",
+    "href": "teaching/index.html#interactive-resources",
+    "title": "Philogic",
+    "section": "",
+    "text": "With the power of OJS and Quarto, I’ve created a few interactive websites to illustrate trickier statistical concepts when teaching. Check them out (and adapt and copy as much as you want!):\n\n\n\n\nPlay with different variables until you get the p-value you want!\n Site  Source\n\nRecreation of FiveThirtyEight’s now-disappeared original “Hack Your Way To Scientific Glory”\n\n\n\n\n\n\nLearn the intuition behind p-values through simulation\n Site  Source\n\nBased on {infer} and Allen Downey’s philosophy that there is only one statistical test\n\n\n\n\n\n\nA practical field guide to causal graphs, do‑calculus, and identification\n Site  Source"
+  },
+  {
+    "objectID": "teaching/index.html#courses",
+    "href": "teaching/index.html#courses",
+    "title": "Philogic",
+    "section": "Courses",
+    "text": "Courses\n\n2025–26\n\n\n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Data Visualization with R \n                \n            \n            \n                PMAP 8551/4551 | \n                Georgia State University\n                \n            \n            Use R, ggplot2, and the principles of graphic design to create beautiful and truthful visualizations of data\n\n            \n                \n                \n                 Fall 2025 (asynchronous online)\n                \n                \n                \n                 Spring 2026 (asynchronous online)\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Governance around the world \n                \n            \n            \n                PMAP 8441/4441 | \n                Georgia State University\n                \n            \n            Explore how the public and nonprofit sectors work around the world and learn how political institutions shape government and civil society\n\n            \n                \n                \n                 Fall 2025\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Program Evaluation for Public Service \n                \n            \n            \n                PMAP 8521 | \n                Georgia State University\n                \n            \n            Combine research design, causal inference, and econometric tools to measure the effects of social programs\n\n            \n                \n                \n                 Spring 2026\n                \n                \n            \n        \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "research/working-papers/chaudhry-heiss-derogations/index.html",
+    "href": "research/working-papers/chaudhry-heiss-derogations/index.html",
+    "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
+    "section": "",
+    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+  },
+  {
+    "objectID": "research/working-papers/chaudhry-heiss-derogations/index.html#important-links",
+    "href": "research/working-papers/chaudhry-heiss-derogations/index.html#important-links",
+    "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
+    "section": "",
+    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+  },
+  {
+    "objectID": "research/working-papers/chaudhry-heiss-derogations/index.html#abstract",
+    "href": "research/working-papers/chaudhry-heiss-derogations/index.html#abstract",
+    "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
+    "section": "Abstract",
+    "text": "Abstract\nIn an effort to combat the COVID-19 pandemic, most governments have imposed restrictions on movement, association, and other civic freedoms in the interest of public health. In many cases, such as New Zealand, these emergency measures have been temporary and respect for human rights has returned to normal. In many other instances, however, governments have used these restrictions to suppress opposition and more permanently restrict civic space. Systematically measuring the consequences of COVID restrictions, however, is a difficult task. We will examine two possible quantitative measures of the relationship between of COVID restrictions and civil society space. First, we will use the Variety of Democracy project’s newly released Pandemic Violations of Democratic Standards Index to explore if and how civil society restrictions predict pandemic backsliding. Second, while many countries sign international human rights treaties that ostensibly bind states to respect rights, several treaties allow for emergency derogations from these obligations. We will tabulate formal human rights treaty derogations due to the pandemic and explore whether these emergency measures led to lasting declines in associational and human rights. We hope that our exploration of these two measures will provide rich data-based descriptions of the relationship between COVID restrictions and civic space that will allow for more causal work in the future."
+  },
+  {
+    "objectID": "research/working-papers/chaudhry-heiss-derogations/index.html#important-figure",
+    "href": "research/working-papers/chaudhry-heiss-derogations/index.html#important-figure",
+    "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
+    "section": "Important figure",
+    "text": "Important figure\nFigure 5: Derogation decisions across pandemic violations and pandemic backsliding\n\n\n\nFigure 5: Derogation decisions across pandemic violations and pandemic backsliding"
+  },
+  {
+    "objectID": "research/working-papers/chaudhry-heiss-derogations/index.html#bibtex-citation",
+    "href": "research/working-papers/chaudhry-heiss-derogations/index.html#bibtex-citation",
+    "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
+    "section": "BibTeX citation",
+    "text": "BibTeX citation\n@unpublished{ChaudhryHeiss:2021,\n    Author = {Suparna Chaudhry and Andrew Heiss},\n    Note = {Working paper},\n    Title = {Derogations and Democratic Backsliding: Exploring the Pandemic's Effects on Civic Spaces},\n    Year = {2021}}"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Philogic",
+    "section": "",
+    "text": "Templates contents…My research spans …"
+  },
+  {
+    "objectID": "research/index.html#journal-articles",
+    "href": "research/index.html#journal-articles",
+    "title": "Philogic",
+    "section": "Journal articles",
+    "text": "Journal articles\n\n\n\n    \n        \n            \n                Vincent Arel-Bundock, Noah Greifer, and Andrew Heiss, “How to Interpret Statistical Models Using {marginaleffects} in R and Python,” Journal of Statistical Software forthcoming (2024), doi: 10.18637/jss.v111.i09\n            \n\n            \n            \n                \n                    \n                            regression\n                        \n                    \n                    \n                            marginal effect\n                        \n                    \n                    \n                            slope\n                        \n                    \n                    \n                            prediction\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                Raw model results?\n            \n                 / Stop! Hard to understand! Use\n            \n                 / {marginaleffects}.\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             Preprint\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Final version\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Add to Zotero\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#working-papers",
+    "href": "research/index.html#working-papers",
+    "title": "Philogic",
+    "section": "Working papers",
+    "text": "Working papers\n\n\n\n    \n        \n            \n                Suparna Chaudhry and Andrew Heiss, “Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs”\n            \n\n            \n            \n                \n                    \n                            Civil society\n                        \n                    \n                    \n                            NGO regulations\n                        \n                    \n                    \n                            Foreign aid\n                        \n                    \n                    \n                            Causal inference\n                        \n                    \n                    \n                            Panel data\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Analysis notebook\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n        \n            \n                Suparna Chaudhry and Andrew Heiss, “Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces”\n            \n\n            \n            \n                \n                    \n                            Human rights\n                        \n                    \n                    \n                            Civil society\n                        \n                    \n                    \n                            NGO regulations\n                        \n                    \n                    \n                            COVID-19\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#book-chapters",
+    "href": "research/index.html#book-chapters",
+    "title": "Philogic",
+    "section": "Book chapters",
+    "text": "Book chapters\n\n\n\n    \n        \n            \n                Suparna Chaudhry and Andrew Heiss, “Closing Space and the Restructuring of Global Activism: Causes and Consequences of the Global Crackdown on NGOs,” chap. 2 in Beyond the Boomerang: New Patterns in Transcalar Advocacy, eds. Christopher L. Pallas and Elizabeth Bloodgood (Tuscaloosa, AL: University of Alabama Press, 2022).\n            \n\n            \n            \n                \n                    \n                            Civil society\n                        \n                    \n                    \n                            NGO regulations\n                        \n                    \n                    \n                            Human rights\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                Governments threatened—\n            \n                 / NGO regulations\n            \n                 / shift funding; missions.\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             Preprint (PDF)\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Preprint (HTML)\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Analysis notebook\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Add to Zotero\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#reviews",
+    "href": "research/index.html#reviews",
+    "title": "Philogic",
+    "section": "Reviews",
+    "text": "Reviews\n\n\n\n    \n        \n            \n                Andrew Heiss, review of Meghan Elizabeth Kallman, The Death of Idealism: Development and Anti-Politics in the Peace Corps, Contemporary Sociology, 50, no. 6 (November 2021): 486–88, doi: 10.1177/00943061211050046g.\n            \n\n            \n            \n                \n                    \n                            International development\n                        \n                    \n                    \n                            Foreign aid\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             Preprint (PDF)\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Preprint (HTML)\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Final version\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Add to Zotero\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#dormant-working-papers",
+    "href": "research/index.html#dormant-working-papers",
+    "title": "Philogic",
+    "section": "Dormant working papers",
+    "text": "Dormant working papers\n\n\n\n    \n        \n            \n                \"Discovering Discourse: The Relationship between Media and NGOs in Egypt between 2011–13\" (with Ken Rogerson, Duke University)\n            \n\n            \n            \n                \n                    \n                            Egypt\n                        \n                    \n                    \n                            Text analysis\n                        \n                    \n                    \n                            Topic modeling\n                        \n                    \n                    \n                            NGOs\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#selected-seminar-papers",
+    "href": "research/index.html#selected-seminar-papers",
+    "title": "Philogic",
+    "section": "Selected seminar papers",
+    "text": "Selected seminar papers\n\n\n\n    \n        \n            \n                “Do Democracies Discourage NGO Cooperation?\"Replication and extension of Amanda Murdie. 2014. “Scrambling for Contact: The Determinants of Inter-NGO Cooperation in Non-Western Countries.\" Review of International Organizations 9, no. 3 (September): 309–31.\n            \n\n            \n            \n                \n                    \n                            INGOs\n                        \n                    \n                    \n                            NGOs\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n        \n            \n                “Explaining Support for Undemocratic Leaders in Democracies in the Middle East”Replication and extension of Amaney Jamal and Mark Tessler. 2008. “Attitudes in the Arab World.\" Journal of Democracy 19, no. 1 (January): 97–110.\n            \n\n            \n            \n                \n                    \n                            Authoritarianism\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full Details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Raw output\n                        \n                    \n                        \n                    \n                        \n                        \n                        \n                             Poster\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/chapters/chaudhry-heiss-closing-space/index.html",
+    "href": "research/chapters/chaudhry-heiss-closing-space/index.html",
+    "title": "Closing Space and the Restructuring of Global Activism: Causes and Consequences of the Global Crackdown on NGOs",
+    "section": "",
+    "text": "Figure 1: 2017 CIVICUS Monitor civic space ratings\n\n\n\nFigure 1: 2017 CIVICUS Monitor civic space ratings"
+  },
+  {
+    "objectID": "research/chapters/chaudhry-heiss-closing-space/index.html#important-figure",
+    "href": "research/chapters/chaudhry-heiss-closing-space/index.html#important-figure",
+    "title": "Closing Space and the Restructuring of Global Activism: Causes and Consequences of the Global Crackdown on NGOs",
+    "section": "",
+    "text": "Figure 1: 2017 CIVICUS Monitor civic space ratings\n\n\n\nFigure 1: 2017 CIVICUS Monitor civic space ratings"
+  },
+  {
+    "objectID": "research/chapters/chaudhry-heiss-closing-space/index.html#citation",
+    "href": "research/chapters/chaudhry-heiss-closing-space/index.html#citation",
+    "title": "Closing Space and the Restructuring of Global Activism: Causes and Consequences of the Global Crackdown on NGOs",
+    "section": "Citation",
+    "text": "Citation\n\n Add to Zotero \n\n@incollection{ChaudhryHeiss:2022,\n    Address = {Tuscaloosa, AL},\n    Author = {Suparna Chaudhry and Andrew Heiss},\n    Booktitle = {Beyond the Boomerang: New Patterns in Transcalar Advocacy},\n    Editor = {Christopher L. Pallas and Elizabeth Bloodgood},\n    Publisher = {University of Alabama Press},\n    Title = {Closing Space and the Restructuring of Global Activism: Causes and Consequences of the Global Crackdown on {NGOs}},\n    Chapter = {2},\n    Year = {2022}}"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "History of Chinese Literature",
+    "title": "Philogic",
     "section": "",
-    "text": "Preface\n「邏輯」有很多種，「邏輯學」也有很多種。不同的人學習邏輯學有不同的目的。本筆記中的「邏輯學」知識主要服務於語言、思維的分析，不追求邏輯學在其他領域的功能。\n本筆記大致列出邏輯基礎學習階段的主要材料，主要參考（chāoxí）以下課本攢集而成：\n其中，直接取自《符號邏輯講義》的材料最多，取自《邏輯學導論》較多，素樸集合論、表列演算則直接取自完全開源的 Open Logic Project 項目源碼。",
-    "crumbs": [
-      "Preface"
-    ]
+    "text": "Hello there! This is a temporal test of \\(\\kappa\\)-paradoxical set and \\(\\varphi \\in \\Sigma\\) φ and Σ…\n鐸語 克萊登大學·哲學系 \n\n\n\n\n\n\n\n(+86) 13600008128\n\n\n\n\n\n\n\nmail@philogic.cn\n\n\n\n\n\n\n\nhttps://philogic.cn"
   },
   {
-    "objectID": "index.html#learning-features",
-    "href": "index.html#learning-features",
-    "title": "History of Chinese Literature",
-    "section": "Learning features",
-    "text": "Learning features\n\n\n\n\n\n\nNote\n\n\n\nSometimes other fields might add interested value to the understanding of the computational biology area. This feature remarks some of them and aim to explain these intersections.\n\n\n\n\n\n\n\n\nTip\n\n\n\nAs you move forward in the computational biology field you will find that there are several tips and tricks (mainly from the command line) as well as some random CLI programs that can leverage your daily workflow as a researcher. Using this feature we highlight some of those that appeared to linger on the field.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nTo help you consolidate your understanding we end most chapters with important messages or concepts that help you evaluate yourself as you move forward on the lessons.\n\n\n\n\n\n\n\n\nCautionCaution\n\n\n\nWhen experimenting with the CLI and many other computational tools it is common to face several known errors and drawbacks. Then, we present some of them and how to sort them out.\n\n\n\n\n\n\n\n\nWarningChallenges\n\n\n\nSince focused on a competences learning approach we have highlighted several real-life (but basic) challenges a researcher faces when approaching computational biology problem (from tool selection, usage and result analysis). Therefore the book section challenges presents a selection of these problems that will later be approached by a computational biology strategy (mainly from the CLI).\n\n\n\n\n\n\n\n\nNone File format\n\n\n\nAs many analysis specialize on data analysis, many formats arise that optimize the processing steps or the data storing steps. Some of these formats are keystones of bioinformatic analyses. We present examples of some formats an describe its main elements.",
-    "crumbs": [
-      "Preface"
-    ]
+    "objectID": "blog/index.html#section",
+    "href": "blog/index.html#section",
+    "title": "Philogic",
+    "section": "2026",
+    "text": "2026\n\n\n    \n    \n                  \n            February 25, 2026\n        \n        \n            How to automatically convert TikZ images to SVG with Quarto\n\n            \n            \n                \n                \n                    quarto\n                \n                \n                \n                    tikz\n                \n                \n            \n            \n\n            Make Quarto convert TikZ graphics to SVG files when rendering to non-LaTeX outputs like HTML, Word, and Typst\n            \n            \n             10.59350/5m018-qax35\n            \n        \n        \n        \n            \n        \n        \n    \n    \n    \n                  \n            January 13, 2026\n        \n        \n            How to make your data analysis life easier using Positron, Raycast, and Espanso\n\n            \n            \n                \n                \n                    positron\n                \n                \n                \n                    automation\n                \n                \n                \n                    writing\n                \n                \n                \n                    data science\n                \n                \n                \n                    databases\n                \n                \n                \n                    duckdb\n                \n                \n                \n                    automator\n                \n                \n            \n            \n\n            Links and resources from my time on Posit's Data Science Lab in January 2026\n            \n            \n             10.59350/zj8p7-7kg49\n            \n        \n        \n        \n            \n        \n        \n    \n    \n\nNo matching items"
   },
   {
-    "objectID": "index.html#notation-備註",
-    "href": "index.html#notation-備註",
-    "title": "History of Chinese Literature",
-    "section": "Notation 備註",
-    "text": "Notation 備註\n\nMathematical notations",
-    "crumbs": [
-      "Preface"
-    ]
+    "objectID": "blog/index.html#section-1",
+    "href": "blog/index.html#section-1",
+    "title": "Philogic",
+    "section": "2025",
+    "text": "2025\n\n\n    \n    \n                  \n            July 3, 2025\n        \n        \n            Open files in external programs with Positron or Visual Studio Code\n\n            \n            \n                \n                \n                    positron\n                \n                \n                \n                    writing\n                \n                \n                \n                    data science\n                \n                \n            \n            \n\n            Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.\n            \n            \n             10.59350/87hpe-4ah24\n            \n        \n        \n        \n            \n        \n        \n    \n    \n\nNo matching items"
   },
   {
-    "objectID": "chs-zz/intro.html",
-    "href": "chs-zz/intro.html",
-    "title": "Introduction",
+    "objectID": "blog/2026/01/13/dsl-positron-workflow/index.html",
+    "href": "blog/2026/01/13/dsl-positron-workflow/index.html",
+    "title": "How to make your data analysis life easier using Positron, Raycast, and Espanso",
     "section": "",
-    "text": "Bioinformatics vs. Computational biology\nThe present book gathers the lecture notes of the undergrad course in Fundamentals of Computational Biology that takes place in EAFIT University. The first part will focus on how to use the the command line interface (aka CLI). It includes a long-format chapter about the Unix tools and concepts that is taught during the first four class lessons. The second chapter of covers the basics of git and the principal workflows to work daily on a collaborative manner this is actually the second lesson of the course. The third lessons, highlights the importance of package manager systems (such as homebrew and conda or scoop) and briefly introduce the main concepts and relevant commands. Later, in a fourth lesson, we introduce important concepts about how computers handle the tasks or jobs, and the parallelization of them. We talk about the computer architectures, the cluster architectures and the job scheduling software called Slurm, which is used on our local HPC cluster.\nThe second part is dedicated to sequence analysis and will cover several topics related to sequencing technologies, sequence alignments. All this topics are covered from the biological perspective, mathematical notions and the practical computing approach. Some of the main bioinformatics file extensions are covered and the git\nThird part is focused genomics. It will cover main algorithms for genome assembly and some relevant programs. Also the biological nuances of gene calling and gene annotation, and finally will variant calling analysis, which introduces the gene mapping concept and some of the most important bioinformatics file extensions.\nNext parts are currently optionals for the course per-se and some iterations may only include one of those or some combinations. They are mainly dedicated to introduce metagenomics, differential gene expression analysis and structural bioinformatics.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "On January 13, 2026, I was on Posit’s Data Science Lab to talk about my Positron settings and other neat workflow-y things I use to make my life easier.\nThis isn’t a standard blog post—it’s mostly just a list of the stuff we talked about, with lots of different links to other resources."
   },
   {
-    "objectID": "chs-zz/intro.html#the-extent-of-computational-biology",
-    "href": "chs-zz/intro.html#the-extent-of-computational-biology",
-    "title": "Introduction",
-    "section": "The extent of computational biology",
-    "text": "The extent of computational biology\nThere so many fields on bioinformarics Fig. 1, that sometimes its hard to focus on the fundamentals. But this is also an opportunity to discuss the main aspects and differences across the fields.\n\n\n\n\n\n\nFigure 1: Different areas on bioinfomatics",
-    "crumbs": [
-      "Introduction"
-    ]
+    "objectID": "blog/2026/01/13/dsl-positron-workflow/index.html#positron-stuff",
+    "href": "blog/2026/01/13/dsl-positron-workflow/index.html#positron-stuff",
+    "title": "How to make your data analysis life easier using Positron, Raycast, and Espanso",
+    "section": "Positron stuff",
+    "text": "Positron stuff\nFavorite Positron extensions:\n\nAir\nBetter Comments\nFile Properties Viewer\nPastum\nPeacock\nProject Manager\nRainbow CSV\nSpell Right\n\nMy custom Positron settings (these all live in settings.json):\n\nClick to expand\n{\n    // Editor settings\n    // -------------------------------------------------------------------------\n    // Fonts\n    // Use GitHub's Monaspace (https://github.com/githubnext/monaspace) and enable ligatures\n    \"editor.fontFamily\": \"'Monaspace Argon Var'\",\n    \"editor.fontSize\": 12.5,\n    \"editor.fontLigatures\": \"'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig', 'liga'\",\n\n    // Highlight modified/unsaved tabs\n    \"workbench.editor.highlightModifiedTabs\": true,\n\n    // Add some rulers\n    \"editor.rulers\": [\n        80,\n        100\n    ],\n\n    // Indent with two spaces, but only for R\n    \"[r]\": {\n        \"editor.tabSize\": 2,\n        \"editor.formatOnPaste\": false,\n    },\n    \"[quarto]\": {\n        \"editor.tabSize\": 2,\n        \"editor.defaultFormatter\": \"quarto.quarto\"\n    },\n\n    // Nicer handling of end-of-document newlines, via\n    // https://rfdonnelly.github.io/posts/sane-vscode-whitespace-settings/\n    \"files.insertFinalNewline\": true,\n    \"editor.renderFinalNewline\": \"dimmed\",\n    \"editor.renderWhitespace\": \"trailing\",\n    \"files.trimFinalNewlines\": true,\n\n    // General editor settings\n    \"editor.detectIndentation\": false,\n    \"editor.showFoldingControls\": \"always\",\n    \"window.newWindowDimensions\": \"inherit\",\n    \"editor.scrollBeyondLastLine\": false,\n    \"window.title\": \"${activeEditorFull}${separator}${rootName}\",\n    \"editor.tabSize\": 4,\n    \"editor.wordWrap\": \"on\",\n    \"editor.multiCursorModifier\": \"ctrlCmd\",\n    \"editor.snippetSuggestions\": \"top\",\n\n    // Hide things from the file panel\n    \"files.exclude\": {\n        \"**/.Rhistory\": true,\n        \"**/.Rproj\": true,\n        \"**/.Rproj.user\": true,\n        \"**/renv/library\": true,\n        \"**/renv/local\": true,\n        \"**/renv/staging\": true\n        // \"**/_freeze\": true,\n        // \"**/.quarto/**\": true\n    },\n    // Hide things from the global search menu and watcher\n    \"files.watcherExclude\": {\n        \"**/.Rproj/*\": true,\n        \"**/.venv/*\": true,\n        \"**/renv/library\": true,\n        \"**/renv/local\": true,\n        \"**/renv/staging\": true,\n        \"*/_freeze/*\": true,\n        \"*/.quarto\": true\n    },\n\n    // Sign git commits\n    \"git.enableCommitSigning\": true,\n\n\n    // Extension-specific settings\n    // -------------------------------------------------------------------------\n    // Markdown linting settings (idk if this stuff even works with Quarto though)\n    \"markdownlint.config\": {\n        \"default\": true,\n        \"MD012\": { \"maximum\": 2 },\n        \"MD025\": false,\n        \"MD041\": false\n    },\n\n    // Wrap at 80 columns with the \"Rewrap\" extension\n    \"rewrap.wrappingColumn\": 80,\n\n    // Don't phone home for the \"YAML\" extension\n    \"redhat.telemetry.enabled\": false,\n\n    // Positron things\n    \"git.confirmSync\": false,\n    \"git.suggestSmartCommit\": false,\n    \"positron.r.quietMode\": true,\n    \"better-comments.highlightPlainText\": true,\n    \"workbench.startupEditor\": \"newUntitledFile\",\n    \"workbench.editor.empty.hint\": \"hidden\",\n    \"remote.autoForwardPortsSource\": \"hybrid\",\n    \"projectManager.tags\": [\n        \"Personal\",\n        \"Research\",\n        \"Teaching\"\n    ],\n    \"window.confirmBeforeClose\": \"keyboardOnly\",\n    \"plots.darkFilter\": \"off\",\n    \"workbench.keybindings.rstudioKeybindings\": true,\n    \"positron.assistant.enable\": true,\n    \"dataExplorer.summaryCollapsed\": true,\n    \"editor.defaultFormatter\": \"Posit.air-vscode\",\n    \"python.locator\": \"js\",\n    \"python.enableAutoReload\": false,\n    \"workbench.editor.pinnedTabsOnSeparateRow\": true,\n    \"positron.assistant.inlineCompletions.enable\": {\n        \"*\": false\n    },\n    \"inlineChat.lineNaturalLanguageHint\": false,\n\n    // Miscellaneous settings\n    \"latex-workshop.view.pdf.color.dark.backgroundColor\": \"#272822\",\n    \"latex-workshop.latex.autoBuild.run\": \"never\",\n\n    \"files.associations\": {\n        \"renv.lock\": \"json\"\n    },\n    \"editor.guides.bracketPairs\": \"active\",\n    \"diffEditor.ignoreTrimWhitespace\": false,\n    \"terminal.integrated.commandsToSkipShell\": [\n        \"language-julia.interrupt\"\n    ],\n    \"githubPullRequests.createOnPublishBranch\": \"never\",\n\n    \"projectManager.openInNewWindowWhenClickingInStatusBar\": true,\n    \"[dockercompose]\": {\n        \"editor.insertSpaces\": true,\n        \"editor.tabSize\": 2,\n        \"editor.autoIndent\": \"advanced\",\n        \"editor.quickSuggestions\": {\n            \"other\": true,\n            \"comments\": false,\n            \"strings\": true\n        },\n        \"editor.defaultFormatter\": \"redhat.vscode-yaml\"\n    },\n    \"[github-actions-workflow]\": {\n        \"editor.defaultFormatter\": \"redhat.vscode-yaml\"\n    },\n    \"[yaml]\": {\n        \"editor.defaultColorDecorators\": \"auto\"\n    },\n    \"markdownTablePrettify.extendedLanguages\": [\n        \"quarto\"\n    ],\n    \"editor.copyWithSyntaxHighlighting\": false,\n    \"workbench.settings.showAISearchToggle\": false,\n    \"workbench.preferredDarkColorTheme\": \"Monokai\",\n    \"workbench.colorTheme\": \"Monokai\",\n    // \"workbench.colorTheme\": \"Monokai Pro (Filter Spectrum)\",\n    // Override the terminal background color to match the editor background\n    \"workbench.colorCustomizations\": {\n        \"[Monokai Pro (Filter Spectrum)]\": {\n            \"terminal.background\": \"#222222\",\n            \"panel.background\": \"#222222\"\n        },\n        \"[Monokai Classic]\": {\n            \"terminal.background\": \"#272822\",\n            \"panel.background\": \"#272822\"\n        }\n    },\n    \"workbench.iconTheme\": \"material-icon-theme\",\n    \"workbench.productIconTheme\": \"fluent-icons\",\n    \"pastum.defaultConvention\": \"snake_case\",\n    \"git.autofetch\": true,\n    \"window.newWindowProfile\": \"Default\",\n    \"terminal.integrated.detectLocale\": \"on\",\n    \"claudeCode.preferredLocation\": \"panel\",\n    \"material-icon-theme.folders.associations\": {\n        \"renv\": \"Packages\",\n        \"_freeze\": \"Archive\",\n        \"_targets\": \"Components\",\n        \"resource\": \"\"\n    },\n    \"spellright.language\": [\n        \"en\"\n    ],\n    \"spellright.documentTypes\": [\n        \"markdown\",\n        \"latex\",\n        \"quarto\"\n    ],\n    \"workbench.activityBar.location\": \"top\"\n}\n\nMy Positron keyboard shortcuts (these all live in keybindings.json):\n\nClick to expand\n[\n    {\n        \"key\": \"shift+cmd+d\",\n        \"command\": \"editor.action.copyLinesDownAction\",\n        \"when\": \"editorFocus\"\n    },\n    {\n        \"key\": \"ctrl+alt+`\",\n        \"command\": \"workbench.action.terminal.new\",\n        \"when\": \"terminalProcessSupported || terminalWebExtensionContributedProfile\"\n    },\n    {\n        \"key\": \"ctrl+shift+`\",\n        \"command\": \"-workbench.action.terminal.new\",\n        \"when\": \"terminalProcessSupported || terminalWebExtensionContributedProfile\"\n    },\n    {\n        \"key\": \"ctrl+shift+`\",\n        \"command\": \"workbench.action.terminal.toggleTerminal\",\n        \"when\": \"terminal.active\"\n    },\n    {\n        \"key\": \"ctrl+`\",\n        \"command\": \"-workbench.action.terminal.toggleTerminal\",\n        \"when\": \"terminal.active\"\n    },\n    {\n        \"key\": \"shift+cmd+c\",\n        \"command\": \"-editor.action.commentLine\",\n        \"when\": \"config.rstudio.keymap.enable && editorTextFocus\"\n    },\n    {\n        \"key\": \"alt+cmd+q\",\n        \"command\": \"rewrap.rewrapComment\",\n        \"when\": \"editorTextFocus\"\n    },\n    {\n        \"key\": \"alt+q\",\n        \"command\": \"-rewrap.rewrapComment\",\n        \"when\": \"editorTextFocus\"\n    },\n    {\n        \"key\": \"cmd+d\",\n        \"command\": \"-editor.action.deleteLines\",\n        \"when\": \"editorTextFocus\"\n    },\n    {\n        \"key\": \"cmd+. cmd+r\",\n        \"command\": \"r.createNewFile\"\n    },\n    // create reprex from selection\n    {\n        \"key\": \"cmd+. cmd+shift+r\",\n        \"command\": \"workbench.action.executeCode.console\",\n        \"when\": \"editorTextFocus\",\n        \"args\": {\n            \"langId\": \"r\",\n            \"code\": \"reprex::reprex_selection()\",\n            \"focus\": false\n        }\n    },\n    {\n        \"key\": \"shift+alt+cmd+l\",\n        \"command\": \"editor.action.insertCursorAtEndOfEachLineSelected\",\n        \"when\": \"editorTextFocus\"\n    },\n    {\n        \"key\": \"shift+alt+i\",\n        \"command\": \"-editor.action.insertCursorAtEndOfEachLineSelected\",\n        \"when\": \"editorTextFocus\"\n    },\n    // Keybindings inspired by Emil Hvitfeldt\n    // https://emilhvitfeldt.com/post/positron-key-bindings/\n    {\n        \"key\": \"cmd+. cmd+1\",\n        \"command\": \"workbench.action.focusActiveEditorGroup\"\n    },\n    {\n        \"key\": \"cmd+. cmd+2\",\n        \"command\": \"workbench.action.positronConsole.focusConsole\"\n    },\n    {\n        \"key\": \"cmd+. cmd+shift+v\",\n        \"command\": \"workbench.action.positronConsole.clearConsole\"\n    },\n    {\n        \"key\": \"cmd+. cmd+3\",\n        \"command\": \"workbench.action.terminal.focus\"\n    },\n    // {\n    //     \"key\": \"cmd+. cmd+shift+b\",\n    //     \"command\": \"workbench.action.terminal.clear\"\n    // },\n    {   // Restart terminal\n        \"key\": \"cmd+shift+9\",\n        \"command\": \"runCommands\",\n        \"args\": {\n            \"commands\": [\n                \"workbench.action.terminal.kill\",\n                \"workbench.action.terminal.new\"\n            ]\n        }\n    },\n    // My stuff again ↓\n    {\n        \"key\": \"cmd+. cmd+q\",\n        \"command\": \"quarto.newDocument\"\n    },\n    {\n        \"key\": \"shift+cmd+n\",\n        \"command\": \"-r.createNewFile\"\n    },\n    {\n        \"key\": \"cmd+. cmd+m\",\n        \"command\": \"workbench.action.files.newUntitledFile\",\n        \"args\": { \"languageId\": \"markdown\" }\n    },\n    {\n        \"key\": \"ctrl+shift+k\",\n        \"command\": \"editor.action.deleteLines\",\n        \"when\": \"editorTextFocus\"\n    },\n    {\n        \"key\": \"shift+alt+cmd+ctrl+t\",\n        \"command\": \"workbench.action.tasks.runTask\",\n        \"args\": \"Open in Typora\"\n    },\n    {\n        \"key\": \"cmd+alt+shift+i\",\n        \"command\": \"editor.action.insertSnippet\",\n        \"when\": \"editorTextFocus && editorLangId == quarto\",\n        \"args\": {\n            \"snippet\": \"```\\n\\n\\n\\n$0```{r}\"\n        }\n    },\n]"
   },
   {
-    "objectID": "chs-propositional/001.html",
-    "href": "chs-propositional/001.html",
-    "title": "1  文學的進路",
+    "objectID": "blog/2026/01/13/dsl-positron-workflow/index.html#positron-connections-pane",
+    "href": "blog/2026/01/13/dsl-positron-workflow/index.html#positron-connections-pane",
+    "title": "How to make your data analysis life easier using Positron, Raycast, and Espanso",
+    "section": "Positron connections pane",
+    "text": "Positron connections pane\nGeneral tutorial\nReal life use cases:\n\nMirror of a relational database of Idaho’s election results for testing and local development. It’s a core part of the DIY Election Desk project that I presented about at posit::conf(2025) (see code here)\nTaking a massive 10 GB zipped CSV file and putting it in a DuckDB database and accessing it through {dbplyr} (see code here)\n\nExample with DuckDB and {connections}; the same general process works with any other database backend, like SQLite, MySQL, Spark, PostgreSQL, etc.:\n\nlibrary(tidyverse)\n\n# Use nicer DuckDB Connections Pane features\n# options(\"duckdb.enable_rstudio_connection_pane\" = TRUE)\n\n# Connect to a database\ndb_file &lt;- \"my_fancy_database.duckdb\"\ncon &lt;- connections::connection_open(duckdb::duckdb(), db_file)\n\n# Add stuff to it\ncopy_to(\n  con,\n  gapminder::gapminder,\n  name = \"gapminder\",\n  overwrite = TRUE,\n  temporary = FALSE\n)\n\n# Get stuff out of it\ngapminder_2007 &lt;- tbl(con, I(\"gapminder\")) |&gt;\n  filter(year == 2007) |&gt;\n  collect()\n\n# All done\nconnections::connection_close(con)"
+  },
+  {
+    "objectID": "blog/2026/01/13/dsl-positron-workflow/index.html#workflow-tips-and-tricks",
+    "href": "blog/2026/01/13/dsl-positron-workflow/index.html#workflow-tips-and-tricks",
+    "title": "How to make your data analysis life easier using Positron, Raycast, and Espanso",
+    "section": "Workflow tips and tricks",
+    "text": "Workflow tips and tricks\n\nGeneral things I use\nMy /uses page\n\n\nmacOS Quick Actions\nOpen a folder in Positron from macOS Finder with Quick Actions\n\n\nRaycast\nDownload Raycast (both macOS and Windows)\nHelpful resources:\n\nRaycast on YouTube: Raycast has a big YouTube presence and there are a lot of resources out there about it\n101 Things You Can Do With Raycast\nGetting Started with Raycast for Windows\n\nMy setup:\n\nMy custom Raycast scripts (neat things like getting a random.org seed, toggling a webcam light)\nMy extension settings (there’s no easy way to share these details other than screenshots 🤷‍♂️). The ◆ symbol here stands for ⌘⌥^⇧ (or mashing the whole corner of my keyboard).\n\nFirst halfSecond half\n\n\n\n\n\n\n\n\n\nCustom quicklinks:\n\nSearch my repositories on Github\n\nhttps://github.com/search?q=user%3Aandrewheiss%20{argument name=\"Search\"}&type=code\n\nOpen my “Movies to watch” note in Obsidian\n\nobsidian://open?path=%2FUsers%2Fandrew%2FObsidian%2FNotes%2F%E2%80%A2%20Goals%2FMovies%20to%20watch.md\n\n\nOther neat features:\n\nUpcoming calendar events in the menubar\nClipboard history\nEmoji picker\nColor picker\n\n\n\n\nEspanso\nDownload Espanso (macOS, Windows, and Linux)\nAll my shortcuts and settings\nSome things I do with it:\n\nTypographic things like:\n\n;comm for ⌘, ;shift for ⇧, ;opt for ⌥\n;times for a true multiplication sign ×, ;minus for a true subtraction sign −\n;prime1 and ;prime2 for ′ and ″ (like 5′ 11″)\n\n…and date things like:\n\n;dt for “2026-01-13”\n;dz for “2026-01-13T11:06”\n;dm for “2026-01-13 11:06:05”\n;date for “January 13, 2026”\n\n…and longer words with repeated letters that I always mess up, like these:\n\ninsttn for “institution”\nconsttal for “constitutional”\nentrepal for “entrepreneurial”\n\n…and code snippets like ;dplyrsum for inserting this R code to disable {dplyr}’s grouping messages:\noptions(dplyr.summarise.inform = FALSE)\n…or running a {targets} pipeline with ;tarm:\ntargets::tar_make()\n…or adding Quarto chunk metadata like disabling warnings and messages with ;wm:\n#| warning: false\n#| message: false\n…and adding figure dimensions with ;figw or ;figh:\n#| fig-width: \n#| fig-height: \n…and lots of other Quarto things like panel tabsets (;;pan), slideshow columns (;;col), includes (;;include), conditional content (;;visible), callouts (;;call), etc.:\n\n…and creating boilerplate Quarto YAML front matter with ;;qmd:"
+  },
+  {
+    "objectID": "atom.html",
+    "href": "atom.html",
+    "title": "philogic’s blog",
     "section": "",
-    "text": "1.1 人性是發展的\n全書似乎是先有「人性是發展的」總論點基調，再去找材料套進去這條一以貫之的總線索，邏輯看起來一貫明了，論證卻時常缺乏說服力。因邏輯自足，全書文風顯得酣暢大氣，某些段落有排山倒海之勢，因而頗見作者性情；也因此導致寫作時語言表述方面瑕疵不少。讀者容易掉進作者的「邏輯圈套」而走火入魔，本書應是文學史學習的「另類參考課本」。\nBefore landing into the CLI let us consider the Unix concept. The first question that comes in this section is : what is Unix ? It simply is an :operating system (OS). In other words, it is a set of programs that inter-operate with each other to let you communicate with the machine. A very important variant (or clone) of Unix is the very well known OS :Linux, which was created by :Linus Torvalds from scratch. The most important idea behind Unix based systems is the idea that we can use it to access information and hardware programmatically. Other main feature from Unix-like OS systems is the fact that data is usually stored as text files and the interface by which users communicate with the machine is also text-based (TUI : text user interface as opposed to GUI, graphic user interface).\nAlmost every computer has a way to interact with or access to the inner elements of the computer. Such interface is called the the command-line-interface Fig. 1.1.",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>文學的進路</span>"
-    ]
+    "text": "How to automatically convert TikZ images to SVG with Quarto\n\n\nMake Quarto convert TikZ graphics to SVG files when rendering to non-LaTeX outputs like HTML, Word, and Typst\n\n\n\n\n\nFeb 25, 2026\n\n\nphilogic\n\n\n\n\n\n\n\n\n\n\n\n\nHow to make your data analysis life easier using Positron, Raycast, and Espanso\n\n\nLinks and resources from my time on Posit’s Data Science Lab in January 2026\n\n\n\n\n\nJan 13, 2026\n\n\nphilogic\n\n\n\n\n\n\n\n\n\n\n\n\nOpen files in external programs with Positron or Visual Studio Code\n\n\nPositron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.\n\n\n\n\n\nJul 3, 2025\n\n\nphilogic\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "chs-propositional/001.html#人性是發展的",
-    "href": "chs-propositional/001.html#人性是發展的",
-    "title": "1  文學的進路",
+    "objectID": "blog/2025/07/03/open-files-external-programs-positron/index.html",
+    "href": "blog/2025/07/03/open-files-external-programs-positron/index.html",
+    "title": "Open files in external programs with Positron or Visual Studio Code",
     "section": "",
-    "text": "Figure 1.1: A terminal app displaying common features of the command line interface\n\n\n\n\n1.1.1 File paths\nPrograms, files and directories on every machine (with Unix-like OS) display hierarchical paths (routes), starting out from the root (represented by the back-slash character /). The root represents the beginning of all the software installed in the machine. And many other files are nested from there forming a tree-like structure for the paths Fig. 1.2\n\n\n\n\n\nFigure 1.2: A terminal displaying tree-like structure of the programs in a machine with macOS\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can inspect the paths of a nested directory tree using tree command in you cli :\ntree -d -L 1\n\nThere are basically two ways to explore or navigate your file system. If you always represent it from the root, then you are presenting an absolute path. For instance the absolute path to my desktop is (/Users/camilogarcia/Desktop).\n\n1.1.2 Basic Unix commands\nGiven that the vast majority of file systems are organized in file paths, the first question when starting with the CLI is “Where am I ?”. So Unix tool system is equipped with a bunch of commands but its basic ones are pretty much oriented to answer that question and navigating this text-based interface of files. The following three commands (pwd, cd, ls) will help you conquer the CLI.\n\n1.1.2.1 Printing your working directory\nTo know where you are you can see your current location, that is to print your working directory using the pwd command.\npwd\n\n1.1.2.2 Change to other directory\ncd test-dir\n\n\n\n\n\n\n\nTip\n\n\n\nSome basic arguments to navigate across your terminal :\ncd .. # change backwards\ncd ~  # change to the home\ncd /  # change to the root\ncd -  # change to previous dir\n\n\n1.1.2.3 Listing files\nls \n\n\n\n\n\n\n\nTip\n\n\n\nYou can navigate your executed commands by typing  or .\n\n\n1.1.2.4 Making new directories\nmkdir test-dir\n\n1.1.2.5 Creating a file\nA simple command to create any file inside your terminal is touch it just create a file, but do not allow any editing.\ntouch new-file.txt\nThe new-file.txt is empty and created on your current location unless you assign another path when creating it. We suggest to take a look at Allison Horst illustrations, especially on how to name files depending on the case see Fig. 1.3\n\n\n\n\n\n\n\nFigure 1.3: Different conventions for naming files or directories as a good computational practice. Such as de the kebab-case or the UpperCammelCase. Illustration by Allison Horst\n\n\n\n1.1.2.6 Printing files or inputs\ncat new-file.txt\nsome\nlines\nthat\nwere\nwritten\n\necho \"This will be printed\"\n\nThis will be printed\n\n\n\n1.1.2.7 Removing files or directories\nrm\n\n\n\n\n\n\n\nTip\n\n\n\nWhen having a long command, it becomes practically to go to the beginning or to the end of it. To do so you can use the key combination Ctrl + A and Ctrl + E respectively.\n\nrmdir\n\n1.1.3 Anatomy of a command\nThere is still many conventions by which the parts of a command line might be called, yet a very standard convention is presented in Fig. 1.4\n\n\n\n\n\nFigure 1.4: A simple command and a convention to call its main components\n\n\nSome other for instance also tend to call the option as flag. This conventions are powerful because almost any command line interface display this structure (complex one add some other features and simple one tend to lack subcommands).\n\n\n\n\n\n\nWarningChallenge\n\n\n\n\n\nBacterial defense mechanisms to avoid bacteriophage infections are abundant. One of these is the :restriction-modification system (RM-System), which works by targeting a specific sites called motifs, shared by the phage and bacteria, with methylations. Motifs are commonly represented as a :sequence logo which is a probabilistic representation of the nucleotides at each position. The challenge consists of finding the number of times the motif from Fig. 1.5 appears on B. tequilensis EA-CB0015 genome using a command. Assume that probabilities are equal when multiple bases appeared at one site.\n\n\n\n\n\nFigure 1.5: A RM-system motif logo\n\n\nBefore diving into an :answer take your time to think and solve it by your own.",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>文學的進路</span>"
-    ]
+    "text": "Positron’s Quarto support is really quite robust and it’s full of nice little features like previewing a citation using whatever bibliography style your document is using (Chicago, APA, etc.) when you hover over a citation key:\n\n\n\nPreview of a citation\n\n\n…or knowing about the different headings inside your document for tab-completed cross references:\n\n\n\nTab completion list of sections in a document\n\n\n…or even knowing about those headings in other documents in a project:\n\n\n\nTab completion list of sections in a different document\n\n\nThat’s all neat, but for long-form writing, like blog posts, articles, and book chapters, there are tools that make writing with Markdown a lot nicer, especially on macOS. Within most text editing areas, macOS has really neat writing tools and spellchecking and autocorrect features. For example, if you press ⌘^D while your cursor is in a word, you’ll get a little dictionary+thesaurus popup:\n\n\n\n\n\n\n\nDictionary and thesaurus popup\n\n\nYou also get macOS’s built-in autocorrect and spellchecking and autocomplete:\n\n  \n\nYou can also access macOS’s Writing Tools, which are like a built-in Grammarly. I actually really don’t like these except for the proofread option, which is like an LLM-backed grammar/style suggestion generator.\n\n  \n\nHowever, lots of these tools don’t work in Positron (or Visual Studio Code, or really any Electron app). There’s a longstanding bug in Chromium/Electron-based apps (like Positron, Visual Studio Code, Obsidian, and others) where some of these writing tools don’t work (this issue is my least favorite thing about Obsidian). Some non-native apps support spellchecking, and most let you look up selected words in the dictionary or thesaurus, but they don’t use macOS’s autocorrect, autocomplete, or Writing Tools.\nPositron and Visual Studio Code don’t support macOS’s built-in dictionary unless you use the vscode-spellright extension which uses macOS’s native spelling API. However, even then, it doesn’t work like it does in regular apps—misspelled words appear with a red underline and display in the Problems Pane, but you can’t right click on misspelled words to change them automatically.\n\n\n\nFixing spelling problems in Positron with vscode-spellright\n\n\nThere are a ton of Markdown editors for macOS, and I’ve probably used them all since 2008(!). Most of them fully support all of macOS’s writing features, and they’re generally designed to create delightful writing experiences. I’m particularly fond of iA Writer, Ulysses, and Typora.\nTypora in particular is nice because it’s the only one I’ve found that’s based on pandoc-flavored Markdown, so it can properly preview things like subscripts (CO~2~ becomes CO2), superscripts (x^2^ becomes x2), strikethroughs (~~deleted~~ becomes deleted), inline footnotes (Blah.^[A note.] makes a footnote), and other pandoc-specific syntax. Typora can also display LaTeX math, and it can open Quarto Markdown files without any problems—it just can’t run any code chunks, but that’s not surprising, since it’s not an IDE.\n\nQuarto and Typora\nMy normal workflow for writing documents in Quarto Markdown (and R Markdown before that) is to open a .qmd file in multiple apps. I open files in Positron or RStudio when working on code-related stuff, and I open files in Typora when focusing more on writing and editing. (I rarely actually ever put them side-by-side, and don’t typically always have the same document open in each simultaneously—it depends on what I’m doing: mainly writing or mainly coding).\n\n\n\nThe same document open in both Positron and Typora\n\n\nI’m happy with this system and I’ve used it for years. If Positron / Visual Studio Code or RStudio had full access to all of the macOS spellchecking and autocorrect and writing features, I could do everything there and skip Typora, but IDEs have a different purpose than writing apps, so I don’t think they’ll ever be as polished and nice as Typora or other Markdown editors.\nOne point of friction in this workflow is getting a .qmd file in Positron open in Typora. I typically need to right click on the .qmd file in the File Explorer Pane, select “Reveal in Finder” to open it in macOS Finder, then right click on the .qmd file in Finder, select “Open With” and finally choose Typora:\n\n  \n\nThat’s a lot of clicking and it’s often enough of a hurdle where I won’t open the file in Typora, and I’ll end up with lots of unnecessary typos or or [sic] repeated words from doing lots of writing in Positron.\nIt would be great if Positron / Visual Studio Code had an option to open a file in an external program from the File Explorer Pane, but it doesn’t.\nBut I recently discovered a workaround!\n\n\nRunning external processes with tasks\nBoth Visual Studio Code and Positron have support for Tasks, which let you run external tools and programs that you define in a tasks.json file.\nYou can edit the systemwide tasks.json if you go to Positron &gt; Settings &gt; Tasks (on macOS; on Windows, it’ll be somewhere in the settings menu):\n\n\n\n\n\n\n\nOpening tasks.json\n\n\nThe full documentation for the Tasks syntax is online, but it’s fairly straightforward. We can add a task to open a file with Typora like this:\n\n\ntasks.json\n\n{\n    \"version\": \"2.0.0\",\n    \"tasks\": [\n        {\n            \"label\": \"Open in Typora\",\n            \"type\": \"shell\",\n            \"command\": \"open -a Typora '${file}'\"\n        }\n    ]\n}\n\nTo run the task, open the Command Palette, search for “Tasks: Run Task”, and then choose the “Open in Typora” task.\n\n  \n\nMagical!\n\n\nLaunch tasks more quickly\nOne downside to this, though, is that it’s a two-step process with the Command Palette—you need to go into “Tasks: Run Task” first, then find the exact task there. We can speed this up in a couple ways.\nFirst, we can assign a keyboard shortcut to the task (see this for complete documentation). In keybindings.json, add an entry for workbench.action.tasks.runTask with the args argument set to whatever you used as label in the task definition. With this, I can mash ⌘⌥⇧^T and open the current file in Typora:\n\n\nkeybindings.json\n\n{\n    \"key\": \"shift+alt+cmd+ctrl+t\",\n    \"command\": \"workbench.action.tasks.runTask\",\n    \"args\": \"Open in Typora\"\n}\n\n\n  \n\nSecond, there’s a neat tasks extension that lets you add little shortcut buttons to the status bar in Positron / Visual Studio Code. After installing the extension, modify tasks.json to look like this:\n\n\ntasks.json\n\n{\n    \"version\": \"2.0.0\",\n    \"statusbar.default.hide\": true,  // Hide all tasks by default\n    \"tasks\": [\n        {\n            \"label\": \"Open in Typora\",\n            \"type\": \"shell\",\n            \"command\": \"open -a Typora '${file}'\",\n            \"options\": {\n                \"statusbar\": {\n                    \"hide\": false,  // Show this task\n                    \"label\" : \"$(pencil) Open in Typora\",\n                    \"detail\" : \"Open current Markdown-ish file in Typora\",\n                    \"filePattern\" : \".*\\\\.\\\\S*md$\"  // Show this only for Markdown-flavored files\n                }\n            }\n        }\n    ]\n}\n\n\n\n\n\n\n\nTipLimit button to specific file types\n\n\n\nThe filaPattern entry here lets you control when the status button bar appears. The regular expression incantation \".*\\\\.\\\\S*md$\" will make it appear on any file with a Markdown-like extension, like .md, .qmd, .Rmd, and so on.\n\n\nThere should be a new button down in the status bar that you can click to run the task and open the file in Typora:\n\n\n\n\n\n\n\nAn “Open in Typora” button in Positron’s status bar\n\n\n\n\nDo more with tasks\nThis is just an example of one simple task that opens a file in a different program. You can modify it to any other program, or make even more complex tasks like testing and building packages, or building and deplying websites. You can even chain tasks together in a sequence. See this or this or this for other examples.\n\n\n\n\n\n\nCitationBibTeX citation:@online{2025,\n  author = {, philogic},\n  title = {Open Files in External Programs with {Positron} or {Visual}\n    {Studio} {Code}},\n  date = {2025-07-03},\n  url = {https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/},\n  doi = {10.59350/87hpe-4ah24},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nphilogic. 2025. “Open Files in\nExternal Programs with Positron or Visual Studio Code.” July 3,\n2025. https://doi.org/10.59350/87hpe-4ah24."
   },
   {
-    "objectID": "chs-propositional/001.html#most-important-skills",
-    "href": "chs-propositional/001.html#most-important-skills",
-    "title": "1  文學的進路",
-    "section": "\n1.2 Most important skills",
-    "text": "1.2 Most important skills\nWhen facing the CLI several issues or problems will arise. As for any other unintuitive challenge, a complete text interface Handling errors. Getting help Patience",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>文學的進路</span>"
-    ]
-  },
-  {
-    "objectID": "chs-propositional/001.html#intermediate-unix",
-    "href": "chs-propositional/001.html#intermediate-unix",
-    "title": "1  文學的進路",
-    "section": "\n1.3 Intermediate Unix",
-    "text": "1.3 Intermediate Unix\n\n1.3.1 Special operators or metacharacters\nSome operator or metacharacters have special functions in bash. For instance the * or wildcard is a regular expression character (sometimes called as a placeholder) that will turn in any character, many times, similarly the ? represents any character, once. Whereas the $ (dollar sign or operator) is intended for an special task : call environmental variables which means that once a variable is defined (e.g., var=1) this variable can be called via the $ operator anytime echo $var will get us 1 as the standard output\n\n1.3.2 Intermediate commands\nwc\ntr\ngrep \nsed \n\n1.3.3 Unix flows\n\n\n\n\n\n\n\nTip\n\n\n\nWhen using the CLI at first its common to feal quite slow. Then, a very useful tip to boost the productivity from the command line is the autocompletion of commands by hitting &lt;tab&gt; after the initial command.\n\n\n1.3.3.1 Redirection\n\n\nRedirecting flow\n\n\n1.3.3.2 Pipe\n\n\nPipe flow\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhen having a long command, it is also useful to jump by lines instead of character by character. To do so you can use the key combination Alt + &lt;- and Alt + -&gt; respectively.\n\n\n1.3.4 loops, conditionals and script variables\n\n\n\n\n\n\nWarningChallenge\n\n\n\n\n\nA second part of this challenges consists of create a script out from r the motif-search one-line command that recursively search the motifs in all genomes from a zip file that contains 10 bacterial genomes. The script should include the shebang, loops, conditionals and environmental variables.\nSee a possible script that solve the challenge :here",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>文學的進路</span>"
-    ]
-  },
-  {
-    "objectID": "chs-propositional/001.html#advance-unix-stuff",
-    "href": "chs-propositional/001.html#advance-unix-stuff",
-    "title": "1  文學的進路",
-    "section": "\n1.4 Advance Unix stuff",
-    "text": "1.4 Advance Unix stuff\n\n1.4.1 System permissions\n\n1.4.2 Aliasing\n\n1.4.3 The .bashrc\n\n\n1.4.4 awk snippet\n\n\n\n\n\n\nWarningChallenge\n\n\n\n\n\n:Restriction endonucleases (RE) cleave the DNA by digesting the :phosphodiester bond between two nucleotides. Many RE are directed to specific DNA motifs normally palindromic. There are mainly three types according to it digestive mechanism. RE have been widely used in molecular biotechnology because its specificity and versatility to carry out different experiments.\nOne of the main uses of RE is to generate a pattern of restricted fragments from different organisms so that samples of organisms, sequences or genes could be distinguished, as long as they display differences in the number of recognition motifs. This is normally done in the lab, where an RE is mixed with a DNA sample and later an :electrophoresis gel is run to see a separation pattern according to the fragments size.\nProfessor Javier has sequenced the genome of a sampled SARS-CoV2 and want to see the band pattern that the genome would display if it were digested with the RE EcoRV. He has asked you to help him with this problem. The expected output is a text file with the sizes of the fragments, where the size is the number of nucleotides of each fragment.\n\n\n\nFor more explanations on the basic commands in the command line we suggest to visit the first chapters of Computing skills for biologist from Allesina & Wilmes (2019)\nA list of reading for this section :\nDudley & Butte (2009)\nPerkel et al. (2021)\nBrandies & Hogg (2021)\n\n\n\n\nAllesina, S., & Wilmes, M. (2019). Computing skills for biologists. https://doi.org/10.2307/j.ctvc77jrc\n\n\nBrandies, P. A., & Hogg, C. J. (2021). Ten simple rules for getting started with command-line bioinformatics. In PLoS Computational Biology (No. 2; Vol. 17, p. e1008645). Public Library of Science San Francisco, CA USA.\n\n\nDudley, J. T., & Butte, A. J. (2009). A quick guide for developing effective bioinformatics programming skills. In PLOS computational biology (No. 12; Vol. 5, p. e1000589). Public Library of Science San Francisco, USA.\n\n\nPerkel, J. M. et al. (2021). Five reasons why researchers should learn to love the command line. Nature, 590(7844), 173–174.",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>文學的進路</span>"
-    ]
-  },
-  {
-    "objectID": "chs-propositional/002.html",
-    "href": "chs-propositional/002.html",
-    "title": "2  Version control",
+    "objectID": "blog/2026/02/25/tikz-quarto-svg-fun/index.html",
+    "href": "blog/2026/02/25/tikz-quarto-svg-fun/index.html",
+    "title": "How to automatically convert TikZ images to SVG with Quartoxyz",
     "section": "",
-    "text": "2.1 Version control systems\nAs its name suggests, a version control system (VCS) allow you to keep record of the changes happening while working files and directories. Several VCSs have been created but the most popular is git. It is characterized by being a distributed VCS, which means that changes history are recorded locally (whether in a user laptop or user account) in contrast to other centralized VCSs that changes are saved on a shared machine or server.\nSo, why bother to learn a VCS in bioinformatics ? Well there are many reasons, but to highlight some of them : i) Since VCSs allow you to record changes, you can always trace back the steps made in ana analysis, which is nice for the reproducibility of your work. ii) a system like git could be coupled with a shared-centralized server as it is GitHub (we’ll talk about it later and then one could share and collaborate, expanding the extent of your research and iii) following the structures and command from git its at first overwhelming and demands consistency and order, then when scaling a project it will payoff this stepping curve of learning by keeping the efficiency of your work.",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Version control</span>"
-    ]
+    "text": "Back in 2021 I wrote a little guide to how to use tikz chunks in R Markdown documents. {knitr} supports tikz natively, and with some some shenanigans and special settings—and after recompiling LaTeX with one extra feature and setting a new environment variable on macOS—it’s possible to have tikz chunks automatically knit to PDF in PDFs and SVG in HTML and Word. While convoluted, it’s a neat process and I’ve used it for several published papers (like, see Figures A2 and A3 here—those are built with tikz!).\nWhile that process works, I’ve also found it really annoying, and for years I’ve looked for better ways. The very first pre-release version of Quarto was also in 2021, but it was too young to do much with languages beyond R and Python. Since then, though, Quarto has added native support for two different diagram languages: Mermaid and Graphviz. They work well for lots of diagrams, but not for most of the diagrams I make, where (1) I want exact control over where items go, and (2) I want them to look nice and visually fit with the rest of the document.\nFor instance, let’s say I want to include a minimalist little standard directed acyclic graph (DAG) that shows that some treatment \\(X\\) causes some outcome \\(Y\\) in the subsequent time period, but the effect is confounded by a third variable \\(Z\\). Something like this:"
   },
   {
-    "objectID": "chs-propositional/002.html#git-installation-and-configuration",
-    "href": "chs-propositional/002.html#git-installation-and-configuration",
-    "title": "2  Version control",
-    "section": "\n2.2 Git installation and configuration",
-    "text": "2.2 Git installation and configuration\nInstallation could proceed from the official page of git. If working from WSL it has the binaries preinstalled, so you can jump directly to the configuration. The second step is to configure your user name and an email. with the following lines :\n\ngit config --global user.name \"Your Name\"\ngit config --global user.email user@eafit.edu.co\n\nYou could always user the preferred e-mail. More configurations are available, for instance the preferred editor to work with and so on, you can explore by asking for help git config --help or git config --list.\n\n2.2.1 The basics\nThere are at least six basic commands. Three of them allow recording local changes (git init, git add and git commit) and the other three help you to inspect the state of the changes (git status, git diff and git log), we will dive into the detail in the following lines. So, to start recording changes in a directory you must initialize the directory (which will now be called repository) using git init. This is a one-time command to get started.\n\n2.2.2 The local workflow\n\n\n\n\n\nLocal workflow of a git project adding and committing changes\n\n#local-workflow",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Version control</span>"
-    ]
+    "objectID": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#quick-easy-ugly-diagrams-with-mermaid-and-graphviz",
+    "href": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#quick-easy-ugly-diagrams-with-mermaid-and-graphviz",
+    "title": "How to automatically convert TikZ images to SVG with Quartoxyz",
+    "section": "Quick, easy, ugly diagrams with Mermaid and Graphviz",
+    "text": "Quick, easy, ugly diagrams with Mermaid and Graphviz\nWe can create this DAG with Mermaid, but there are limited styling options and there’s not really any good way to control the layout, so we’re pretty much stuck with this:\n\n\n```{mermaid}\ngraph LR\n  X([X]) --&gt; Y([Y])\n  Z([Z]) --&gt; X([X])\n  Z([Z]) --&gt; Y([Y])\n```\n\n\n\n\n\n\n\ngraph LR\n  X([X]) --&gt; Y([Y])\n  Z([Z]) --&gt; X([X])\n  Z([Z]) --&gt; Y([Y])\n\n\n\n\n\n\n\n\nWe can also use Graphviz to make the same DAG, and it has a few extra options for layout—like here, we tell it that the Z node is the focal point of the diagram and that X and Y should be pushed down:\n\n\n```{dot}\ndigraph {\n  node [shape=circle]\n    \n  { rank=source; Z }\n  { rank=sink; X; Y }\n    \n  X -&gt; Y\n  Z -&gt; X\n  Z -&gt; Y\n}\n```\n\n\n\n\n\n\n\n\n\n\n\n\nZ\n\nZ\n\n\n\nX\n\nX\n\n\n\nZ-&gt;X\n\n\n\n\n\nY\n\nY\n\n\n\nZ-&gt;Y\n\n\n\n\n\nX-&gt;Y\n\n\n\n\n\n\n\n\n\n\n\n\nThat’s all fine, but what if we want, like, control over these diagrams? Or math? Or typographic things like subscripts or superscripts? Good luck."
   },
   {
-    "objectID": "chs-propositional/002.html#exploring-github",
-    "href": "chs-propositional/002.html#exploring-github",
-    "title": "2  Version control",
-    "section": "\n2.3 Exploring GitHub",
-    "text": "2.3 Exploring GitHub\nAs mention before, one of the great advantages that git can later achieve is to collaborate. However, to get into that a sharable server must allow users to have a common ground, and this is what GitHub allow. GitHub is a web platform where the local repositories become public and any user can access to the controlled versions of an image of your repo. The famous pet is the octocat Fig. 2.1\n\n\n\n\n\n\nFigure 2.1: The octocat from GitHub\n\nTo enable the communication with a remote repo, git has encoded many specific commands, once the repos are cloned a simple workflow from the own local and remote repos is made possible thanks to two simple commands git push and git pull.\nThere a several ways to starting out a remote project, whether it starts from a local folder or whether it starts from a remote repo. The second strategy is sometimes easier as you just need to later git clone the remote into a local folder. To do so every repo has its own code-icon  to later copy the repo link and later hit git clone &lt;https...&gt; on the desired folder. Now you got a linked copy of the remote on your machine.\n\n\n\n\n\n\nCautionCaution\n\n\n\nBut before working on a remote and pushing your first commits, it is common to find an error regarding the remote branch (also called origin). There are several ways to avoid this caveat, but a very anticipated way is to configure git\n\ngit config --global push.autoSetupRemote true\n\nThis will save you from every time typing git push --set-upstream origin &lt;main&gt; when working on a new remote repo.\n\n\n\n\n\n\n\nFigure 2.2: The cloning workflow in brief\n\n\nCloning is therefore the process of creating a local copy of remote repository, that is a machine version of the remote repo, later all the common local workflow is carried out normally Fig. 2.2\n\n\n\n\n\n\n\nTip\n\n\n\nIf you want to keep a file out of synchronization git provides a simple way to do so by creating a .gitignore file having the the paths to the files to keep in your local machine\n\n\n2.3.1 Forking and collaborate\nBasic collaboration on an open repository is a three-step process. First you need to fork the repo, this will create a mirror copy of the repo in your GitHub profile. In a second step, a simple clone of the repo will generate a copy of the forked repo on your local machine, so you can freely work and make your mistakes and push them to your forked repo that belongs to your account. In a third step, once they are on the remote repo you will have to create a pull request (PR), as its name suggest : you are asking the owners of the original to consider your changes Fig. 2.3.\n\n\n\n\n\nFigure 2.3: A common collaborative workflow from GitHub, using fork, clone and pull requests\n\n\n\n2.3.2 Branching and merging",
-    "crumbs": [
-      "先秦\n",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Version control</span>"
-    ]
+    "objectID": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#nicer-diagrams-with-tikz",
+    "href": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#nicer-diagrams-with-tikz",
+    "title": "How to automatically convert TikZ images to SVG with Quartoxyz",
+    "section": "Nicer diagrams with TikZ",
+    "text": "Nicer diagrams with TikZ\nTikZ is very good at making diagrams. It handles math. It handles fancy formatting. It’s also absolutely miserable to work with—you have to draw diagrams with a kinda-sorta-dialect of LaTeX. (Making initial TikZ diagrams is one area where LLMs are incredibly useful!). TikZ also converts exclusively to PDF,1 but you can convert those diagrams from PDF to other formats like SVG or PNG.\n1 Technically DVI, but whatever.Here’s that same DAG as TikZ:\n\\begin{tikzpicture}[&gt;={stealth}]\n  \\node (x) at (0,0) {$X_{t}$};\n  \\node (y) at (2,0) {$Y_{t + 1}$};\n  \\node (z) at (1,1) {$Z$};\n  \\path[-&gt;] (z) edge (x);\n  \\path[-&gt;] (z) edge (y);\n  \\path[-&gt;] (x) edge (y);\n\\end{tikzpicture}\nHowever, Quarto won’t render this as an image because it requires feeding it through LaTeX. As I show here, it’s possible to use R Markdown with {knitr} in a special tikz chunk, which would appear as a nice diagram when rendering to PDF. With a bunch of extra setup, you can also get tikz chunks to appear as SVG when rendering to non-PDF formats.\nMy guide still works with Quarto and you can just do that if you want to use TikZ chunks! I’ve been doing it for years! But Quarto re-renders and re-converts each diagram every time you render the document, which is excessive and slow. Getting all the special scaffolding set up is annoying too. It only works with R-based documents. You have to reinstall LaTeX with special extra settings on macOS. You have to create a special chunk template and then hook that into the tikz engine. And you have to do that every time. Oof.\nThere’s an easier way though!"
   },
   {
-    "objectID": "chs-predicate/algorithm-thinking.html",
-    "href": "chs-predicate/algorithm-thinking.html",
-    "title": "3  Algorithm thinking",
+    "objectID": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram",
+    "href": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram",
+    "title": "How to automatically convert TikZ images to SVG with Quartoxyz",
+    "section": "Converting TikZ to both PDF and SVG with Quarto and diagram",
+    "text": "Converting TikZ to both PDF and SVG with Quarto and diagram\nThe pandoc team has an extension called diagram that is essentially a fancy Lua filter that will take code for several different diagram languages (including TikZ) and convert them into images.2 In 2023 they reorganized it to work as a Quarto extension, so installing it and using it is nice and straightforward. It’s language agnostic—you don’t have to use it only in an R document. You don’t have to recompile LaTeX on macOS or set any systemwide environment variables. It Just Works™.\n2 There are two other Quarto extensions/filters that do something similar (imagify and quarto_tikz). I’m sure they work great too—albeit differently from diagrams. I super trust the pandoc people, so I’m happy to stick with diagrams.Here’s what you have to do:\n\nDownload and install Inkscape and tell your terminal that it exists. The diagram extension uses Inkscape, an open source vector editor (like Adobe Illustrator, but free) to handle the PDF → SVG conversion. This is the only external piece of software you need to get this process to work, and you never really need to open it. You’ll install it and set it up once—after that, things will work normally.\n\n\n\n\n\n\nTipPutting inkscape in your PATH\n\n\n\n\n\nInkscape can be used from the terminal using the inkscape command, but that program lives in different places depending on your operating system. The diagram extension assumes that you can access it by running inkscape in your terminal, but this likely won’t work immediately.\n\nFor macOS: On macOS, inkscape lives in /Applications/Inkscape.app/Contents/MacOS/inkscape. You can symlink it to a more accessible location with this terminal command:\nln -s /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape\nFor Windows: On Windows, inkscape.exe lives in the bin folder of wherever you installed Inkscape, likely somewhere like C:\\Program Files\\Inkscape\\bin. You’ll need to add that to your PATH. You can do that by going to System Properties &gt; Environment Variables &gt; and append C:\\Program Files\\Inkscape\\bin to the PATH variable, or you can run this in PowerShell:\n[Environment]::SetEnvironmentVariable(\"Path\", $env:Path + \";C:\\Program Files\\Inkscape\\bin\", \"Machine\")\nFor both: Once you’ve symlinked the program or added it to your path, you should be able to open a new terminal window and run this:\ninkscape --version\n\n\n\n\nInstall the diagram extension in a Quarto project. Create a new Quarto project. From the terminal, run this to install the diagram extension:\nquarto install extension pandoc-ext/diagram\nTell your document to use the extension. Add this to the YAML header of a Quarto document:\n---\nfilters:\n  - diagram\n---\nAdd a .tikz block to your document. Add a tikz code block to your document like this:\n```{.tikz}\n\\begin{tikzpicture}[&gt;={stealth}]\n  \\node (x) at (0,0) {$X_{t}$};\n  \\node (y) at (2,0) {$Y_{t + 1}$};\n  \\node (z) at (1,1) {$Z$};\n  \\path[-&gt;] (z) edge (x);\n  \\path[-&gt;] (z) edge (y);\n  \\path[-&gt;] (x) edge (y);\n\\end{tikzpicture}\n```\nRender! Render the document to PDF and you should see a diagram. Render it to HTML or .docx or Typst and it should use inkscape to convert it to SVG. Magic.\n\n\n\n\nThat’s it! No weird LaTeX recompilation. No special R-only knitr templates and engine overrides. Quarto, pandoc, Lua, and Inkscape take care of everything automatically."
+  },
+  {
+    "objectID": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#extra-settings-and-complete-example",
+    "href": "blog/2026/02/25/tikz-quarto-svg-fun/index.html#extra-settings-and-complete-example",
+    "title": "How to automatically convert TikZ images to SVG with Quartoxyz",
+    "section": "Extra settings and complete example",
+    "text": "Extra settings and complete example\nYou can configure lots of other settings too—see the TikZ section of the documentation at sample.md here or the extension’s test file for tikz for more details.\nFor example, you can control the LaTeX engine that gets used, add LaTeX and TikZ packages and other preamble-y things, and enable caching so that figures don’t need to be recompiled every time. You can even use native Quarto cross referencing and captions, but you need to use its cross-reference div syntax.\nHere’s a complete mini example. Because we enabled caching, it won’t rebuild and re-convert each time you render, and because we gave it a filename, there will be a standalone SVG file in example_files/mediabag/a-neat-dag.svg. It also defines some custom colors and fonts.\n\n\nexample.qmd\n\n---\ntitle: \"Some neat document\"\n\nfilters:\n  - diagram\n\ndiagram:\n  cache: true\n  cache-dir: ./tikz-cache\n  engine:\n    tikz:\n      execpath: lualatex\n      header-includes:\n        - '\\usepackage{libertine}'\n        - '\\usepackage{libertinust1math}'\n        - '\\definecolor{xcolor}{HTML}{d7433b}'\n        - '\\definecolor{ycolor}{HTML}{008d98}'\n        - '\\definecolor{zcolor}{HTML}{ffcc3d}'\n---\n\nSee @fig-dag-thing for a neat example!\n\n::: {#fig-dag-thing}\n\n```{.tikz}\n%%| filename: a-neat-dag\n%%| width: 50%\n\n\\begin{tikzpicture}[&gt;={stealth}]\n  \\node [xcolor] (x) at (0,0) {$X_{t}$};\n  \\node [ycolor] (y) at (2,0) {$Y_{t + 1}$};\n  \\node [zcolor] (z) at (1,1) {$Z$};\n  \\path[-&gt;] (z) edge (x);\n  \\path[-&gt;] (z) edge (y);\n  \\path[-&gt;] (x) edge (y);\n\\end{tikzpicture}\n```\n\nCaption for the DAG\n\n:::\n\nThat will create a diagram like this:\n\n\n\n\n\n\nFigure 1: Caption for the DAG\n\n\n\n\nThis process works with any TikZ diagram (these came from Christian Testa’s tikz examples). There’s no way you can do stuff like this with Mermaid or Graphviz :)\n\n\n\n\n\n\n\n\n\n\n\n(a) A cone with a height and radius (original)\n\n\n\n\n\n\n\n\n\n\n\n(b) Definition of an intersection (original)\n\n\n\n\n\n\n\nFigure 2: Some example TikZ diagrams\n\n\n\n\nHere’s the Markdown to make Figure 2 (a) and Figure 2 (b) in Figure 2:\n\n\nexample.qmd\n\nHere's the Markdown to make @fig-cone and @fig-set in @fig-tikz-examples:\n\n:::: {#fig-tikz-examples layout-ncol=2 layout-valign=\"bottom\"}\n\n::: {#fig-cone}\n\n```{.tikz}\n%%| filename: cone\n%%| width: 100%\n\n\\usetikzlibrary{calc, backgrounds}\n\n\\begin{tikzpicture}[scale=.75,\n  background rectangle/.style={fill=white},\n  show background rectangle]\n  \\draw[dashed] (0,0) arc (170:10:2cm and 0.4cm)coordinate[pos=0] (a);\n  \\draw (0,0) arc (-170:-10:2cm and 0.4cm) coordinate (b);\n  \\draw[densely dashed] \n      ([yshift=4cm]$(a)!0.5!(b)$) -- \n      node[right,font=\\footnotesize] {1} coordinate[pos=0.95] (aa)($(a)!0.5!(b)$) -- \n      node[above,font=\\footnotesize] {1} coordinate[pos=0.1] (bb) (b);\n  \\draw (aa) -| (bb);\n  \\draw (a) -- ([yshift=4cm]$(a)!0.5!(b)$) -- (b);\n\\end{tikzpicture}\n```\n\nA cone with a height and radius ([original](https://github.com/ctesta01/tikz-examples/blob/main/2023/cone/cone.tex))\n\n:::\n\n::: {#fig-set}\n\n```{.tikz}\n%%| filename: set-belonging\n%%| width: 100%\n\n\\usetikzlibrary{backgrounds}\n\n\\begin{tikzpicture}[scale=1.5, background rectangle/.style={fill=white}, show background rectangle]\n  % Draw the universe rectangle\n  \\draw[thick] (-2,-1.75) rectangle (2,1.75) node[below left] {\\(\\Omega\\)};\n\n  % Draw the fill for circle A and label it\n  \\draw[thick, fill=blue!20, draw opacity = .65] (-0.5,0) circle (1);\n  \\node at (-1, 0.2) {\\(A\\)};\n\n  % Draw circle B and label it\n  \\draw[thick] (0.5,0) circle (1);\n  \\draw[thick, fill=red!20, opacity = .65] (0.5,0) circle (1);\n\n  % Draw the outer circle for A so it appears \"on top of\" the intersection\n  \\node at (1,0.2) {\\(B\\)};\n\n  %\n  \\draw[thick] (-0.5,0) circle (1);\n\n  % Label the intersection (A \\cap B)\n  \\node at (0,0) {\\(A \\cap B\\)};\n\\end{tikzpicture}\n```\n\nDefinition of an intersection ([original](https://github.com/ctesta01/tikz-examples/blob/main/2023/intersection/intersection.tex))\n\n:::\n\nSome example TikZ diagrams\n\n::::"
+  },
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Philogic",
     "section": "",
-    "text": "3.1 What is an algorithm",
-    "crumbs": [
-      "秦漢\n",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Algorithm thinking</span>"
-    ]
+    "text": "Download current CV"
   },
   {
-    "objectID": "chs-predicate/algorithm-thinking.html#solving-a-problem-step-by-step",
-    "href": "chs-predicate/algorithm-thinking.html#solving-a-problem-step-by-step",
-    "title": "3  Algorithm thinking",
-    "section": "3.2 Solving a problem step by step",
-    "text": "3.2 Solving a problem step by step",
-    "crumbs": [
-      "秦漢\n",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Algorithm thinking</span>"
-    ]
-  },
-  {
-    "objectID": "chs-predicate/algorithm-thinking.html#algorithms-in-computing",
-    "href": "chs-predicate/algorithm-thinking.html#algorithms-in-computing",
-    "title": "3  Algorithm thinking",
-    "section": "3.3 Algorithms in computing",
-    "text": "3.3 Algorithms in computing",
-    "crumbs": [
-      "秦漢\n",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Algorithm thinking</span>"
-    ]
-  },
-  {
-    "objectID": "chs-predicate/algorithm-thinking.html#relevance-in-biology",
-    "href": "chs-predicate/algorithm-thinking.html#relevance-in-biology",
-    "title": "3  Algorithm thinking",
-    "section": "3.4 Relevance in biology",
-    "text": "3.4 Relevance in biology",
-    "crumbs": [
-      "秦漢\n",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Algorithm thinking</span>"
-    ]
-  },
-  {
-    "objectID": "chs-predicate/algorithm-thinking.html#pseudocode-and-notations",
-    "href": "chs-predicate/algorithm-thinking.html#pseudocode-and-notations",
-    "title": "3  Algorithm thinking",
-    "section": "3.5 Pseudocode and notations",
-    "text": "3.5 Pseudocode and notations",
-    "crumbs": [
-      "秦漢\n",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Algorithm thinking</span>"
-    ]
-  },
-  {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html",
-    "href": "chs-modal/introduction-to-sequence-analysis.html",
-    "title": "4  Sequence analysis",
+    "objectID": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html",
+    "href": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
     "section": "",
-    "text": "4.1 Biological information\nSince the origin, organisms (or molecules) have been the result of different selective processes. An emergent property of successive iterations of survival/decease was the ability of molecules to keep a record of its past in a very stable manner, so that it will pass generation to generation. Although this might not be the first property or molecule to ever exist (see the :origin of life), the innovation of organisms to pack information of previous events became so advantageous that almost any form of living organism has this property : that is DNA.\nAlmost any living organism harbor DNA in a nucleus or chromosome, which is a very compacted structure that could be actually seen to naked eye in some species. It so arranged or condensed Fig. 4.1 that it is the result of multiple compacting strategies.",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
+    "text": "Paper (preprint)\nGitHub repository"
   },
   {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#biological-information",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#biological-information",
-    "title": "4  Sequence analysis",
+    "objectID": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#important-links",
+    "href": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#important-links",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
     "section": "",
-    "text": "Figure 4.1: The different scales of information packed in a biological fashion. Figure adapted from Meneely et al. (2017) book showing how DNA in a eukaryote is packaged with chromosomal proteins to form the much more compact chromatin. Chromatin is then folded into higher-order structures and eventually into the chromosome",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
+    "text": "Paper (preprint)\nGitHub repository"
   },
   {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#the-duality-of-dna",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#the-duality-of-dna",
-    "title": "4  Sequence analysis",
-    "section": "\n4.2 The duality of DNA",
-    "text": "4.2 The duality of DNA\nDNA is an organic molecule of :nucleic acids that is mainly build out of nitrogen-containing compounds (:nucleobases) or just bases.The four bases are adenine (A), cytosine (C), guanine (G) and (T) and they bind strictly as \\(A=T\\) and \\(C\\equiv{G}\\) where each of the lines represents an hydrogen bond.\nDNA nitrogenous bases of are arranged in a very compacted helix structure and too much can be understood from its molecular nature. It is of course governed by the physicochemical properties of the atoms, therefore DNA is a physicochemical entity. But those common bricks have also a very beautiful emergent property that comes out from their order (mainly), and that is to keep the instructions that build the organism from which it belongs. These instructions are nothing else than information, which also follow some informational rules. Then DNA is also an informational entity.\n\n\n\n\n\nFigure 4.2: DNA double helix structure and main characteristics. Image adapted from Brown (2018) showing the structure with the sugar–phosphate backbone of each polynucleotide drawn as a gray ribbon with the base pairs in green\n\n\nThe description of DNA bases helped the elucidation of the helicoidal structure as well as the elucidation of the base pairing rules of the nucleotides Fig. 4.4, also called the Chargaff’s rules of base pairing. The first outstanding feature of the DNA structure was indeed highlighted by Watson and Crick in its famous paper about a subtle mechanism of replication. The\n\n\n\n\n\n\nFigure 4.3: A phosphodiester bond bind two nitrogenous bases as in the backbone of the DNA helix\n\nThis idea of the duality of the DNA (and of course of other biological molecules as well) is the source of the study of many bioinformatic fields. But a question remains open : how do we capture the informational nature of a DNA sequence so that we end up with a sequential file of characters ATCGCTATC.... This is not a trivial question in fact.\n\n\n\n\n\n\n\n\n\n(a) Guanine and cytosine base pair\n\n\n\n\n \n\n\n\n\n\n\n\n(b) Adenine and thymine base pair\n\n\n\n\n\n\nFigure 4.4: Most common nucleotides present in DNA and the chemical interactions that bond each pair.",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
+    "objectID": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#abstract",
+    "href": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#abstract",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Abstract",
+    "text": "Abstract\nThe parameters of a statistical model can sometimes be difficult to interpret substantively, especially when that model includes non-linear components, interactions, or transformations. Analysts who fit such complex models often seek to transform raw parameter estimates into quantities that are easier for domain experts and stakeholders to understand. This article presents a simple conceptual framework to describe a vast array of such quantities of interest, which are reported under imprecise and inconsistent terminology across disciplines: predictions, marginal predictions, marginal means, marginal effects, conditional effects, slopes, contrasts, risk ratios, etc. We introduce {marginaleffects}, a package for R and Python which offers a simple and powerful interface to compute all of those quantities, and to conduct (non-)linear hypothesis and equivalence tests on them. {marginaleffects} is lightweight; extensible; it works well in combination with other R and Python packages; and it supports over 100 classes of models, including Linear, Generalized Linear, Generalized Additive, Mixed Effects, Bayesian, and several machine learning models."
   },
   {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#the-central-dogma-theory-of-molecular-biology-extended",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#the-central-dogma-theory-of-molecular-biology-extended",
-    "title": "4  Sequence analysis",
-    "section": "\n4.3 The central dogma theory of molecular biology extended",
-    "text": "4.3 The central dogma theory of molecular biology extended\nSo far we have addressed that DNA is a very stable molecule that stores biological (i.e., evolutionary) information. Also, that DNA could represent a sequential object of characters as in a computer digital object or file as well. But how is it that this order has an underlying biological sense ? This was a very though question that required the accumulation of many experimental discoveries and the meeting of genetics and molecular biology.\n\n\n\n\n\nFigure 4.5: An extended representation of the central theory of molecular biology. Image from Mäkinen et al. (2015)",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
+    "objectID": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#important-figures",
+    "href": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#important-figures",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Important figures",
+    "text": "Important figures\n\n\n\nFigure 2: Predicted probability of impartiality by levels of equality and democracy\n\n\n\n\n\nFigure 4: Tangents to the prediction function at 25 and 50"
   },
   {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#sequencing-strategies",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#sequencing-strategies",
-    "title": "4  Sequence analysis",
-    "section": "\n4.4 Sequencing strategies",
-    "text": "4.4 Sequencing strategies",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
+    "objectID": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#citation",
+    "href": "research/articles/arel-bundock-greifer-heiss-mfxplainer-2024/index.html#citation",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Citation",
+    "text": "Citation\n\n Add to Zotero \n\n@article{Arel-BundockGreiferHeiss:2024,\n    title = {How to Interpret Statistical Models Using {marginaleffects} in {R} and {Python}},\n    author = {Vincent Arel-Bundock and Noah Greifer and Andrew Heiss},\n    doi = {10.18637/jss.v111.i09},\n    journal = {Journal of Statistical Software},\n    year = {2024},\n    volume = {111},\n    number = {9},\n    pages = {1–32}}"
   },
   {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#sequencing-over-time",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#sequencing-over-time",
-    "title": "4  Sequence analysis",
-    "section": "\n4.5 Sequencing over time",
-    "text": "4.5 Sequencing over time",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
-  },
-  {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#some-insights-from-sequencing-genomes",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#some-insights-from-sequencing-genomes",
-    "title": "4  Sequence analysis",
-    "section": "\n4.6 Some insights from sequencing genomes",
-    "text": "4.6 Some insights from sequencing genomes",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
-  },
-  {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#biological-information-databases",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#biological-information-databases",
-    "title": "4  Sequence analysis",
-    "section": "\n4.7 Biological information databases",
-    "text": "4.7 Biological information databases",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
-  },
-  {
-    "objectID": "chs-modal/introduction-to-sequence-analysis.html#retrieving-data-from-ncbi",
-    "href": "chs-modal/introduction-to-sequence-analysis.html#retrieving-data-from-ncbi",
-    "title": "4  Sequence analysis",
-    "section": "\n4.8 Retrieving data from NCBI",
-    "text": "4.8 Retrieving data from NCBI\nInforation or databases inside the NCBI comes in many different ways. Perhaps the most used file format in bioinformatics is the FASTA format. It is a very simple format that consist of two lines, the header which is basically noted by starting with the &gt; symbol and is always preceding the sequence, that is present in the second line.\n\n\n\n\n\n\nNone FASTA\n\n\n\n&gt;sequence\nATCCCTAGCTAGCTCGCTATCGATCATCCCTAGCTAGCTCGCTATCGATCATCCCTAGCTAGCTCG...\n\n\n\n4.8.1 The manual way\n\n4.8.2 Entrez direct\nWe first need to install the Entrez Direct command line utilities. This could be done in several ways, one suggested by the manual and a very simple one using conda (mamba).\n\nmamba create -y –n entrez entrez\n\nThis line will create a new conda environment called entrez and will automatically install all dependencies. We later activate the environment with conda activate entrez and then we got the entire Entrez CLI utilities.\nThere are several commands and its function is to interact with the NCBI databases system. It is, however, a very huge set of utilities and commands to cope with at first, so the learning curve is somehow steppe. Here is a way to download the Bacillus tequilensis EA-CB0015 genome with a line of code that interleave three of the main commands of Entrez :\n\nesearch -db assembly -query GCF_012225885.1 |\nelink   -target nucleotide -name assembly_nuccore_refseq | \nefetch  -format fasta &gt; GCF_012225885.1.fasta\n\n\n4.8.3 Simpler download programs\nSince the manual way is clumsy when scaling and automating, and the entrez-direct utilities are somehow hard at first hand, some bioinformaticians have already thought ways to ease users the hard of knowing the NCBI internal database structure and to resume many of the utlities to just a ‘download’ command out from what in entrez is distributed in search, filter, and download commands.\nA very nice command to download genomes is the bit-dl-ncbi-assemblies from Mike Lee, who has also made a remarkable work to bring many bioiformatic knowledge to newcomers. Similarly and quite more robust is the ncbi-genome-download CLI (or abbreviated as ngd) developed by Kai Blin\nWhen navigating the NCBI databases some data is being curated and continuously updated by the execution of annotation tools. The refseq database is precisely the one that is more curated. For the case of genomes the accession number of those that belong to the refseq category are start with GCF ids, whereas the annotated genomes from the genbank category display the GCA ids\nUsing ngd to download a complete genome using the refeseq or genbank accession numbers, would be as easy as :\n\nngd --format fasta --flat-output -A GCF_002055965.1 bacteria\n\nThe one-line will download the refeseq genome of the Bacillus tequilenis EA-CB0015 in a fasta nucleotide format. the --flat-option from the script will handle out extra metadata of the search and will download strictly the data.\nIt is important to highlight that these simpler scripts are focused on genomic information, so that direct downloads of genes, proteins, transcripts, and many other kind of data must be done with entrez or other programs. Some recent efforts have been made to create a more robust CLI to interact with different databases, but in a very easy and intuitive way, such as the gget project. It is more focused on vertebrate databases, but also has a port to NCBI, UniProt and other databases. And is very simple. Here is an example to download all the isoforms in a multi-fasta format of the cancer-related gene BRCA2 in a human genome (GRCh38.p13) :\n\ngget seq -iso -o BRCA2.fasta ENSG00000139618\n\nIt is establishing a connection with the Ensemble database, which is focused on vertebrate genome and transcriptome data.\n\n\n\n\n\n\n\nWarningChallenge\n\n\n\nProfessor Camilo is interested on knowing how many complete genomes of Bacillus subtilis are there in the NCBI databases. He asks you later to count the number of features (genes, CDS, ncRNA, rRNA, etc.) in the genome of Bacillus subtilis NCIB 3610 (GCF_002055965.1). And tell you to document each of the steps and how did you end up with the answer. Saving the file with your initials (e.g., CG-activity01.md)\n\n\n\n\n\n\nBrown, T. A. (2018). Genomes 4. Garland science.\n\n\nMäkinen, V., Belazzougui, D., Cunial, F., & Tomescu, A. I. (2015). Genome-scale algorithm design. Cambridge University Press.\n\n\nMeneely, P. M., Hoang, R. D., Okeke, I. N., & Heston, K. (2017). Genetics: Genes, genomes, and evolution. Oxford University Press.",
-    "crumbs": [
-      "Modal\n",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence analysis</span>"
-    ]
-  },
-  {
-    "objectID": "chs-intuitionistic/phylogenetic-reconstructions.html",
-    "href": "chs-intuitionistic/phylogenetic-reconstructions.html",
-    "title": "5  Phylogenetics",
+    "objectID": "research/reviews/heiss-death-idealism/index.html",
+    "href": "research/reviews/heiss-death-idealism/index.html",
+    "title": "What Kills Idealism? Review of The Death of Idealism: Development and Anti-Politics in the Peace Corps, by Meghan Elizabeth Kallman",
     "section": "",
-    "text": "5.1 What is a phylogenetic tree",
-    "crumbs": [
-      "Intuitionistic\n",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phylogenetics</span>"
-    ]
+    "text": "Add to Zotero \n\n@article{Heiss:20211,\n    author = {Andrew Heiss},\n    doi = {10.1177/00943061211050046g},\n    journal = {Contemporary Sociology},\n    number = {6},\n    pages = {486--488},\n    titleaddon = {\\bibstring{reviewof} Meghan Elizabeth Kallman, \\mkbibemph{The Death of Idealism: Development and Anti-Politics in the Peace Corps}},\n    volume = {50},\n    year = {2021}}"
   },
   {
-    "objectID": "chs-intuitionistic/phylogenetic-reconstructions.html#mehtods-for-phylogenetic-reconstruction",
-    "href": "chs-intuitionistic/phylogenetic-reconstructions.html#mehtods-for-phylogenetic-reconstruction",
-    "title": "5  Phylogenetics",
-    "section": "5.2 Mehtods for phylogenetic reconstruction",
-    "text": "5.2 Mehtods for phylogenetic reconstruction",
-    "crumbs": [
-      "Intuitionistic\n",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phylogenetics</span>"
-    ]
-  },
-  {
-    "objectID": "chs-intuitionistic/phylogenetic-reconstructions.html#building-a-phylogenetic-reconstruction",
-    "href": "chs-intuitionistic/phylogenetic-reconstructions.html#building-a-phylogenetic-reconstruction",
-    "title": "5  Phylogenetics",
-    "section": "5.3 Building a phylogenetic reconstruction",
-    "text": "5.3 Building a phylogenetic reconstruction\n\n5.3.1 Evolutionary substitution model\n\n\n5.3.2 Maximum likelihood\n\n\n5.3.3 Bayesian inference",
-    "crumbs": [
-      "Intuitionistic\n",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phylogenetics</span>"
-    ]
-  },
-  {
-    "objectID": "chs-meta/genome-assembly.html",
-    "href": "chs-meta/genome-assembly.html",
-    "title": "6  Genome assembly",
+    "objectID": "research/reviews/heiss-death-idealism/index.html#citation",
+    "href": "research/reviews/heiss-death-idealism/index.html#citation",
+    "title": "What Kills Idealism? Review of The Death of Idealism: Development and Anti-Politics in the Peace Corps, by Meghan Elizabeth Kallman",
     "section": "",
-    "text": "6.1 The problem of assembling genomes",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
+    "text": "Add to Zotero \n\n@article{Heiss:20211,\n    author = {Andrew Heiss},\n    doi = {10.1177/00943061211050046g},\n    journal = {Contemporary Sociology},\n    number = {6},\n    pages = {486--488},\n    titleaddon = {\\bibstring{reviewof} Meghan Elizabeth Kallman, \\mkbibemph{The Death of Idealism: Development and Anti-Politics in the Peace Corps}},\n    volume = {50},\n    year = {2021}}"
   },
   {
-    "objectID": "chs-meta/genome-assembly.html#main-algorithms-for-genome-asssembly",
-    "href": "chs-meta/genome-assembly.html#main-algorithms-for-genome-asssembly",
-    "title": "6  Genome assembly",
-    "section": "6.2 Main algorithms for genome asssembly",
-    "text": "6.2 Main algorithms for genome asssembly\n\n6.2.1 Overlay, Layout, Consensus (OLS)\n\n\n6.2.2 De Bruijn graphs",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
-  },
-  {
-    "objectID": "chs-meta/genome-assembly.html#main-concepts-of-an-assembly",
-    "href": "chs-meta/genome-assembly.html#main-concepts-of-an-assembly",
-    "title": "6  Genome assembly",
-    "section": "6.3 Main concepts of an assembly",
-    "text": "6.3 Main concepts of an assembly\n\n6.3.1 Contigs, Unitigs, Scaffolds",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
-  },
-  {
-    "objectID": "chs-meta/genome-assembly.html#a-complete-workflow-for-assembling-genomes",
-    "href": "chs-meta/genome-assembly.html#a-complete-workflow-for-assembling-genomes",
-    "title": "6  Genome assembly",
-    "section": "6.4 A complete workflow for assembling genomes",
-    "text": "6.4 A complete workflow for assembling genomes",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
-  },
-  {
-    "objectID": "chs-meta/genome-assembly.html#assessing-genomes",
-    "href": "chs-meta/genome-assembly.html#assessing-genomes",
-    "title": "6  Genome assembly",
-    "section": "6.5 Assessing genomes",
-    "text": "6.5 Assessing genomes\n\n6.5.1 Inspecting genome graphs\n\n\n6.5.2 Genome completeness",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
-  },
-  {
-    "objectID": "chs-meta/genome-assembly.html#understanding-genome-difficulties",
-    "href": "chs-meta/genome-assembly.html#understanding-genome-difficulties",
-    "title": "6  Genome assembly",
-    "section": "6.6 Understanding genome difficulties",
-    "text": "6.6 Understanding genome difficulties\n\nEnd of chromosomes\nErros\nLack of coverage\nHeterozigozity\nrepeats",
-    "crumbs": [
-      "Meta\n",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Genome assembly</span>"
-    ]
-  },
-  {
-    "objectID": "chs-application/metagenomic-sequencing.html",
-    "href": "chs-application/metagenomic-sequencing.html",
-    "title": "7  Metagenomic sequencing",
+    "objectID": "research/working-papers/chaudhry-heiss-ngos-aid/index.html",
+    "href": "research/working-papers/chaudhry-heiss-ngos-aid/index.html",
+    "title": "Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs",
     "section": "",
-    "text": "7.1 Designing the experiment\nMetagenomes is the study of whole DNA of a biological communities.\nMetagenomic of a single gene (16S, ITS, etc.) is also called metataxonomic (amplicon sequencing). In contrast all the genes/ genomes in the sample is actually metagenomics.\nSome differences :\nMetagenomic | Metataxonomic expensive | cheap more samples| less specific regions | random regions\nStablish the basic experimental unit and the appropriate replicates, control, randomization !\nIt is important to have metadata of the experiment in a plant microbial community is common to have pH, geo-reference, temperature, etc.\nIn metataxonomic we analyses hypervariable regions (V3-V4) and compare relative abundance to identify which is the most informative (abundance, richness)",
-    "crumbs": [
-      "Application\n",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Metagenomic sequencing</span>"
-    ]
+    "text": "Paper (preprint)\nSupplement (preprint)\nStatistical analysis notebook\nGitHub repository"
   },
   {
-    "objectID": "chs-application/metagenomic-sequencing.html#dna-extraction-and-sequencing-illumina",
-    "href": "chs-application/metagenomic-sequencing.html#dna-extraction-and-sequencing-illumina",
-    "title": "7  Metagenomic sequencing",
-    "section": "7.2 DNA extraction and Sequencing (Illumina)",
-    "text": "7.2 DNA extraction and Sequencing (Illumina)\n\nFollowed common sequencing is also important to make quality check of the data",
-    "crumbs": [
-      "Application\n",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Metagenomic sequencing</span>"
-    ]
-  },
-  {
-    "objectID": "chs-application/metagenomic-sequencing.html#denoising",
-    "href": "chs-application/metagenomic-sequencing.html#denoising",
-    "title": "7  Metagenomic sequencing",
-    "section": "7.3 Denoising",
-    "text": "7.3 Denoising\nThere are several way to define OTUs (97-99 % of similarity) for instance :\n\nIt is defined operational unit of species or species groups (be careful to assign a sequence as an species)\nTaxonomic level of sampling selected in the study… individual, population, species,…\n\nPipelines for OTUs or ASVs are Quimme and Silva and deNBI",
-    "crumbs": [
-      "Application\n",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Metagenomic sequencing</span>"
-    ]
-  },
-  {
-    "objectID": "chs-application/metagenomic-sequencing.html#chimera",
-    "href": "chs-application/metagenomic-sequencing.html#chimera",
-    "title": "7  Metagenomic sequencing",
-    "section": "7.4 Chimera",
-    "text": "7.4 Chimera\nReads that result from combinations in the sequencing",
-    "crumbs": [
-      "Application\n",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Metagenomic sequencing</span>"
-    ]
-  },
-  {
-    "objectID": "chs-application/metagenomic-sequencing.html#taxonomic-annotation",
-    "href": "chs-application/metagenomic-sequencing.html#taxonomic-annotation",
-    "title": "7  Metagenomic sequencing",
-    "section": "7.5 Taxonomic annotation",
-    "text": "7.5 Taxonomic annotation\nUsing Silva or deNBI",
-    "crumbs": [
-      "Application\n",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Metagenomic sequencing</span>"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html",
-    "href": "chs-zz/HISTORY.html",
-    "title": "History",
+    "objectID": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#important-links",
+    "href": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#important-links",
+    "title": "Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs",
     "section": "",
-    "text": "Edition 0.0.11 (2023-01-19)",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
+    "text": "Paper (preprint)\nSupplement (preprint)\nStatistical analysis notebook\nGitHub repository"
   },
   {
-    "objectID": "chs-zz/HISTORY.html#edition-0.0.11-2023-01-19",
-    "href": "chs-zz/HISTORY.html#edition-0.0.11-2023-01-19",
-    "title": "History",
-    "section": "",
-    "text": "Adding some quarto code annotations !\nNew chapter on algorithms\nAdd a challenge on genome assembly\nRendering with Q v.1.3",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
+    "objectID": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#abstract",
+    "href": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#abstract",
+    "title": "Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs",
+    "section": "Abstract",
+    "text": "Abstract\nForeign donors routinely use nongovernmental organizations (NGOs) to deliver foreign aid. However, states are increasingly relying on repressive legislation to crack down on NGOs within their borders. How have foreign aid donors responded to this legal crackdown on NGOs? Using original data from all countries that received aid from 1981–2012, we assess the impact of anti-NGO laws on total flows of official foreign aid, the nature of projects funded, and the channels used for distributing this aid. Overall, we find that donors scale back their operations in repressive countries. However, rather than completely withdraw, we find that donors redirect funds within restrictive countries by decreasing funds for politically sensitive issues, and channeling more aid through domestic rather than foreign NGOs. While our findings challenge existing notions of foreign aid running on “autopilot,” they also have worrying implications for Western donors and domestic NGOs working on contentious issues."
   },
   {
-    "objectID": "chs-zz/HISTORY.html#edition-0.0.10-2022-12-17",
-    "href": "chs-zz/HISTORY.html#edition-0.0.10-2022-12-17",
-    "title": "History",
-    "section": "Edition 0.0.10 (2022-12-17)",
-    "text": "Edition 0.0.10 (2022-12-17)\n\nUpdate book with new quarto and extension versions\nChallenge on sequence alignment\nExperimenting new covers\nSome typos cleaning\nChange giscus theme",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
+    "objectID": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#figure",
+    "href": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#figure",
+    "title": "Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs",
+    "section": "Figure",
+    "text": "Figure\nFigure 5: Predicted ODA (foreign aid) across a range of differences from average number of anti-NGO laws in an average country; dark line shows average of 500 draws from posterior distribution.\n\n\n\nFigure 5: Predicted ODA (foreign aid) across a range of differences from average number of anti-NGO laws in an average country; dark line shows average of 500 draws from posterior distribution."
   },
   {
-    "objectID": "chs-zz/HISTORY.html#edition-0.0.9-2022-09-08",
-    "href": "chs-zz/HISTORY.html#edition-0.0.9-2022-09-08",
-    "title": "History",
-    "section": "Edition 0.0.9 (2022-09-08)",
-    "text": "Edition 0.0.9 (2022-09-08)\n\nStarting the Sanger chapter\nMore on Seq. analysis\nKeep history on book and add dates\nChange the cover\nAdd new parts and chapters outlines (phylogenetics and metagenomics)\nNew challenges on seq analysis solved",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.8-2022-08-29",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.8-2022-08-29",
-    "title": "History",
-    "section": "Ed. 0.0.8 (2022-08-29)",
-    "text": "Ed. 0.0.8 (2022-08-29)\n\nNew render w/ Quarto 1.1\nAdding more on sequence analysis\nIncluding new extension for videos\nImprove some images\nBook has now Giscus to enable discussions\nNew info on download genomics data\nNew foot page with license and more info",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.7-2022-08-19",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.7-2022-08-19",
-    "title": "History",
-    "section": "Ed. 0.0.7 (2022-08-19)",
-    "text": "Ed. 0.0.7 (2022-08-19)\n\nChanges in git chapter\nMore images in different chapters\nStart using new filters : lightbox for images and nutshell for expandable explanations\nSome images in HPC chapter\nSome outlines in Package manager chapter\nSome paragraphs on the sequence analysis chapter\nAdditional challenges",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.6-2022-08-09",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.6-2022-08-09",
-    "title": "History",
-    "section": "Ed. 0.0.6 (2022-08-09)",
-    "text": "Ed. 0.0.6 (2022-08-09)\n\nMore updates to CLI chapter.\nUpdate the Version Control chapter.\nDecoupled genome annotation section into separate chapter.\nAdd a motif search challenge\nAdd cover image\nMany typos corrected.",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.5-2022-07-28",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.5-2022-07-28",
-    "title": "History",
-    "section": "Ed. 0.0.5 (2022-07-28)",
-    "text": "Ed. 0.0.5 (2022-07-28)\n\nUpdate CLI chapter.\nDecoupled Seq analysis and Genomics into separate chapters.\nChapters were reorganized in its own dirs to make easier navigation. They also were renamed for later easier addition of other chapters.\nNew learning features using Quarto callouts. This will hopefully improve learning and enjoy the book.\nChapters sections will have numbering.",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.4-2022-04-24",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.4-2022-04-24",
-    "title": "History",
-    "section": "Ed. 0.0.4 (2022-04-24)",
-    "text": "Ed. 0.0.4 (2022-04-24)\n\nMinor typos and outline for the structural biology section\nStart improving crossreferences",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.3-2022-04-18",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.3-2022-04-18",
-    "title": "History",
-    "section": "Ed. 0.0.3 (2022-04-18)",
-    "text": "Ed. 0.0.3 (2022-04-18)\n\nCitation and reference of the book is now almost complete",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.2-2022-04-17",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.2-2022-04-17",
-    "title": "History",
-    "section": "Ed. 0.0.2 (2022-04-17)",
-    "text": "Ed. 0.0.2 (2022-04-17)\n\nThis Ed. includes more information of the book and author\nAdds DOI and Zenodo\nIncludes Social commenting",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/HISTORY.html#ed.-0.0.1-2022-04-12",
-    "href": "chs-zz/HISTORY.html#ed.-0.0.1-2022-04-12",
-    "title": "History",
-    "section": "Ed. 0.0.1 (2022-04-12)",
-    "text": "Ed. 0.0.1 (2022-04-12)\n\nThis preliminary Ed. contains the basic outline of the book\nContains the first draft solutions to challenges demos",
-    "crumbs": [
-      "Appendix",
-      "History"
-    ]
-  },
-  {
-    "objectID": "chs-zz/references.html",
-    "href": "chs-zz/references.html",
-    "title": "References",
-    "section": "",
-    "text": "Visitors\n Views\n\n\n\n\nThe Page\n...\n...\n\n\nThe Site\n...\n...\n\n\n\n\n\n\n\n\n\n\n\nAllesina, S., & Wilmes, M. (2019). Computing skills for\nbiologists. https://doi.org/10.2307/j.ctvc77jrc\n\n\nBrandies, P. A., & Hogg, C. J. (2021). Ten simple rules for getting\nstarted with command-line bioinformatics. In PLoS Computational\nBiology (No. 2; Vol. 17, p. e1008645). Public Library of Science\nSan Francisco, CA USA.\n\n\nBrown, T. A. (2018). Genomes 4. Garland science.\n\n\nDudley, J. T., & Butte, A. J. (2009). A quick guide for developing\neffective bioinformatics programming skills. In PLOS computational\nbiology (No. 12; Vol. 5, p. e1000589). Public Library of Science\nSan Francisco, USA.\n\n\nMäkinen, V., Belazzougui, D., Cunial, F., & Tomescu, A. I. (2015).\nGenome-scale algorithm design. Cambridge University Press.\n\n\nMeneely, P. M., Hoang, R. D., Okeke, I. N., & Heston, K. (2017).\nGenetics: Genes, genomes, and evolution. Oxford University\nPress.\n\n\nPerkel, J. M. et al. (2021). Five reasons why researchers should learn\nto love the command line. Nature, 590(7844), 173–174.",
-    "crumbs": [
-      "References"
-    ]
+    "objectID": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#bibtex-citation",
+    "href": "research/working-papers/chaudhry-heiss-ngos-aid/index.html#bibtex-citation",
+    "title": "Are Donors Really Responding? Analyzing the Impact of Global Restrictions on NGOs",
+    "section": "BibTeX citation",
+    "text": "BibTeX citation\n@unpublished{ChaudhryHeiss:2023,\n    Author = {Suparna Chaudhry and Andrew Heiss},\n    Note = {Working paper},\n    Title = {Are Donors Really Responding? Analyzing the Impact of Global Restrictions on {NGO}s},\n    Year = {2023}}"
   }
 ]

@@ -801,7 +801,7 @@ Convert TikZ Images to SVG with Quarto.”</span> February 25, 2026. <a href="ht
 <li><a href="https://open-vsx.org/extension/ban/spellright">Spell Right</a></li>
 </ul>
 <p><strong>My custom Positron settings</strong> (these all live in <code>settings.json</code>):</p>
-<details aria-label="Click to expand" id="details-1">
+<details id="details-1" aria-label="Click to expand">
 <summary>Click to expand</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2266,7 +2266,7 @@ background-color: null;
 font-style: inherit;">}</span></span></code></pre></div></div>
 </details>
 <p><strong>My Positron keyboard shortcuts</strong> (these all live in <code>keybindings.json</code>):</p>
-<details aria-label="Click to expand" id="details-2">
+<details id="details-2" aria-label="Click to expand">
 <summary>Click to expand</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><span class="ot" style="color: #003B4F;
 background-color: null;

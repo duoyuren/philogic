@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mèng">
+<meta name="description" content="Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.">
+
+<title>Open files in external programs with Positron or Visual Studio Code | Mèng – Philogic</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<link href="../../../../../style/files/logo.png" rel="icon" type="image/png">
+<script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-c718b9440fa26adf045ba5475759b8f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d7364d34961a5d7e6f94e317816a60c6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #170C3A;
+      }
+</style>
+
+
+<meta property="og:title" content="Open files in external programs with Positron or Visual Studio Code | Mèng">
+<meta property="og:description" content="Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.">
+<meta property="og:image" content="https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/img/quarto-typora-side-by-side.png">
+<meta property="og:site_name" content="Philogic">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="1880">
+<meta property="og:image:width" content="3014">
+<meta name="twitter:title" content="Open files in external programs with Positron or Visual Studio Code | Mèng">
+<meta name="twitter:description" content="Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.">
+<meta name="twitter:image" content="https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/img/quarto-typora-side-by-side.png">
+<meta name="twitter:creator" content="@andrewheiss">
+<meta name="twitter:site" content="@andrewheiss">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="1880">
+<meta name="twitter:image-width" content="3014">
+</head>
+
+<body class="floating nav-fixed slimcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../../index.html">
+    <span class="navbar-title">Philogic</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../teaching/index.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:mail@philogic.cn"> 
+<span class="menu-text"><iconify-icon inline="" icon="bi:envelope" style="font-size: 1.1em;" aria-label="Icon envelope from bi Iconify.design set." title="E-mail"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/duoyuren" rel="me"> 
+<span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://jinxian.art/"> 
+<span class="menu-text"><iconify-icon inline="" icon="fa6-brands:blogger" style="font-size: 1.15em;" aria-label="Icon blogger from fa6-brands Iconify.design set." title="Blogger"></iconify-icon></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">Open files in external programs with Positron or Visual Studio Code</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+                  <div>
+        <div class="description">
+          Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">positron</div>
+                <div class="quarto-category">writing</div>
+                <div class="quarto-category">data science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://philogic.cn/">Mèng</a> <a href="https://orcid.org/0000-0002-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Thursday, July 3, 2025</p>
+      </div>
+    </div>
+    
+      
+      <div>
+      <div class="quarto-title-meta-heading">Doi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://doi.org/10.59350/87hpe-4ah24">10.59350/87hpe-4ah24</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#quarto-and-typora" id="toc-quarto-and-typora" class="nav-link active" data-scroll-target="#quarto-and-typora">Quarto and Typora</a></li>
+  <li><a href="#running-external-processes-with-tasks" id="toc-running-external-processes-with-tasks" class="nav-link" data-scroll-target="#running-external-processes-with-tasks">Running external processes with tasks</a></li>
+  <li><a href="#launch-tasks-more-quickly" id="toc-launch-tasks-more-quickly" class="nav-link" data-scroll-target="#launch-tasks-more-quickly">Launch tasks more quickly</a></li>
+  <li><a href="#do-more-with-tasks" id="toc-do-more-with-tasks" class="nav-link" data-scroll-target="#do-more-with-tasks">Do more with tasks</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<p><a href="https://quarto.org/docs/tools/positron/">Positron’s Quarto support</a> is really quite robust and it’s full of nice little features like previewing a citation using whatever bibliography style your document is using (Chicago, APA, etc.) when you hover over a citation key:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="img/quarto-citation-preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Preview of a citation"><img src="img/quarto-citation-preview.png" class="img-fluid figure-img" alt="Preview of a citation"></a></p>
+<figcaption class="margin-caption">Preview of a citation</figcaption>
+</figure>
+</div>
+<p>…or knowing about the different headings inside your document for tab-completed cross references:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="img/quarto-jump-to-section.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Tab completion list of sections in a document"><img src="img/quarto-jump-to-section.png" class="img-fluid figure-img" alt="Tab completion list of sections in a document"></a></p>
+<figcaption class="margin-caption">Tab completion list of sections in a document</figcaption>
+</figure>
+</div>
+<p>…or even knowing about those headings in other documents in a project:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="img/quarto-jump-to-section-other-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Tab completion list of sections in a different document"><img src="img/quarto-jump-to-section-other-file.png" class="img-fluid figure-img" alt="Tab completion list of sections in a different document"></a></p>
+<figcaption class="margin-caption">Tab completion list of sections in a different document</figcaption>
+</figure>
+</div>
+<p>That’s all neat, but for long-form writing, like blog posts, articles, and book chapters, there are tools that make writing with Markdown a lot nicer, especially on macOS. Within most text editing areas, macOS has really neat writing tools and spellchecking and autocorrect features. For example, if you press <kbd>⌘^D</kbd> while your cursor is in a word, you’ll get a little dictionary+thesaurus popup:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/dictionary-popup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Dictionary and thesaurus popup"><img src="img/dictionary-popup.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Dictionary and thesaurus popup"></a></p>
+</figure>
+</div>
+<figcaption class="margin-caption">Dictionary and thesaurus popup</figcaption>
+</figure>
+</div>
+<p>You also get macOS’s built-in autocorrect and spellchecking and autocomplete:</p>
+<video controls="" width="100%" style="display: block; margin: 1rem auto 2rem;">
+  <source src="video/autocorrect.mp4" type="video/mp4">
+</video>
+<p>You can also access macOS’s <a href="https://support.apple.com/en-ng/guide/mac-help/mchldcd6c260/mac">Writing Tools</a>, which are like a built-in <a href="https://www.grammarly.com/">Grammarly</a>. I actually <em>really don’t like these</em> except for the proofread option, which is like an LLM-backed grammar/style suggestion generator.</p>
+<video controls="" width="100%" style="display: block; margin: 1rem auto 2rem;">
+  <source src="video/writing-tools.mp4" type="video/mp4">
+</video>
+<p>However, lots of these tools don’t work in Positron (or Visual Studio Code, or really any <a href="https://www.electronjs.org/">Electron</a> app). There’s a <a href="https://issues.chromium.org/issues/351745838">longstanding bug in Chromium/Electron-based apps</a> (like Positron, Visual Studio Code, <a href="https://obsidian.md/">Obsidian</a>, and others) where some of these writing tools don’t work (<a href="https://forum.obsidian.md/t/support-os-level-auto-correct-text-correction-in-macos/68567/42">this issue</a> is my least favorite thing about Obsidian). Some non-native apps support spellchecking, and most let you look up selected words in the dictionary or thesaurus, but they don’t use macOS’s autocorrect, autocomplete, or Writing Tools.</p>
+<p>Positron and Visual Studio Code don’t support macOS’s built-in dictionary unless you use the <a href="https://github.com/bartosz-antosik/vscode-spellright">vscode-spellright</a> extension which uses macOS’s native spelling API. However, even then, it doesn’t work like it does in regular apps—misspelled words appear with a red underline and display in the Problems Pane, but you can’t right click on misspelled words to change them automatically.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="img/spelling-problems.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Fixing spelling problems in Positron with vscode-spellright"><img src="img/spelling-problems.png" class="img-fluid figure-img" alt="Fixing spelling problems in Positron with vscode-spellright"></a></p>
+<figcaption class="margin-caption">Fixing spelling problems in Positron with vscode-spellright</figcaption>
+</figure>
+</div>
+<p>There are a ton of Markdown editors for macOS, and I’ve probably used them all since 2008(!). Most of them fully support all of macOS’s writing features, and they’re generally designed to create delightful writing experiences. I’m particularly fond of <a href="https://ia.net/writer">iA Writer</a>, <a href="https://ulysses.app/">Ulysses</a>, and <a href="https://typora.io/">Typora</a>.</p>
+<p><a href="https://typora.io/">Typora</a> in particular is nice because it’s the only one I’ve found that’s based on <a href="https://pandoc.org/MANUAL.html">pandoc-flavored Markdown</a>, so it can properly preview things like subscripts (<code>CO~2~</code> becomes CO<sub>2</sub>), superscripts (<code>x^2^</code> becomes x<sup>2</sup>), strikethroughs (<code>~~deleted~~</code> becomes <del>deleted</del>), inline footnotes (<code>Blah.^[A note.]</code> makes a footnote), and other pandoc-specific syntax. Typora can also display LaTeX math, and it can open Quarto Markdown files without any problems—it just can’t run any code chunks, but that’s not surprising, since it’s not an IDE.</p>
+<section id="quarto-and-typora" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="quarto-and-typora">Quarto and Typora</h3>
+<p>My normal workflow for writing documents in Quarto Markdown (and R Markdown before that) is to open a <code>.qmd</code> file in multiple apps. I open files in Positron or RStudio when working on code-related stuff, and I open files in Typora when focusing more on writing and editing. (I rarely actually ever put them side-by-side, and don’t typically always have the same document open in each simultaneously—it depends on what I’m doing: mainly writing or mainly coding).</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="img/quarto-typora-side-by-side.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="The same document open in both Positron and Typora"><img src="img/quarto-typora-side-by-side.png" class="img-fluid figure-img" alt="The same document open in both Positron and Typora"></a></p>
+<figcaption class="margin-caption">The same document open in both Positron and Typora</figcaption>
+</figure>
+</div>
+<p>I’m happy with this system and I’ve used it for years. If Positron / Visual Studio Code or RStudio had full access to all of the macOS spellchecking and autocorrect and writing features, I could do <em>everything</em> there and skip Typora, but IDEs have a different purpose than writing apps, so I don’t think they’ll ever be as polished and nice as Typora or other Markdown editors.</p>
+<p>One point of friction in this workflow is getting a <code>.qmd</code> file in Positron open in Typora. I typically need to right click on the <code>.qmd</code> file in the File Explorer Pane, select “Reveal in Finder” to open it in macOS Finder, then right click on the <code>.qmd</code> file in Finder, select “Open With” and finally choose Typora:</p>
+<video controls="" width="100%" style="display: block; margin: 1rem auto 2rem;">
+  <source src="video/finder-to-typora.mp4" type="video/mp4">
+</video>
+<p>That’s a lot of clicking and it’s often enough of a hurdle where I won’t open the file in Typora, and I’ll end up with lots of unnecessary typos or or [<em>sic</em>] repeated words from doing lots of writing in Positron.</p>
+<p>It would be great if Positron / Visual Studio Code had an option to open a file in an external program from the File Explorer Pane, but it doesn’t.</p>
+<p>But I recently discovered a workaround!</p>
+</section>
+<section id="running-external-processes-with-tasks" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="running-external-processes-with-tasks">Running external processes with tasks</h3>
+<p>Both Visual Studio Code and Positron have support for <a href="https://code.visualstudio.com/docs/debugtest/tasks">Tasks</a>, which let you run external tools and programs that you define in a <code>tasks.json</code> file.</p>
+<p>You can edit the systemwide <code>tasks.json</code> if you go to Positron &gt; Settings &gt; Tasks (on macOS; on Windows, it’ll be somewhere in the settings menu):</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/tasks-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Opening tasks.json"><img src="img/tasks-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Opening tasks.json"></a></p>
+</figure>
+</div>
+<figcaption class="margin-caption">Opening <code>tasks.json</code></figcaption>
+</figure>
+</div>
+<p>The <a href="https://code.visualstudio.com/docs/debugtest/tasks#vscode">full documentation for the Tasks syntax is online</a>, but it’s fairly straightforward. We can add a task to open a file with Typora like this:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>tasks.json</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="tasks.json"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"version"</span><span class="fu">:</span> <span class="st">"2.0.0"</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"tasks"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"label"</span><span class="fu">:</span> <span class="st">"Open in Typora"</span><span class="fu">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"shell"</span><span class="fu">,</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"command"</span><span class="fu">:</span> <span class="st">"open -a Typora '${file}'"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>To run the task, open the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">Command Palette</a>, search for “Tasks: Run Task”, and then choose the “Open in Typora” task.</p>
+<video controls="" width="100%" style="display: block; margin: 1rem auto 2rem;">
+  <source src="video/command-palette-tasks.mp4" type="video/mp4">
+</video>
+<p>Magical!</p>
+</section>
+<section id="launch-tasks-more-quickly" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="launch-tasks-more-quickly">Launch tasks more quickly</h3>
+<p>One downside to this, though, is that it’s a two-step process with the Command Palette—you need to go into “Tasks: Run Task” first, then find the exact task there. We can speed this up in a couple ways.</p>
+<p>First, we can assign a keyboard shortcut to the task (<a href="https://code.visualstudio.com/docs/debugtest/tasks#_binding-keyboard-shortcuts-to-tasks">see this for complete documentation</a>). In <code>keybindings.json</code>, add an entry for <code>workbench.action.tasks.runTask</code> with the <code>args</code> argument set to whatever you used as <code>label</code> in the task definition. With this, I can mash <kbd>⌘⌥⇧^T</kbd> and open the current file in Typora:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>keybindings.json</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="keybindings.json"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"key"</span><span class="fu">:</span> <span class="st">"shift+alt+cmd+ctrl+t"</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"command"</span><span class="fu">:</span> <span class="st">"workbench.action.tasks.runTask"</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"args"</span><span class="fu">:</span> <span class="st">"Open in Typora"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<video controls="" width="100%" style="display: block; margin: 1rem auto 2rem;">
+  <source src="video/open-with-keyboard.mp4" type="video/mp4">
+</video>
+<p>Second, there’s <a href="https://github.com/actboy168/vscode-tasks">a neat <code>tasks</code> extension</a> that lets you add little shortcut buttons to the status bar in Positron / Visual Studio Code. After installing the extension, modify <code>tasks.json</code> to look like this:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>tasks.json</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="tasks.json"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"version"</span><span class="fu">:</span> <span class="st">"2.0.0"</span><span class="fu">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"statusbar.default.hide"</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span>  <span class="er">//</span> <span class="er">Hide</span> <span class="er">all</span> <span class="er">tasks</span> <span class="er">by</span> <span class="er">default</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"tasks"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"label"</span><span class="fu">:</span> <span class="st">"Open in Typora"</span><span class="fu">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"shell"</span><span class="fu">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"command"</span><span class="fu">:</span> <span class="st">"open -a Typora '${file}'"</span><span class="fu">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"options"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"statusbar"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                    <span class="dt">"hide"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span>  <span class="er">//</span> <span class="er">Show</span> <span class="er">this</span> <span class="er">task</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                    <span class="dt">"label"</span> <span class="fu">:</span> <span class="st">"$(pencil) Open in Typora"</span><span class="fu">,</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                    <span class="dt">"detail"</span> <span class="fu">:</span> <span class="st">"Open current Markdown-ish file in Typora"</span><span class="fu">,</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                    <span class="dt">"filePattern"</span> <span class="fu">:</span> <span class="st">".*</span><span class="ch">\\</span><span class="st">.</span><span class="ch">\\</span><span class="st">S*md$"</span>  <span class="er">//</span> <span class="er">Show</span> <span class="er">this</span> <span class="er">only</span> <span class="er">for</span> <span class="er">Markdown-flavored</span> <span class="er">files</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                <span class="fu">}</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Limit button to specific file types
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>filaPattern</code> entry here lets you control when the status button bar appears. The regular expression incantation <code>".*\\.\\S*md$"</code> will make it appear on any file with a Markdown-like extension, like <code>.md</code>, <code>.qmd</code>, <code>.Rmd</code>, and so on.</p>
+</div>
+</div>
+<p>There should be a new button down in the status bar that you can click to run the task and open the file in Typora:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/typora-status-bar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="An “Open in Typora” button in Positron’s status bar"><img src="img/typora-status-bar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="An “Open in Typora” button in Positron’s status bar"></a></p>
+</figure>
+</div>
+<figcaption class="margin-caption">An “Open in Typora” button in Positron’s status bar</figcaption>
+</figure>
+</div>
+</section>
+<section id="do-more-with-tasks" class="level3">
+<h3 class="anchored" data-anchor-id="do-more-with-tasks">Do more with tasks</h3>
+<p>This is just an example of one simple task that opens a file in a different program. You can modify it to any other program, or make even more complex tasks like testing and building packages, or building and deplying websites. You can even chain tasks together in a sequence. See <a href="https://www.allisonthackston.com/articles/vscode-tasks.html">this</a> or <a href="https://www.reddit.com/r/vscode/comments/dhekzd/does_anyone_use_tasks_what_do_you_do_with_them/">this</a> or <a href="https://medium.com/@chhaymenghong/a-deep-dive-into-vscode-tasks-improve-your-developer-workflow-today-8a75e40e0f0a">this</a> for other examples.</p>
+
+
+<!-- -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2025,
+  author = {, Mèng},
+  title = {Open Files in External Programs with {Positron} or {Visual}
+    {Studio} {Code}},
+  date = {2025-07-03},
+  url = {https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/},
+  doi = {10.59350/87hpe-4ah24},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mèng. 2025. <span>“Open Files in External Programs with Positron or
+Visual Studio Code.”</span> July 3, 2025. <a href="https://doi.org/10.59350/87hpe-4ah24">https://doi.org/10.59350/87hpe-4ah24</a>.
+</div></div></section></div></main> <!-- /main -->
+<style>
+.styled-table {
+    border-collapse: collapse;
+    /* margin: 0px 0;  */
+    font-size: 0.9em;
+    font-variant: small-caps;
+    /* font-family: "Helvetica Neue", "Arial", 'Noto Sans TC', 'Noto Sans SC', "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", "微软雅黑", sans-serif; */
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 3px 6px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    /* background-color: #f3f3f3; */
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 1.5px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    /* color: #009879; */
+}
+</style>
+<script defer="" src="https://busuanzi.9420.ltd/js"></script>
+
+
+<table class="styled-table caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"><span class="fa-solid fa-handshake"></span></th>
+<th data-quarto-table-cell-role="th"><span class="fa-solid fa-users"></span> Visitors</th>
+<th data-quarto-table-cell-role="th"><span class="fa-solid fa-eye"></span> Views</th>
+</tr>
+</thead>
+<tbody>
+<tr class="active-row odd">
+<td style="text-align: left;">The Page</td>
+<td><span id="busuanzi_page_uv">...</span></td>
+<td><span id="busuanzi_page_pv">...</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The Site</td>
+<td><a href="https://philogic.cn"><span id="busuanzi_site_uv">...</span></a></td>
+<td><a href="https://info.flagcounter.com/SonU"><span id="busuanzi_site_pv">...</span></a></td>
+</tr>
+</tbody>
+</table>
+
+<!--
+<div class="busuanzi">
+<span> <!-- busuanziAltPageUV  
+<i class="fa-solid fa-handshake"></i> <b>The Page</b>: <i class="fa-solid fa-users"></i> <b style="color:red;"><span id="busuanzi_page_uv">...</span></b> Visitors, <i class="fa-solid fa-eye"></i> <b style="color:red;"><span id="busuanzi_page_pv">...</span></b> Views; <b>The Site</b>: <i class="fa-solid fa-users"></i> <b><span id="busuanzi_site_uv">...</span></b> Visitors, <i class="fa-solid fa-eye"></i> <b><span id="busuanzi_site_pv">...</span></b> Views.
+</span>
+</div>
+-->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/philogic\.cn\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "duoyuren/philogic";
+    script.dataset.repoId = "R_kgDORr7Vhg";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDORr7Vhs4C5nnq";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Open files in external programs with Positron or Visual Studio Code"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025-07-03</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Positron is great for code, but macOS has better programs specifically for writing with Markdown. Quickly open a Quarto file in an external program with tasks."</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> img/quarto-typora-side-by-side.png</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span><span class="co"> </span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "img/quarto-typora-side-by-side.png"</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="an">open-graph:</span><span class="co"> </span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "img/quarto-typora-side-by-side.png"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - positron</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - writing</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - data science</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="an">resources:</span><span class="co"> </span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">  - video/*</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">    lightbox: true</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="an">doi:</span><span class="co"> 10.59350/87hpe-4ah24</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span><span class="co"> true</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Positron's Quarto support</span><span class="co">](https://quarto.org/docs/tools/positron/)</span> is really quite robust and it's full of nice little features like previewing a citation using whatever bibliography style your document is using (Chicago, APA, etc.) when you hover over a citation key:</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="al">![Preview of a citation](img/quarto-citation-preview.png)</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>…or knowing about the different headings inside your document for tab-completed cross references:</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="al">![Tab completion list of sections in a document](img/quarto-jump-to-section.png)</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>…or even knowing about those headings in other documents in a project:</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="al">![Tab completion list of sections in a different document](img/quarto-jump-to-section-other-file.png)</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>That's all neat, but for long-form writing, like blog posts, articles, and book chapters, there are tools that make writing with Markdown a lot nicer, especially on macOS. Within most text editing areas, macOS has really neat writing tools and spellchecking and autocorrect features. For example, if you press <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>⌘^D<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> while your cursor is in a word, you'll get a little dictionary+thesaurus popup:</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="al">![Dictionary and thesaurus popup](img/dictionary-popup.png)</span>{width="60%" fig-align="center"}</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>You also get macOS's built-in autocorrect and spellchecking and autocomplete:</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;video controls width="100%" style="display: block; margin: 1rem auto 2rem;"&gt;</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;source src="video/autocorrect.mp4" type="video/mp4"&gt;</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/video&gt;</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>You can also access macOS's <span class="co">[</span><span class="ot">Writing Tools</span><span class="co">](https://support.apple.com/en-ng/guide/mac-help/mchldcd6c260/mac)</span>, which are like a built-in <span class="co">[</span><span class="ot">Grammarly</span><span class="co">](https://www.grammarly.com/)</span>. I actually *really don't like these* except for the proofread option, which is like an LLM-backed grammar/style suggestion generator.</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;video controls width="100%" style="display: block; margin: 1rem auto 2rem;"&gt;</span></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;source src="video/writing-tools.mp4" type="video/mp4"&gt;</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/video&gt;</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>However, lots of these tools don't work in Positron (or Visual Studio Code, or really any <span class="co">[</span><span class="ot">Electron</span><span class="co">](https://www.electronjs.org/)</span> app). There's a <span class="co">[</span><span class="ot">longstanding bug in Chromium/Electron-based apps</span><span class="co">](https://issues.chromium.org/issues/351745838)</span> (like Positron, Visual Studio Code, <span class="co">[</span><span class="ot">Obsidian</span><span class="co">](https://obsidian.md/)</span>, and others) where some of these writing tools don't work (<span class="co">[</span><span class="ot">this issue</span><span class="co">](https://forum.obsidian.md/t/support-os-level-auto-correct-text-correction-in-macos/68567/42)</span> is my least favorite thing about Obsidian). Some non-native apps support spellchecking, and most let you look up selected words in the dictionary or thesaurus, but they don't use macOS's autocorrect, autocomplete, or Writing Tools.</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>Positron and Visual Studio Code don't support macOS's built-in dictionary unless you use the <span class="co">[</span><span class="ot">vscode-spellright</span><span class="co">](https://github.com/bartosz-antosik/vscode-spellright)</span> extension which uses macOS's native spelling API. However, even then, it doesn't work like it does in regular apps---misspelled words appear with a red underline and display in the Problems Pane, but you can't right click on misspelled words to change them automatically.</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="al">![Fixing spelling problems in Positron with vscode-spellright](img/spelling-problems.png)</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>There are a ton of Markdown editors for macOS, and I've probably used them all since 2008(!). Most of them fully support all of macOS's writing features, and they're generally designed to create delightful writing experiences. I'm particularly fond of <span class="co">[</span><span class="ot">iA Writer</span><span class="co">](https://ia.net/writer)</span>, <span class="co">[</span><span class="ot">Ulysses</span><span class="co">](https://ulysses.app/)</span>, and <span class="co">[</span><span class="ot">Typora</span><span class="co">](https://typora.io/)</span>. </span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Typora</span><span class="co">](https://typora.io/)</span> in particular is nice because it's the only one I've found that's based on <span class="co">[</span><span class="ot">pandoc-flavored Markdown</span><span class="co">](https://pandoc.org/MANUAL.html)</span>, so it can properly preview things like subscripts (<span class="in">`CO~2~`</span> becomes CO~2~), superscripts (<span class="in">`x^2^`</span> becomes x^2^), strikethroughs (<span class="in">`~~deleted~~`</span> becomes ~~deleted~~), inline footnotes (<span class="in">`Blah.^[A note.]`</span> makes a footnote), and other pandoc-specific syntax. Typora can also display LaTeX math, and it can open Quarto Markdown files without any problems---it just can't run any code chunks, but that's not surprising, since it's not an IDE.</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quarto and Typora</span></span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>My normal workflow for writing documents in Quarto Markdown (and R Markdown before that) is to open a <span class="in">`.qmd`</span> file in multiple apps. I open files in Positron or RStudio when working on code-related stuff, and I open files in Typora when focusing more on writing and editing. (I rarely actually ever put them side-by-side, and don't typically always have the same document open in each simultaneously—it depends on what I'm doing: mainly writing or mainly coding).</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="al">![The same document open in both Positron and Typora](img/quarto-typora-side-by-side.png)</span></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>I'm happy with this system and I've used it for years. If Positron / Visual Studio Code or RStudio had full access to all of the macOS spellchecking and autocorrect and writing features, I could do *everything* there and skip Typora, but IDEs have a different purpose than writing apps, so I don't think they'll ever be as polished and nice as Typora or other Markdown editors.</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>One point of friction in this workflow is getting a <span class="in">`.qmd`</span> file in Positron open in Typora. I typically need to right click on the <span class="in">`.qmd`</span> file in the File Explorer Pane, select "Reveal in Finder" to open it in macOS Finder, then right click on the <span class="in">`.qmd`</span> file in Finder, select "Open With" and finally choose Typora:</span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;video controls width="100%" style="display: block; margin: 1rem auto 2rem;"&gt;</span></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;source src="video/finder-to-typora.mp4" type="video/mp4"&gt;</span></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/video&gt;</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>That's a lot of clicking and it's often enough of a hurdle where I won't open the file in Typora, and I'll end up with lots of unnecessary typos or or <span class="co">[</span><span class="ot">*sic*</span><span class="co">]</span> repeated words from doing lots of writing in Positron.</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>It would be great if Positron / Visual Studio Code had an option to open a file in an external program from the File Explorer Pane, but it doesn't.</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>But I recently discovered a workaround!</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="fu">### Running external processes with tasks</span></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>Both Visual Studio Code and Positron have support for <span class="co">[</span><span class="ot">Tasks</span><span class="co">](https://code.visualstudio.com/docs/debugtest/tasks)</span>, which let you run external tools and programs that you define in a <span class="in">`tasks.json`</span> file.</span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>You can edit the systemwide <span class="in">`tasks.json`</span> if you go to Positron &gt; Settings &gt; Tasks (on macOS; on Windows, it'll be somewhere in the settings menu):</span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="al">![Opening `tasks.json`](img/tasks-menu.png)</span>{width="60%" fig-align="center"}</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">full documentation for the Tasks syntax is online</span><span class="co">](https://code.visualstudio.com/docs/debugtest/tasks#vscode)</span>, but it's fairly straightforward. We can add a task to open a file with Typora like this:</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a><span class="in">```{.json filename="tasks.json"}</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>    <span class="st">"version"</span><span class="op">:</span> <span class="st">"2.0.0"</span><span class="op">,</span></span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tasks"</span><span class="op">:</span> [</span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>            <span class="st">"label"</span><span class="op">:</span> <span class="st">"Open in Typora"</span><span class="op">,</span></span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>            <span class="st">"type"</span><span class="op">:</span> <span class="st">"shell"</span><span class="op">,</span></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>            <span class="st">"command"</span><span class="op">:</span> <span class="st">"open -a Typora '${file}'"</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>To run the task, open the <span class="co">[</span><span class="ot">Command Palette</span><span class="co">](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)</span>, search for "Tasks: Run Task", and then choose the "Open in Typora" task.</span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;video controls width="100%" style="display: block; margin: 1rem auto 2rem;"&gt;</span></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;source src="video/command-palette-tasks.mp4" type="video/mp4"&gt;</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/video&gt;</span></span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>Magical!</span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### Launch tasks more quickly</span></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>One downside to this, though, is that it's a two-step process with the Command Palette—you need to go into "Tasks: Run Task" first, then find the exact task there. We can speed this up in a couple ways.</span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>First, we can assign a keyboard shortcut to the task (<span class="co">[</span><span class="ot">see this for complete documentation</span><span class="co">](https://code.visualstudio.com/docs/debugtest/tasks#_binding-keyboard-shortcuts-to-tasks)</span>). In <span class="in">`keybindings.json`</span>, add an entry for <span class="in">`workbench.action.tasks.runTask`</span> with the <span class="in">`args`</span> argument set to whatever you used as <span class="in">`label`</span> in the task definition. With this, I can mash <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>⌘⌥⇧^T<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> and open the current file in Typora:</span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a><span class="in">```{.json filename="keybindings.json"}</span></span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>    <span class="st">"key"</span><span class="op">:</span> <span class="st">"shift+alt+cmd+ctrl+t"</span><span class="op">,</span></span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>    <span class="st">"command"</span><span class="op">:</span> <span class="st">"workbench.action.tasks.runTask"</span><span class="op">,</span></span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a>    <span class="st">"args"</span><span class="op">:</span> <span class="st">"Open in Typora"</span></span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;video controls width="100%" style="display: block; margin: 1rem auto 2rem;"&gt;</span></span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;source src="video/open-with-keyboard.mp4" type="video/mp4"&gt;</span></span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/video&gt;</span></span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>Second, there's <span class="co">[</span><span class="ot">a neat `tasks` extension</span><span class="co">](https://github.com/actboy168/vscode-tasks)</span> that lets you add little shortcut buttons to the status bar in Positron / Visual Studio Code. After installing the extension, modify <span class="in">`tasks.json`</span> to look like this:</span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{.json filename="tasks.json"}</span></span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>    <span class="st">"version"</span><span class="op">:</span> <span class="st">"2.0.0"</span><span class="op">,</span></span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>    <span class="st">"statusbar.default.hide"</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span>  <span class="co">// Hide all tasks by default</span></span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tasks"</span><span class="op">:</span> [</span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>            <span class="st">"label"</span><span class="op">:</span> <span class="st">"Open in Typora"</span><span class="op">,</span></span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>            <span class="st">"type"</span><span class="op">:</span> <span class="st">"shell"</span><span class="op">,</span></span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>            <span class="st">"command"</span><span class="op">:</span> <span class="st">"open -a Typora '${file}'"</span><span class="op">,</span></span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>            <span class="st">"options"</span><span class="op">:</span> {</span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>                <span class="st">"statusbar"</span><span class="op">:</span> {</span>
+<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"hide"</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span>  <span class="co">// Show this task</span></span>
+<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"label"</span> <span class="op">:</span> <span class="st">"$(pencil) Open in Typora"</span><span class="op">,</span></span>
+<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"detail"</span> <span class="op">:</span> <span class="st">"Open current Markdown-ish file in Typora"</span><span class="op">,</span></span>
+<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"filePattern"</span> <span class="op">:</span> <span class="st">".*</span><span class="sc">\\</span><span class="st">.</span><span class="sc">\\</span><span class="st">S*md$"</span>  <span class="co">// Show this only for Markdown-flavored files</span></span>
+<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>                }</span>
+<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a><span class="fu">### Limit button to specific file types</span></span>
+<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a>The <span class="in">`filaPattern`</span> entry here lets you control when the status button bar appears. The regular expression incantation <span class="in">`".*\\.\\S*md$"`</span> will make it appear on any file with a Markdown-like extension, like <span class="in">`.md`</span>, <span class="in">`.qmd`</span>, <span class="in">`.Rmd`</span>, and so on.</span>
+<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a>There should be a new button down in the status bar that you can click to run the task and open the file in Typora:</span>
+<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a><span class="al">![An "Open in Typora" button in Positron's status bar](img/typora-status-bar.png)</span>{width="60%" fig-align="center"}</span>
+<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Do more with tasks</span></span>
+<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>This is just an example of one simple task that opens a file in a different program. You can modify it to any other program, or make even more complex tasks like testing and building packages, or building and deplying websites. You can even chain tasks together in a sequence. See <span class="co">[</span><span class="ot">this</span><span class="co">](https://www.allisonthackston.com/articles/vscode-tasks.html)</span> or <span class="co">[</span><span class="ot">this</span><span class="co">](https://www.reddit.com/r/vscode/comments/dhekzd/does_anyone_use_tasks_what_do_you_do_with_them/)</span> or <span class="co">[</span><span class="ot">this</span><span class="co">](https://medium.com/@chhaymenghong/a-deep-dive-into-vscode-tasks-improve-your-developer-workflow-today-8a75e40e0f0a)</span> for other examples.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2013–Now. Mèng. All content licensed under </span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> Creative Commons CC BY 4.0</a></span></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://beian.miit.gov.cn/" target="_blank" style="color: #999999;">粤ICP备2026032255号-1</a><br><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-0000-0000">0000-0002-0000-0000</a></span></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span></p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

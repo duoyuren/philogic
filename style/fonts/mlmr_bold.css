@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'MLMRoman5';
-    src: url('style/fonts/webmlm/MLMRoman5-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman5-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'MLMRoman6';
-    src: url('style/fonts/webmlm/MLMRoman6-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman6-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'MLMRoman7';
-    src: url('style/fonts/webmlm/MLMRoman7-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman7-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'MLMRoman8';
-    src: url('style/fonts/webmlm/MLMRoman8-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman8-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'MLMRoman9';
-    src: url('style/fonts/webmlm/MLMRoman9-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman9-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
     font-family: 'MLMRoman10';
-    src: url('style/fonts/webmlm/MLMRoman10-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman10-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -51,7 +51,7 @@
 /*
 @font-face {
     font-family: 'MLMRoman10';
-    src: url('style/fonts/webncm/NewCM10-Bold.woff2') format('woff2');
+    src: url('webncm/NewCM10-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -60,7 +60,7 @@
 
 @font-face {
     font-family: 'MLMRoman12';
-    src: url('style/fonts/webmlm/MLMRoman12-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman12-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -68,7 +68,7 @@
 
 @font-face {
     font-family: 'MLMRoman17';
-    src: url('style/fonts/webmlm/MLMRoman12-Bold.woff2') format('woff2');
+    src: url('webmlm/MLMRoman12-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -78,7 +78,7 @@
 /* 粗斜體 */
 @font-face {
     font-family: 'MLMRoman9';
-    src: url('style/fonts/webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
+    src: url('webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -86,7 +86,7 @@
 
 @font-face {
     font-family: 'MLMRoman10';
-    src: url('style/fonts/webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
+    src: url('webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -94,7 +94,7 @@
 
 @font-face {
     font-family: 'MLMRoman12';
-    src: url('style/fonts/webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
+    src: url('webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -102,7 +102,7 @@
 
 @font-face {
     font-family: 'MLMRoman17';
-    src: url('style/fonts/webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
+    src: url('webmlm/MLMRoman10-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;

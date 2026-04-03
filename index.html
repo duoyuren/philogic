@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c718b9440fa26adf045ba5475759b8f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ed1e5262b9556ea69fd42dacc7b9f95a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-93120d77114d54ff35e00c997c18778d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
@@ -212,23 +212,102 @@ window.Quarto = {
 <p>Meine Herrschaften, mein Name ist <strong>Gāo Sōngnián</strong>. Mancher mag sich fragen: Wie kommt ein alter Entomologe dazu, Logik zu lehren? Absurd! <strong><em>Die Logik ist nichts Geringeres als die Anatomie des Denkens.</em></strong> Die Reden der Weltmenschen gleichen dem wirren Flug der Fliegen – ungeordnet und von den Parasiten des Irrtums zerfressen. Nur mit wissenschaftlicher Strenge können wir diese wirren Argumente klassifizieren und sie mit der Stecknadel der Logik unerbittlich auf dem Probenbrett der Wahrheit fixieren! Ich, als Ihr Rektor, werde Sie heute lehren, wie man das Mikroskop nutzt, um die Maske der Sophisterei abzustreifen und ein rechtschaffener Mann zu werden, der klar zwischen <em>Richtig</em> und <em>Falsch</em> unterscheidet und strikt den Regeln folgt.</p>
 </div>
 </div>
-<div class="mainbody">
-<div class="flag">
-<p class="flag-title">
-Visitor Flags
-</p>
-<div class="flagcol">
-<p><a href="https://info.flagcounter.com/j4n3"><img src="https://s11.flagcounter.com/countxl/j4n3/bg_FFFFFF/txt_586E75/border_FDF7E3/columns_8/maxflags_8/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
-</div>
-<div id="flag-container">
-<p><a href="https://info.flagcounter.com/SonU"><img src="https://s01.flagcounter.com/map/SonU/size_l/txt_586E75/border_FDF7E3/pageviews_1/viewers_3/flags_0/" alt="Flag Counter" border="0"></a></p>
-</div>
-</div>
-</div>
 
 
 
 </main> <!-- /main -->
+<style>
+/* Visitor Flags css */
+
+/* 1. 主體容器佈局 */
+.mainbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* 2. 卡片外框 */
+.flag {
+  margin: 1.5em 0 0.9em 0;
+  max-width: 800px;
+  box-shadow: 0 0px 15px 2px rgb(32, 94, 22);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: $pink;
+}
+
+/* 3. 標題區域 */
+.flag-title {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #009879, #027a62); /* 加上微漸變，質感更好 */
+    color: #ffffff;
+  margin: 0;
+  padding: 12px 0;
+  font-size: 115%;
+  line-height: .7;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* 4. 圖片的父容器：清除所有預設間距與行高 */
+.flagcol,
+#flag-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden; /* 【關鍵】配合圖片負邊距，將超出的白邊隱藏 */
+}
+
+/* 5. 確保 <a> 和 <img> 變成區塊元素，徹底消除圖片底部的 baseline 空隙 */
+.flagcol a,
+#flag-container a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.flagcol img,
+#flag-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/* 
+  6. 【核心裁切去白邊技巧】 
+  由於 FlagCounter 圖片「內部」自帶白色邊距，
+  使用百分比的負 margin 將圖片往上下拉扯，將白邊藏進父容器外並縮減整體高度。
+*/
+
+/* 針對 img1 (國旗列) */
+.flagcol img {
+  margin-top: 0.1%;    /* 裁切圖片上方的白邊 */
+  margin-bottom: -3%; /* 裁切圖片下方的白邊 (與 img2 接壤處) */
+}
+
+/* 針對 img2 (地圖) */
+#flag-container img {
+  margin-top: -1.65%;    /* 裁切圖片上方的白邊 */
+  margin-bottom: -0.1%; /* 裁切圖片下方的白邊 (卡片最底部) */
+}
+</style>
+<div class="mainbody">
+<div class="flag">
+<p class="flag-title">Visitor Flags</p>
+<div class="flagcol">
+<a href="https://info.flagcounter.com/j4n3"><img src="https://s11.flagcounter.com/countxl/j4n3/bg_FFFFFF/txt_586E75/border_FDF7E3/columns_8/maxflags_8/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
+<div id="flag-container">
+<a href="https://info.flagcounter.com/SonU"><img src="https://s01.flagcounter.com/map/SonU/size_l/txt_586E75/border_FDF7E3/pageviews_1/viewers_3/flags_0/" alt="Flag Counter" border="0"></a>
+</div>
+</div>
+</div>
 <style>
 /* 1. 整個表格的外框與基礎設置 */
 .styled-table {

@@ -230,36 +230,174 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <style>
+/* Visitor Flags css */
+
+/* 1. 主體容器佈局 */
+.mainbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* 2. 卡片外框 */
+.flag {
+  margin: 1.5em 0 0.9em 0;
+  max-width: 800px;
+  box-shadow: 0 0px 15px 2px rgb(32, 94, 22);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: $pink;
+}
+
+/* 3. 標題區域 */
+.flag-title {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #009879, #027a62); /* 加上微漸變，質感更好 */
+    color: #ffffff;
+  margin: 0;
+  padding: 12px 0;
+  font-size: 115%;
+  line-height: .7;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* 4. 圖片的父容器：清除所有預設間距與行高 */
+.flagcol,
+#flag-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden; /* 【關鍵】配合圖片負邊距，將超出的白邊隱藏 */
+}
+
+/* 5. 確保 <a> 和 <img> 變成區塊元素，徹底消除圖片底部的 baseline 空隙 */
+.flagcol a,
+#flag-container a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.flagcol img,
+#flag-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/* 
+  6. 【核心裁切去白邊技巧】 
+  由於 FlagCounter 圖片「內部」自帶白色邊距，
+  使用百分比的負 margin 將圖片往上下拉扯，將白邊藏進父容器外並縮減整體高度。
+*/
+
+/* 針對 img1 (國旗列) */
+.flagcol img {
+  margin-top: 0.1%;    /* 裁切圖片上方的白邊 */
+  margin-bottom: -3%; /* 裁切圖片下方的白邊 (與 img2 接壤處) */
+}
+
+/* 針對 img2 (地圖) */
+#flag-container img {
+  margin-top: -1.65%;    /* 裁切圖片上方的白邊 */
+  margin-bottom: -0.1%; /* 裁切圖片下方的白邊 (卡片最底部) */
+}
+</style>
+<div class="mainbody">
+<div class="flag">
+<p class="flag-title">Visitor Flags</p>
+<div class="flagcol">
+<a href="https://info.flagcounter.com/j4n3"><img src="https://s11.flagcounter.com/countxl/j4n3/bg_FFFFFF/txt_586E75/border_FDF7E3/columns_8/maxflags_8/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
+<div id="flag-container">
+<a href="https://info.flagcounter.com/SonU"><img src="https://s01.flagcounter.com/map/SonU/size_l/txt_586E75/border_FDF7E3/pageviews_1/viewers_3/flags_0/" alt="Flag Counter" border="0"></a>
+</div>
+</div>
+</div>
+<style>
+/* 1. 整個表格的外框與基礎設置 */
 .styled-table {
     border-collapse: collapse;
-    /* margin: 0px 0;  */
-    font-size: 0.9em;
+    margin: 20px auto; /* 讓表格在容器中置中，並保留上下間距 */
+    font-size: 0.95em;
     font-variant: small-caps;
-    /* font-family: "Helvetica Neue", "Arial", 'Noto Sans TC', 'Noto Sans SC', "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", "微软雅黑", sans-serif; */
-    min-width: 200px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    min-width: 280px;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* 更柔和現代的陰影 */
+    border-radius: 8px; /* 增加圓角 */
+    overflow: hidden; /* 隱藏溢出，讓圓角能切到標題列 */
+    background-color: #ffffff;
 }
+
+/* 2. 標題列 (Thead) 美化 */
 .styled-table thead tr {
-    background-color: #009879;
+    background: linear-gradient(135deg, #009879, #027a62); /* 加上微漸變，質感更好 */
     color: #ffffff;
     text-align: left;
+    letter-spacing: 0.5px; /* 字距微調 */
 }
+
+/* 3. 儲存格內邊距與對齊 */
 .styled-table th,
 .styled-table td {
-    padding: 3px 6px;
+    padding: 12px 18px; /* 加大留白，看起來更舒爽 */
+    text-align: center; /* 數字置中對齊 */
 }
+
+/* 讓第一欄 (The Page / The Site) 靠左對齊 */
+.styled-table th:first-of-type,
+.styled-table td:first-of-type {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* 4. 內容列 (Tbody) 與邊框 */
 .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ececec;
+    transition: background-color 0.2s ease; /* 加入滑鼠懸浮的漸變動畫 */
 }
-.styled-table tbody tr:nth-of-type(even) {
-    /* background-color: #f3f3f3; */
+
+/* 滑鼠懸浮時的互動效果 */
+.styled-table tbody tr:hover {
+    background-color: #f4fbf9; /* 淺淺的薄荷綠，呼應主題色 */
 }
+
+/* 表格最後一行的底部加粗收尾 */
 .styled-table tbody tr:last-of-type {
-    border-bottom: 1.5px solid #009879;
+    border-bottom: 2px solid #009879;
 }
+
+/* 5. 特別強調的列 */
 .styled-table tbody tr.active-row {
     font-weight: bold;
-    /* color: #009879; */
+    color: #333333;
+}
+
+/* 6. 美化表格內的連結 (a 標籤) */
+.styled-table a {
+    color: #009879;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed transparent;
+    transition: all 0.2s ease;
+}
+
+.styled-table a:hover {
+    color: #027a62;
+    border-bottom: 1px dashed #027a62; /* 懸浮時出現虛線底線 */
+}
+
+/* 7. 微調 FontAwesome 圖標間距 */
+.styled-table th span[class^="fa-"] {
+    margin-right: 6px; /* 讓圖示跟文字不要黏在一起 */
+    opacity: 0.9;
 }
 </style>
 <script defer="" src="https://busuanzi.9420.ltd/js"></script>
@@ -286,14 +424,6 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-
-<!--
-<div class="busuanzi">
-<span> <!-- busuanziAltPageUV  
-<i class="fa-solid fa-handshake"></i> <b>The Page</b>: <i class="fa-solid fa-users"></i> <b style="color:red;"><span id="busuanzi_page_uv">...</span></b> Visitors, <i class="fa-solid fa-eye"></i> <b style="color:red;"><span id="busuanzi_page_pv">...</span></b> Views; <b>The Site</b>: <i class="fa-solid fa-users"></i> <b><span id="busuanzi_site_uv">...</span></b> Visitors, <i class="fa-solid fa-eye"></i> <b><span id="busuanzi_site_pv">...</span></b> Views.
-</span>
-</div>
--->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

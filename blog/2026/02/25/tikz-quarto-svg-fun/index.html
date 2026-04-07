@@ -768,65 +768,63 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
 </div>
 </div>
 <style>
-/* 1. 整個表格的外框與基礎設置 */
+/* 1) 基礎 */
 .styled-table {
     border-collapse: collapse;
-    margin: 20px auto; /* 讓表格在容器中置中，並保留上下間距 */
+    margin: 20px auto;
+    width: min(100%, 800px);          /* 關鍵：自適應容器寬度 */
+    min-width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    table-layout: fixed;              /* 關鍵：固定欄寬，避免內容撐爆 */
     font-size: 0.95em;
     font-variant: small-caps;
-    min-width: 280px;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* 更柔和現代的陰影 */
-    border-radius: 8px; /* 增加圓角 */
-    overflow: hidden; /* 隱藏溢出，讓圓角能切到標題列 */
-    background-color: #ffffff;
 }
 
-/* 2. 標題列 (Thead) 美化 */
+/* 2) 表頭 */
 .styled-table thead tr {
-    background: linear-gradient(135deg, #009879, #027a62); /* 加上微漸變，質感更好 */
+    background: linear-gradient(135deg, #009879, #027a62);
     color: #ffffff;
     text-align: left;
-    letter-spacing: 0.5px; /* 字距微調 */
+    letter-spacing: 0.5px;
 }
 
-/* 3. 儲存格內邊距與對齊 */
+/* 3) 儲存格 */
 .styled-table th,
 .styled-table td {
-    padding: 12px 18px; /* 加大留白，看起來更舒爽 */
-    text-align: center; /* 數字置中對齊 */
+    padding: 12px 14px;               /* 桌面先稍微收窄 */
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;              /* 關鍵：避免 Visitors / Views 被拆行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* 讓第一欄 (The Page / The Site) 靠左對齊 */
 .styled-table th:first-of-type,
 .styled-table td:first-of-type {
     text-align: left;
     font-weight: bold;
 }
 
-/* 4. 內容列 (Tbody) 與邊框 */
+/* 4) tbody */
 .styled-table tbody tr {
     border-bottom: 1px solid #ececec;
-    transition: background-color 0.2s ease; /* 加入滑鼠懸浮的漸變動畫 */
+    transition: background-color 0.2s ease;
 }
-
-/* 滑鼠懸浮時的互動效果 */
 .styled-table tbody tr:hover {
-    background-color: #f4fbf9; /* 淺淺的薄荷綠，呼應主題色 */
+    background-color: #f4fbf9;
 }
-
-/* 表格最後一行的底部加粗收尾 */
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
-
-/* 5. 特別強調的列 */
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #333333;
 }
 
-/* 6. 美化表格內的連結 (a 標籤) */
+/* 5) 連結 */
 .styled-table a {
     color: #009879;
     text-decoration: none;
@@ -834,16 +832,50 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
     border-bottom: 1px dashed transparent;
     transition: all 0.2s ease;
 }
-
 .styled-table a:hover {
     color: #027a62;
-    border-bottom: 1px dashed #027a62; /* 懸浮時出現虛線底線 */
+    border-bottom: 1px dashed #027a62;
 }
 
-/* 7. 微調 FontAwesome 圖標間距 */
+/* 6) 圖示 */
 .styled-table th span[class^="fa-"] {
-    margin-right: 6px; /* 讓圖示跟文字不要黏在一起 */
+    margin-right: 6px;
     opacity: 0.9;
+}
+
+/* 7) 平板/手機適配 */
+@media (max-width: 768px) {
+    .styled-table {
+        font-size: 0.9em;
+        border-radius: 6px;
+        font-variant: normal;         /* 小螢幕建議關閉 small-caps，更省寬 */
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 10px 8px;            /* 關鍵：大幅降低左右留白 */
+    }
+
+    .styled-table th span[class^="fa-"] {
+        margin-right: 4px;
+    }
+}
+
+/* 8) 超小螢幕 */
+@media (max-width: 420px) {
+    .styled-table {
+        font-size: 0.84em;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 8px 6px;
+    }
+
+    /* 可選：略縮短表頭字距 */
+    .styled-table thead tr {
+        letter-spacing: 0.2px;
+    }
 }
 </style>
 <script defer="" src="https://busuanzi.9420.ltd/js"></script>

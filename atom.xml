@@ -16,23 +16,14 @@
   <title>How to automatically convert TikZ images to SVG with Quartoxyz</title>
   <dc:creator>Mèng </dc:creator>
   <link>https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Back in 2021 <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">I wrote a little guide to how to use tikz chunks in R Markdown documents</a>. {knitr} supports tikz natively, and with some some shenanigans and special settings—and after recompiling LaTeX with one extra feature and setting a new environment variable on macOS—it’s possible to have tikz chunks automatically knit to PDF in PDFs and SVG in HTML and Word. While convoluted, it’s a neat process and I’ve used it for several published papers (like, see <a href="https://stats.andrewheiss.com/mountainous-mackerel/analysis/appendix.html">Figures A2 and A3 here</a>—those are <a href="https://github.com/andrewheiss/mountainous-mackerel/blob/main/manuscript/appendix.qmd">built with tikz</a>!).</p>
+  <description><![CDATA[ <p>Back in 2021 <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">I wrote a little guide to how to use tikz chunks in R Markdown documents</a>. {knitr} supports tikz natively, and with some some shenanigans and special settings—and after recompiling LaTeX with one extra feature and setting a new environment variable on macOS—it’s possible to have tikz chunks automatically knit to PDF in PDFs and SVG in HTML and Word. While convoluted, it’s a neat process and I’ve used it for several published papers (like, see <a href="https://stats.andrewheiss.com/mountainous-mackerel/analysis/appendix.html">Figures A2 and A3 here</a>—those are <a href="https://github.com/andrewheiss/mountainous-mackerel/blob/main/manuscript/appendix.qmd">built with tikz</a>!).</p>
 <p>While that process works, I’ve also found it <strong><em>really annoying</em></strong>, and for years I’ve looked for better ways. The very first pre-release version of Quarto was also in 2021, but it was too young to do much with languages beyond R and Python. Since then, though, Quarto has added native support for <a href="https://quarto.org/docs/authoring/diagrams.html">two different diagram languages</a>: <a href="https://quarto.org/docs/authoring/diagrams.html#mermaid">Mermaid</a> and <a href="https://quarto.org/docs/authoring/diagrams.html#graphviz">Graphviz</a>. They work well for lots of diagrams, but not for most of the diagrams I make, where (1) I want exact control over where items go, and (2) I want them to look nice and visually fit with the rest of the document.</p>
 <p>For instance, let’s say I want to include a minimalist little standard directed acyclic graph (DAG) that shows that some treatment <img src="https://latex.codecogs.com/png.latex?X"> causes some outcome <img src="https://latex.codecogs.com/png.latex?Y"> in the subsequent time period, but the effect is confounded by a third variable <img src="https://latex.codecogs.com/png.latex?Z">. Something like this:</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/basic-example.svg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="margin-caption">A simple DAG</figcaption>
-</figure>
+<figure class="figure page-columns page-full"><p><img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/basic-example.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="margin-caption">A simple DAG</figcaption></figure>
 </div>
-<section id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="level2">
-<h2 class="anchored" data-anchor-id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</h2>
+<section id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="level2"><h2 class="anchored" data-anchor-id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</h2>
 <p>We can create this DAG with Mermaid, but there are limited styling options and there’s not really any good way to control the layout, so we’re pretty much stuck with this:</p>
 <div class="grid">
 <div class="g-col-6">
@@ -51,7 +42,7 @@ font-style: inherit;">```</span></span></code></pre></div></div>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
+<p></p><figure class="figure"></figure><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR
   X([X]) --&gt; Y([Y])
@@ -59,7 +50,7 @@ font-style: inherit;">```</span></span></code></pre></div></div>
   Z([Z]) --&gt; Y([Y])
 </pre>
 </div>
-<p></p></figure><p></p>
+<p></p>
 </div>
 </div>
 </div>
@@ -203,60 +194,24 @@ font-style: inherit;">```</span></span></code></pre></div></div>
 <div class="cell" data-fig-width="3.5" data-fig-height="3" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
+<p></p><figure class="figure"></figure><p></p>
 <div>
-<svg width="336" height="288" viewbox="0.00 0.00 98.02 116.02" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112.02)">
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-112.02 94.02,-112.02 94.02,4 -4,4"></polygon>
-<!-- Z -->
-<g id="node1" class="node">
-<title>Z</title>
-<ellipse fill="none" stroke="black" cx="45.01" cy="-90.02" rx="18" ry="18"></ellipse>
-<text text-anchor="middle" x="45.01" y="-85.82" font-family="Times,serif" font-size="14.00">Z</text>
-</g>
-<!-- X -->
-<g id="node2" class="node">
-<title>X</title>
-<ellipse fill="none" stroke="black" cx="18.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse>
-<text text-anchor="middle" x="18.01" y="-13.81" font-family="Times,serif" font-size="14.00">X</text>
-</g>
-<!-- Z&#45;&gt;X -->
-<g id="edge2" class="edge">
-<title>Z-&gt;X</title>
-<path fill="none" stroke="black" d="M38.75,-72.78C35.51,-64.39 31.49,-53.95 27.84,-44.51"></path>
-<polygon fill="black" stroke="black" points="31.1,-43.23 24.24,-35.16 24.57,-45.75 31.1,-43.23"></polygon>
-</g>
-<!-- Y -->
-<g id="node3" class="node">
-<title>Y</title>
-<ellipse fill="none" stroke="black" cx="72.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse>
-<text text-anchor="middle" x="72.01" y="-13.81" font-family="Times,serif" font-size="14.00">Y</text>
-</g>
-<!-- Z&#45;&gt;Y -->
-<g id="edge3" class="edge">
-<title>Z-&gt;Y</title>
-<path fill="none" stroke="black" d="M51.27,-72.78C54.51,-64.39 58.54,-53.95 62.18,-44.51"></path>
-<polygon fill="black" stroke="black" points="65.45,-45.75 65.78,-35.16 58.92,-43.23 65.45,-45.75"></polygon>
-</g>
-<!-- X&#45;&gt;Y -->
-<g id="edge1" class="edge">
-<title>X-&gt;Y</title>
-<path fill="none" stroke="black" d="M36.15,-18.01C38.63,-18.01 41.12,-18.01 43.6,-18.01"></path>
-<polygon fill="black" stroke="black" points="43.8,-21.51 53.8,-18.01 43.8,-14.51 43.8,-21.51"></polygon>
-</g>
-</g>
-</svg>
+<svg width="336" height="288" viewbox="0.00 0.00 98.02 116.02" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112.02)"><polygon fill="white" stroke="transparent" points="-4,4 -4,-112.02 94.02,-112.02 94.02,4 -4,4"></polygon><!-- Z --><g id="node1" class="node"><title>Z</title>
+<ellipse fill="none" stroke="black" cx="45.01" cy="-90.02" rx="18" ry="18"></ellipse><text text-anchor="middle" x="45.01" y="-85.82" font-family="Times,serif" font-size="14.00">Z</text></g><!-- X --><g id="node2" class="node"><title>X</title>
+<ellipse fill="none" stroke="black" cx="18.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse><text text-anchor="middle" x="18.01" y="-13.81" font-family="Times,serif" font-size="14.00">X</text></g><!-- Z&#45;&gt;X --><g id="edge2" class="edge"><title>Z-&gt;X</title>
+<path fill="none" stroke="black" d="M38.75,-72.78C35.51,-64.39 31.49,-53.95 27.84,-44.51"></path><polygon fill="black" stroke="black" points="31.1,-43.23 24.24,-35.16 24.57,-45.75 31.1,-43.23"></polygon></g><!-- Y --><g id="node3" class="node"><title>Y</title>
+<ellipse fill="none" stroke="black" cx="72.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse><text text-anchor="middle" x="72.01" y="-13.81" font-family="Times,serif" font-size="14.00">Y</text></g><!-- Z&#45;&gt;Y --><g id="edge3" class="edge"><title>Z-&gt;Y</title>
+<path fill="none" stroke="black" d="M51.27,-72.78C54.51,-64.39 58.54,-53.95 62.18,-44.51"></path><polygon fill="black" stroke="black" points="65.45,-45.75 65.78,-35.16 58.92,-43.23 65.45,-45.75"></polygon></g><!-- X&#45;&gt;Y --><g id="edge1" class="edge"><title>X-&gt;Y</title>
+<path fill="none" stroke="black" d="M36.15,-18.01C38.63,-18.01 41.12,-18.01 43.6,-18.01"></path><polygon fill="black" stroke="black" points="43.8,-21.51 53.8,-18.01 43.8,-14.51 43.8,-21.51"></polygon></g></g></svg>
 </div>
-<p></p></figure><p></p>
+<p></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <p>That’s all fine, but what if we want, like, control over these diagrams? Or math? Or typographic things like subscripts or superscripts? Good luck.</p>
-</section>
-<section id="nicer-diagrams-with-tikz" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="nicer-diagrams-with-tikz">Nicer diagrams with TikZ</h2>
+</section><section id="nicer-diagrams-with-tikz" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="nicer-diagrams-with-tikz">Nicer diagrams with TikZ</h2>
 <p><a href="https://en.wikipedia.org/wiki/PGF/TikZ">TikZ is very good at making diagrams</a>. It handles math. It handles fancy formatting. It’s also absolutely miserable to work with—you have to draw diagrams with a kinda-sorta-dialect of LaTeX. (Making initial TikZ diagrams is one area where LLMs are incredibly useful!). TikZ also converts exclusively to PDF,<sup>1</sup> but you can convert those diagrams from PDF to other formats like SVG or PNG.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;<em>Technically</em> DVI, but whatever.</p></div></div><p>Here’s that same DAG as TikZ:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><span class="kw" style="color: #003B4F;
@@ -298,13 +253,13 @@ font-style: inherit;">tikzpicture</span>}</span></code></pre></div></div>
 <p>However, Quarto won’t render this as an image because it requires feeding it through LaTeX. <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">As I show here</a>, it’s possible to use R Markdown with {knitr} in a special <code>tikz</code> chunk, which would appear as a nice diagram when rendering to PDF. With a bunch of extra setup, you can also get <code>tikz</code> chunks to appear as SVG when rendering to non-PDF formats.</p>
 <p><a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">My guide</a> still works with Quarto and you can just do that if you want to use TikZ chunks! I’ve been doing it for years! But Quarto re-renders and re-converts each diagram every time you render the document, which is excessive and slow. Getting all the special scaffolding set up is annoying too. It only works with R-based documents. You have to reinstall LaTeX with special extra settings on macOS. You have to create a special chunk template and then hook that into the <code>tikz</code> engine. And you have to do that every time. Oof.</p>
 <p>There’s an easier way though!</p>
-</section>
-<section id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram">Converting TikZ to both PDF and SVG with Quarto and <code>diagram</code></h2>
+</section><section id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram">Converting TikZ to both PDF and SVG with Quarto and <code>diagram</code>
+</h2>
 <p>The pandoc team has an extension called <a href="https://github.com/pandoc-ext/diagram"><code>diagram</code></a> that is essentially a fancy Lua filter that will take code for several different diagram languages (including TikZ) and convert them into images.<sup>2</sup> In 2023 they reorganized it to work as a Quarto extension, so installing it and using it is nice and straightforward. It’s language agnostic—you don’t have to use it only in an R document. You don’t have to recompile LaTeX on macOS or set any systemwide environment variables. It Just Works™.</p>
 <div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;There are two other Quarto extensions/filters that do something similar (<a href="https://github.com/dialoa/imagify"><code>imagify</code></a> and <a href="https://github.com/danmackinlay/quarto_tikz"><code>quarto_tikz</code></a>). I’m sure they work great too—albeit differently from <code>diagrams</code>. I super trust the pandoc people, so I’m happy to stick with <code>diagrams</code>.</p></div></div><p>Here’s what you have to do:</p>
 <ol type="1">
-<li><p><strong>Download and install Inkscape and tell your terminal that it exists</strong>. The <code>diagram</code> extension uses <a href="https://inkscape.org/">Inkscape</a>, an open source vector editor (like Adobe Illustrator, but free) to handle the PDF → SVG conversion. This is the only external piece of software you need to get this process to work, and you never really need to open it. You’ll install it and set it up once—after that, things will work normally.</p>
+<li>
+<p><strong>Download and install Inkscape and tell your terminal that it exists</strong>. The <code>diagram</code> extension uses <a href="https://inkscape.org/">Inkscape</a>, an open source vector editor (like Adobe Illustrator, but free) to handle the PDF → SVG conversion. This is the only external piece of software you need to get this process to work, and you never really need to open it. You’ll install it and set it up once—after that, things will work normally.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Putting `inkscape` in your PATH">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -319,13 +274,16 @@ font-style: inherit;">tikzpicture</span>}</span></code></pre></div></div>
 <div class="callout-body-container callout-body">
 <p>Inkscape can be used from the terminal using the <code>inkscape</code> command, but that program lives in different places depending on your operating system. The diagram extension assumes that you can access it by running <code>inkscape</code> in your terminal, but this likely won’t work immediately.</p>
 <ul>
-<li><p><strong>For macOS</strong>: On macOS, <code>inkscape</code> lives in <code>/Applications/Inkscape.app/Contents/MacOS/inkscape</code>. You can symlink it to a more accessible location with this terminal command:</p>
+<li>
+<p><strong>For macOS</strong>: On macOS, <code>inkscape</code> lives in <code>/Applications/Inkscape.app/Contents/MacOS/inkscape</code>. You can symlink it to a more accessible location with this terminal command:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ln</span> <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">-s</span> /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape</span></code></pre></div></div></li>
-<li><p><strong>For Windows</strong>: On Windows, <code>inkscape.exe</code> lives in the <code>bin</code> folder of wherever you installed Inkscape, likely somewhere like <code>C:\Program Files\Inkscape\bin</code>. You’ll need to add that to your PATH. You can do that by going to System Properties &gt; Environment Variables &gt; and append <code>C:\Program Files\Inkscape\bin</code> to the <code>PATH</code> variable, or you can run this in PowerShell:</p>
+font-style: inherit;">-s</span> /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape</span></code></pre></div></div>
+</li>
+<li>
+<p><strong>For Windows</strong>: On Windows, <code>inkscape.exe</code> lives in the <code>bin</code> folder of wherever you installed Inkscape, likely somewhere like <code>C:\Program Files\Inkscape\bin</code>. You’ll need to add that to your PATH. You can do that by going to System Properties &gt; Environment Variables &gt; and append <code>C:\Program Files\Inkscape\bin</code> to the <code>PATH</code> variable, or you can run this in PowerShell:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">[</span>Environment<span class="op" style="color: #5E5E5E;
@@ -352,22 +310,29 @@ font-style: inherit;">,</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Machine"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">)</span></span></code></pre></div></div></li>
-<li><p><strong>For both</strong>: Once you’ve symlinked the program or added it to your path, you should be able to open a new terminal window and run this:</p>
+font-style: inherit;">)</span></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>For both</strong>: Once you’ve symlinked the program or added it to your path, you should be able to open a new terminal window and run this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">inkscape</span> <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">--version</span></span></code></pre></div></div></li>
+font-style: inherit;">--version</span></span></code></pre></div></div>
+</li>
 </ul>
 </div>
 </div>
-</div></li>
-<li><p><strong>Install the <code>diagram</code> extension in a Quarto project</strong>. Create a new Quarto project. From the terminal, run this to install the <code>diagram</code> extension:</p>
+</div>
+</li>
+<li>
+<p><strong>Install the <code>diagram</code> extension in a Quarto project</strong>. Create a new Quarto project. From the terminal, run this to install the <code>diagram</code> extension:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">quarto</span> install extension pandoc-ext/diagram</span></code></pre></div></div></li>
-<li><p><strong>Tell your document to use the extension</strong>. Add this to the YAML header of a Quarto document:</p>
+font-style: inherit;">quarto</span> install extension pandoc-ext/diagram</span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Tell your document to use the extension</strong>. Add this to the YAML header of a Quarto document:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><span class="pp" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">---</span></span>
@@ -387,8 +352,10 @@ background-color: null;
 font-style: inherit;"> diagram</span></span>
 <span id="cb8-4"><span class="pp" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">---</span></span></code></pre></div></div></li>
-<li><p><strong>Add a <code>.tikz</code> block to your document</strong>. Add a tikz code block to your document like this:</p>
+font-style: inherit;">---</span></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Add a <code>.tikz</code> block to your document</strong>. Add a tikz code block to your document like this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{.tikz}</span></span>
@@ -418,16 +385,17 @@ background-color: null;
 font-style: inherit;">\end{tikzpicture}</span></span>
 <span id="cb9-10"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div></div></li>
-<li><p><strong>Render!</strong> Render the document to PDF and you should see a diagram. Render it to HTML or .docx or Typst and it should use <code>inkscape</code> to convert it to SVG. Magic.</p>
+font-style: inherit;">```</span></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Render!</strong> Render the document to PDF and you should see a diagram. Render it to HTML or .docx or Typst and it should use <code>inkscape</code> to convert it to SVG. Magic.</p>
 <div class="centered-tikz">
 <img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/basic-example.svg" class="img-fluid" style="width:50.0%">
-</div></li>
+</div>
+</li>
 </ol>
 <p>That’s it! No weird LaTeX recompilation. No special R-only knitr templates and engine overrides. Quarto, pandoc, Lua, and Inkscape take care of everything automatically.</p>
-</section>
-<section id="extra-settings-and-complete-example" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="extra-settings-and-complete-example">Extra settings and complete example</h2>
+</section><section id="extra-settings-and-complete-example" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="extra-settings-and-complete-example">Extra settings and complete example</h2>
 <p>You can configure lots of other settings too—see <a href="https://github.com/pandoc-ext/diagram/blob/main/sample.md#tikz">the TikZ section of the documentation at <code>sample.md</code> here</a> or the extension’s <a href="https://github.com/pandoc-ext/diagram/blob/main/test/input-tikz.md">test file for tikz</a> for more details.</p>
 <p>For example, you can control the LaTeX engine that gets used, add LaTeX and TikZ packages and other preamble-y things, and enable caching so that figures don’t need to be recompiled every time. You can even use native Quarto cross referencing and captions, but you need to use <a href="https://quarto.org/docs/authoring/cross-references-divs.html">its cross-reference div syntax</a>.</p>
 <p>Here’s a complete mini example. Because we enabled caching, it won’t rebuild and re-convert each time you render, and because we gave it a filename, there will be a standalone SVG file in <code>example_files/mediabag/a-neat-dag.svg</code>. It also defines some custom colors and fonts.</p>
@@ -539,51 +507,43 @@ font-style: inherit;">```</span></span>
 </div>
 <p>That will create a diagram like this:</p>
 <div id="fig-dag-thing" class="centered-tikz quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full"><div aria-describedby="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/a-neat-dag.svg" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Caption for the DAG
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 <hr>
 <p>This process works with any TikZ diagram (these came from <a href="https://github.com/ctesta01/tikz-examples">Christian Testa’s tikz examples</a>). There’s <em>no way</em> you can do stuff like this with Mermaid or Graphviz :)</p>
 <div id="fig-tikz-examples" class="quarto-layout-panel page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full"><div aria-describedby="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-tikz-examples" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="fig-cone" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/cone.svg" class="img-fluid figure-img" style="width:100.0%" data-ref-parent="fig-tikz-examples">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-subfloat-caption quarto-subfloat-fig" id="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) A cone with a height and radius (<a href="https://github.com/ctesta01/tikz-examples/blob/main/2023/cone/cone.tex">original</a>)
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 </div>
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-tikz-examples" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="fig-set" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/index_files/mediabag/set-belonging.svg" class="img-fluid figure-img" style="width:100.0%" data-ref-parent="fig-tikz-examples">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-subfloat-caption quarto-subfloat-fig" id="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Definition of an intersection (<a href="https://github.com/ctesta01/tikz-examples/blob/main/2023/intersection/intersection.tex">original</a>)
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Some example TikZ diagrams
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 <hr>
 <p>Here’s the Markdown to make Figure&nbsp;2 (a) and Figure&nbsp;2 (b) in Figure&nbsp;2:</p>
@@ -752,10 +712,7 @@ font-style: inherit;">](https://github.com/ctesta01/tikz-examples/blob/main/2023
 
 <!-- -->
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
   author = {, Mèng},
   title = {How to Automatically Convert {TikZ} Images to {SVG} with
     {Quarto}},
@@ -778,17 +735,10 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
   <title>How to make your data analysis life easier using Positron, Raycast, and Espanso</title>
   <dc:creator>Mèng </dc:creator>
   <link>https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>On January 13, 2026, I was on Posit’s Data Science Lab to talk about my Positron settings and other neat workflow-y things I use to make my life easier.</p>
+  <description><![CDATA[ <p>On January 13, 2026, I was on Posit’s Data Science Lab to talk about my Positron settings and other neat workflow-y things I use to make my life easier.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kqYbJoebrwE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>This isn’t a standard blog post—it’s mostly just a list of the stuff we talked about, with lots of different links to other resources.</p>
-<section id="positron-stuff" class="level2">
-<h2 class="anchored" data-anchor-id="positron-stuff">Positron stuff</h2>
+<section id="positron-stuff" class="level2"><h2 class="anchored" data-anchor-id="positron-stuff">Positron stuff</h2>
 <p><strong>Favorite Positron extensions:</strong></p>
 <ul>
 <li><a href="https://positron.posit.co/guide-r-air.html">Air</a></li>
@@ -801,9 +751,7 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
 <li><a href="https://open-vsx.org/extension/ban/spellright">Spell Right</a></li>
 </ul>
 <p><strong>My custom Positron settings</strong> (these all live in <code>settings.json</code>):</p>
-<details id="details-1" aria-label="Click to expand">
-<summary>Click to expand</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<details id="details-1" aria-label="Click to expand"><summary>Click to expand</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">{</span></span>
 <span id="cb1-2">    <span class="er" style="color: #AD0000;
@@ -2264,11 +2212,8 @@ font-style: inherit;">"top"</span></span>
 <span id="cb1-189"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">}</span></span></code></pre></div></div>
-</details>
-<p><strong>My Positron keyboard shortcuts</strong> (these all live in <code>keybindings.json</code>):</p>
-<details id="details-2" aria-label="Click to expand">
-<summary>Click to expand</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><span class="ot" style="color: #003B4F;
+</details><p><strong>My Positron keyboard shortcuts</strong> (these all live in <code>keybindings.json</code>):</p>
+<details id="details-2" aria-label="Click to expand"><summary>Click to expand</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">[</span></span>
 <span id="cb2-2">    <span class="fu" style="color: #4758AB;
@@ -3171,10 +3116,7 @@ font-style: inherit;">,</span></span>
 <span id="cb2-136"><span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">]</span></span></code></pre></div></div>
-</details>
-</section>
-<section id="positron-connections-pane" class="level2">
-<h2 class="anchored" data-anchor-id="positron-connections-pane">Positron connections pane</h2>
+</details></section><section id="positron-connections-pane" class="level2"><h2 class="anchored" data-anchor-id="positron-connections-pane">Positron connections pane</h2>
 <p><a href="https://www.andrewheiss.com/blog/2025/07/10/positron-database-connections/"><strong>General tutorial</strong></a></p>
 <p>Real life use cases:</p>
 <ul>
@@ -3183,126 +3125,189 @@ font-style: inherit;">]</span></span></code></pre></div></div>
 </ul>
 <p>Example with DuckDB and <a href="https://rstudio.github.io/connections/">{connections}</a>; the same general process works with any other database backend, like SQLite, MySQL, Spark, PostgreSQL, etc.:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb3-2"></span>
-<span id="cb3-3"><span class="co" style="color: #5E5E5E;
+font-weight: bold;
+font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span></span>
+<span><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Use nicer DuckDB Connections Pane features</span></span>
-<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+<span><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># options("duckdb.enable_rstudio_connection_pane" = TRUE)</span></span>
-<span id="cb3-5"></span>
-<span id="cb3-6"><span class="co" style="color: #5E5E5E;
+<span></span>
+<span><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Connect to a database</span></span>
-<span id="cb3-7">db_file <span class="ot" style="color: #003B4F;
+<span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">db_file</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"my_fancy_database.duckdb"</span></span>
-<span id="cb3-8">con <span class="ot" style="color: #003B4F;
+<span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">&lt;-</span> connections<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">connection_open</span>(duckdb<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">duckdb</span>(), db_file)</span>
-<span id="cb3-9"></span>
-<span id="cb3-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Add stuff to it</span></span>
-<span id="cb3-11"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">copy_to</span>(</span>
-<span id="cb3-12">  con,</span>
-<span id="cb3-13">  gapminder<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span>gapminder,</span>
-<span id="cb3-14">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">name =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"gapminder"</span>,</span>
-<span id="cb3-15">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">overwrite =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>,</span>
-<span id="cb3-16">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">temporary =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">FALSE</span></span>
-<span id="cb3-17">)</span>
-<span id="cb3-18"></span>
-<span id="cb3-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get stuff out of it</span></span>
-<span id="cb3-20">gapminder_2007 <span class="ot" style="color: #003B4F;
+font-style: inherit;">con</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">tbl</span>(con, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">I</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"gapminder"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-21">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(year <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2007</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-22">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">collect</span>()</span>
-<span id="cb3-23"></span>
-<span id="cb3-24"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># All done</span></span>
-<span id="cb3-25">connections<span class="sc" style="color: #5E5E5E;
+font-style: inherit;">connections</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">connection_close</span>(con)</span></code></pre></div></div>
+font-style: inherit;">connection_open</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">duckdb</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">duckdb</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">db_file</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span></span>
+<span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add stuff to it</span></span>
+<span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">copy_to</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span></span>
+<span>  <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">con</span>,</span>
+<span>  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">gapminder</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">gapminder</span>,</span>
+<span>  name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gapminder"</span>,</span>
+<span>  overwrite <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>,</span>
+<span>  temporary <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span></span>
+<span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span></span>
+<span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Get stuff out of it</span></span>
+<span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">gapminder_2007</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tbl</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">con</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/r/base/AsIs.html">I</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gapminder"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span>  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">year</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2007</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span>  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">collect</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span></span>
+<span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># All done</span></span>
+<span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connections</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connection_close</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">con</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div></div>
 </div>
-</section>
-<section id="workflow-tips-and-tricks" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-tips-and-tricks">Workflow tips and tricks</h2>
-<section id="general-things-i-use" class="level3">
-<h3 class="anchored" data-anchor-id="general-things-i-use">General things I use</h3>
+</section><section id="workflow-tips-and-tricks" class="level2"><h2 class="anchored" data-anchor-id="workflow-tips-and-tricks">Workflow tips and tricks</h2>
+<section id="general-things-i-use" class="level3"><h3 class="anchored" data-anchor-id="general-things-i-use">General things I use</h3>
 <p><a href="../../../../../uses/"><strong>My /uses page</strong></a></p>
-</section>
-<section id="macos-quick-actions" class="level3">
-<h3 class="anchored" data-anchor-id="macos-quick-actions">macOS Quick Actions</h3>
+</section><section id="macos-quick-actions" class="level3"><h3 class="anchored" data-anchor-id="macos-quick-actions">macOS Quick Actions</h3>
 <p><a href="https://www.andrewheiss.com/blog/2025/07/22/positron-open-with-finder/"><strong>Open a folder in Positron from macOS Finder with Quick Actions</strong></a></p>
-</section>
-<section id="raycast" class="level3">
-<h3 class="anchored" data-anchor-id="raycast">Raycast</h3>
+</section><section id="raycast" class="level3"><h3 class="anchored" data-anchor-id="raycast">Raycast</h3>
 <p><a href="https://www.raycast.com/"><strong>Download Raycast</strong></a> (both macOS and Windows)</p>
 <p><strong>Helpful resources:</strong></p>
 <ul>
-<li><a href="https://www.youtube.com/@raycastapp">Raycast on YouTube</a>: Raycast has a big YouTube presence and there are a lot of resources out there about it</li>
+<li>
+<a href="https://www.youtube.com/@raycastapp">Raycast on YouTube</a>: Raycast has a big YouTube presence and there are a lot of resources out there about it</li>
 <li><a href="https://www.youtube.com/watch?v=NuIpZoQwuVY">101 Things You Can Do With Raycast</a></li>
 <li><a href="https://www.youtube.com/watch?v=AN1M88sC024">Getting Started with Raycast for Windows</a></li>
 </ul>
 <p><strong>My setup:</strong></p>
 <ul>
 <li><p><a href="https://github.com/andrewheiss/raycast">My custom Raycast scripts</a> (neat things like getting a random.org seed, toggling a webcam light)</p></li>
-<li><p>My extension settings (there’s no easy way to share these details other than screenshots 🤷‍♂️). The ◆ symbol here stands for <kbd>⌘⌥^⇧</kbd> (or mashing the whole corner of my keyboard).</p>
+<li>
+<p>My extension settings (there’s no easy way to share these details other than screenshots 🤷‍♂️). The ◆ symbol here stands for <kbd>⌘⌥^⇧</kbd> (or mashing the whole corner of my keyboard).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true" href="">First half</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false" href="">Second half</a></li></ul>
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true" href="">First half</a></li>
+<li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false" href="">Second half</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
 <p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/settings-1.png" class="img-fluid"></p>
@@ -3311,97 +3316,135 @@ font-style: inherit;">connection_close</span>(con)</span></code></pre></div></di
 <p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/settings-2.png" class="img-fluid"></p>
 </div>
 </div>
-</div></li>
-<li><p>Custom quicklinks:</p>
+</div>
+</li>
+<li>
+<p>Custom quicklinks:</p>
 <ul>
 <li>Search my repositories on Github
 <ul>
 <li><code>https://github.com/search?q=user%3Aandrewheiss%20{argument name="Search"}&amp;type=code</code></li>
-</ul></li>
+</ul>
+</li>
 <li>Open my “Movies to watch” note in Obsidian
 <ul>
 <li><code>obsidian://open?path=%2FUsers%2Fandrew%2FObsidian%2FNotes%2F%E2%80%A2%20Goals%2FMovies%20to%20watch.md</code></li>
-</ul></li>
-</ul></li>
-<li><p>Other neat features:</p>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Other neat features:</p>
 <ul>
 <li><a href="https://www.raycast.com/changelog/1-32-0">Upcoming calendar events in the menubar</a></li>
 <li>Clipboard history</li>
 <li>Emoji picker</li>
 <li>Color picker</li>
-</ul></li>
 </ul>
-</section>
-<section id="espanso" class="level3">
-<h3 class="anchored" data-anchor-id="espanso">Espanso</h3>
+</li>
+</ul></section><section id="espanso" class="level3"><h3 class="anchored" data-anchor-id="espanso">Espanso</h3>
 <p><a href="https://espanso.org/"><strong>Download Espanso</strong></a> (macOS, Windows, and Linux)</p>
 <p><a href="https://github.com/andrewheiss/espanso">All my shortcuts and settings</a></p>
 <p>Some things I do with it:</p>
 <ul>
-<li><p>Typographic things like:</p>
+<li>
+<p>Typographic things like:</p>
 <ul>
-<li><code>;comm</code> for ⌘, <code>;shift</code> for ⇧, <code>;opt</code> for ⌥</li>
-<li><code>;times</code> for a true multiplication sign ×, <code>;minus</code> for a true subtraction sign −</li>
-<li><code>;prime1</code> and <code>;prime2</code> for ′ and ″ (like 5′ 11″)</li>
-</ul></li>
-<li><p>…and date things like:</p>
+<li>
+<code>;comm</code> for ⌘, <code>;shift</code> for ⇧, <code>;opt</code> for ⌥</li>
+<li>
+<code>;times</code> for a true multiplication sign ×, <code>;minus</code> for a true subtraction sign −</li>
+<li>
+<code>;prime1</code> and <code>;prime2</code> for ′ and ″ (like 5′ 11″)</li>
+</ul>
+</li>
+<li>
+<p>…and date things like:</p>
 <ul>
-<li><code>;dt</code> for “2026-01-13”</li>
-<li><code>;dz</code> for “2026-01-13T11:06”</li>
-<li><code>;dm</code> for “2026-01-13 11:06:05”</li>
-<li><code>;date</code> for “January 13, 2026”</li>
-</ul></li>
-<li><p>…and longer words with repeated letters that I always mess up, like these:</p>
+<li>
+<code>;dt</code> for “2026-01-13”</li>
+<li>
+<code>;dz</code> for “2026-01-13T11:06”</li>
+<li>
+<code>;dm</code> for “2026-01-13 11:06:05”</li>
+<li>
+<code>;date</code> for “January 13, 2026”</li>
+</ul>
+</li>
+<li>
+<p>…and longer words with repeated letters that I always mess up, like these:</p>
 <ul>
-<li><code>insttn</code> for “institution”</li>
-<li><code>consttal</code> for “constitutional”</li>
-<li><code>entrepal</code> for “entrepreneurial”</li>
-</ul></li>
-<li><p>…and code snippets like <code>;dplyrsum</code> for inserting this R code to disable {dplyr}’s grouping messages:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+<li>
+<code>insttn</code> for “institution”</li>
+<li>
+<code>consttal</code> for “constitutional”</li>
+<li>
+<code>entrepal</code> for “entrepreneurial”</li>
+</ul>
+</li>
+<li>
+<p>…and code snippets like <code>;dplyrsum</code> for inserting this R code to disable {dplyr}’s grouping messages:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">options</span>(<span class="at" style="color: #657422;
+font-style: inherit;"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">dplyr.summarise.inform =</span> <span class="cn" style="color: #8f5902;
+font-style: inherit;">(</span>dplyr.summarise.inform <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">FALSE</span>)</span></code></pre></div></div></li>
-<li><p>…or running a {targets} pipeline with <code>;tarm</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">targets<span class="sc" style="color: #5E5E5E;
+font-style: inherit;">=</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div></div>
+</li>
+<li>
+<p>…or running a {targets} pipeline with <code>;tarm</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">targets</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">tar_make</span>()</span></code></pre></div></div></li>
-<li><p>…or adding Quarto chunk metadata like disabling warnings and messages with <code>;wm</code>:</p>
+font-style: inherit;">tar_make</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div></div>
+</li>
+<li>
+<p>…or adding Quarto chunk metadata like disabling warnings and messages with <code>;wm</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| warning: false</span></span>
 <span id="cb6-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">#| message: false</span></span></code></pre></div></div></li>
-<li><p>…and adding figure dimensions with <code>;figw</code> or <code>;figh</code>:</p>
+font-style: inherit;">#| message: false</span></span></code></pre></div></div>
+</li>
+<li>
+<p>…and adding figure dimensions with <code>;figw</code> or <code>;figh</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| fig-width: </span></span>
 <span id="cb7-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">#| fig-height: </span></span></code></pre></div></div></li>
-<li><p>…and lots of other Quarto things like panel tabsets (<code>;;pan</code>), slideshow columns (<code>;;col</code>), includes (<code>;;include</code>), conditional content (<code>;;visible</code>), callouts (<code>;;call</code>), etc.:</p>
-<p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/callout.png" class="img-fluid"></p></li>
-<li><p>…and creating boilerplate Quarto YAML front matter with <code>;;qmd</code>:</p>
+font-style: inherit;">#| fig-height: </span></span></code></pre></div></div>
+</li>
+<li>
+<p>…and lots of other Quarto things like panel tabsets (<code>;;pan</code>), slideshow columns (<code>;;col</code>), includes (<code>;;include</code>), conditional content (<code>;;visible</code>), callouts (<code>;;call</code>), etc.:</p>
+<p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/callout.png" class="img-fluid"></p>
+</li>
+<li>
+<p>…and creating boilerplate Quarto YAML front matter with <code>;;qmd</code>:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/qmd-espanso.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure class="figure"><p><img src="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/qmd-espanso.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
-</div></li>
+</div>
+</li>
 </ul>
 
 
 <!-- -->
 
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
+</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
   author = {, Mèng},
   title = {How to Make Your Data Analysis Life Easier Using {Positron,}
     {Raycast,} and {Espanso}},

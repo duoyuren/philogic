@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="generator" content="quarto-1.9.38">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Mèng">
 <meta name="description" content="Make Quarto convert TikZ graphics to SVG files when rendering to non-LaTeX outputs like HTML, Word, and Typst">
-
 <title>How to automatically convert TikZ images to SVG with Quartoxyz | Mèng – Philogic</title>
 <style>
 /* Default styles provided by pandoc.
@@ -62,7 +58,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -82,8 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/bootstrap/bootstrap-5d5ffd43c6ab687b058561f8a0c27a43.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script src="../../../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
-<script id="quarto-search-options" type="application/json">{
+<script src="../../../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -109,16 +103,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<style>
+}</script><style>
 
       .quarto-title-block .quarto-title-banner {
         background: #170C3A;
       }
 </style>
-<script src="../../../../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../../../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="../../../../../site_libs/quarto-diagram/mermaid.min.js"></script><script src="../../../../../site_libs/quarto-diagram/mermaid-init.js"></script><link href="../../../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <style>
 svg.mermaid-js {
   max-width: 100% !important;
@@ -130,11 +121,7 @@ svg.mermaid-js {
   margin-bottom: 1em;
 }
 </style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -160,7 +147,6 @@ window.Quarto = {
   typesetMath
 };
 </script>
-
 <meta property="og:title" content="How to automatically convert TikZ images to SVG with Quartoxyz | Mèng">
 <meta property="og:description" content="Make Quarto convert TikZ graphics to SVG files when rendering to non-LaTeX outputs like HTML, Word, and Typst">
 <meta property="og:image" content="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/fancy-dag.png">
@@ -177,13 +163,10 @@ window.Quarto = {
 <meta name="twitter:image-height" content="1924">
 <meta name="twitter:image-width" content="3751">
 </head>
-
 <body class="floating nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../../index.html">
     <span class="navbar-title">Philogic</span>
@@ -195,7 +178,7 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="../../../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
@@ -208,8 +191,8 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="mailto:mail@philogic.cn"> 
 <span class="menu-text"><iconify-icon inline="" icon="bi:envelope" style="font-size: 1.1em;" aria-label="Icon envelope from bi Iconify.design set." title="E-mail"></iconify-icon></span></a>
   </li>  
@@ -222,15 +205,11 @@ window.Quarto = {
 <span class="menu-text"><iconify-icon inline="" icon="fa6-brands:blogger" style="font-size: 1.15em;" aria-label="Icon blogger from fa6-brands Iconify.design set." title="Blogger"></iconify-icon></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">How to automatically convert TikZ images to SVG with Quartoxyz</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                   <div>
@@ -276,40 +255,27 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#quick-easy-ugly-diagrams-with-mermaid-and-graphviz" id="toc-quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="nav-link active" data-scroll-target="#quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</a></li>
+<li><a href="#quick-easy-ugly-diagrams-with-mermaid-and-graphviz" id="toc-quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="nav-link active" data-scroll-target="#quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</a></li>
   <li><a href="#nicer-diagrams-with-tikz" id="toc-nicer-diagrams-with-tikz" class="nav-link" data-scroll-target="#nicer-diagrams-with-tikz">Nicer diagrams with TikZ</a></li>
   <li><a href="#converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" id="toc-converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" class="nav-link" data-scroll-target="#converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram">Converting TikZ to both PDF and SVG with Quarto and <code>diagram</code></a></li>
   <li><a href="#extra-settings-and-complete-example" id="toc-extra-settings-and-complete-example" class="nav-link" data-scroll-target="#extra-settings-and-complete-example">Extra settings and complete example</a></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+  </ul></nav>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
-
-
-
-
-
-<p>Back in 2021 <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">I wrote a little guide to how to use tikz chunks in R Markdown documents</a>. {knitr} supports tikz natively, and with some some shenanigans and special settings—and after recompiling LaTeX with one extra feature and setting a new environment variable on macOS—it’s possible to have tikz chunks automatically knit to PDF in PDFs and SVG in HTML and Word. While convoluted, it’s a neat process and I’ve used it for several published papers (like, see <a href="https://stats.andrewheiss.com/mountainous-mackerel/analysis/appendix.html">Figures A2 and A3 here</a>—those are <a href="https://github.com/andrewheiss/mountainous-mackerel/blob/main/manuscript/appendix.qmd">built with tikz</a>!).</p>
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><p>Back in 2021 <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">I wrote a little guide to how to use tikz chunks in R Markdown documents</a>. {knitr} supports tikz natively, and with some some shenanigans and special settings—and after recompiling LaTeX with one extra feature and setting a new environment variable on macOS—it’s possible to have tikz chunks automatically knit to PDF in PDFs and SVG in HTML and Word. While convoluted, it’s a neat process and I’ve used it for several published papers (like, see <a href="https://stats.andrewheiss.com/mountainous-mackerel/analysis/appendix.html">Figures A2 and A3 here</a>—those are <a href="https://github.com/andrewheiss/mountainous-mackerel/blob/main/manuscript/appendix.qmd">built with tikz</a>!).</p>
 <p>While that process works, I’ve also found it <strong><em>really annoying</em></strong>, and for years I’ve looked for better ways. The very first pre-release version of Quarto was also in 2021, but it was too young to do much with languages beyond R and Python. Since then, though, Quarto has added native support for <a href="https://quarto.org/docs/authoring/diagrams.html">two different diagram languages</a>: <a href="https://quarto.org/docs/authoring/diagrams.html#mermaid">Mermaid</a> and <a href="https://quarto.org/docs/authoring/diagrams.html#graphviz">Graphviz</a>. They work well for lots of diagrams, but not for most of the diagrams I make, where (1) I want exact control over where items go, and (2) I want them to look nice and visually fit with the rest of the document.</p>
 <p>For instance, let’s say I want to include a minimalist little standard directed acyclic graph (DAG) that shows that some treatment <span class="math inline">\(X\)</span> causes some outcome <span class="math inline">\(Y\)</span> in the subsequent time period, but the effect is confounded by a third variable <span class="math inline">\(Z\)</span>. Something like this:</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="index_files/mediabag/basic-example.svg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="margin-caption">A simple DAG</figcaption>
-</figure>
+<figure class="figure page-columns page-full"><p><img src="index_files/mediabag/basic-example.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="margin-caption">A simple DAG</figcaption></figure>
 </div>
-<section id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="level2">
-<h2 class="anchored" data-anchor-id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</h2>
+<section id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz" class="level2"><h2 class="anchored" data-anchor-id="quick-easy-ugly-diagrams-with-mermaid-and-graphviz">Quick, easy, ugly diagrams with Mermaid and Graphviz</h2>
 <p>We can create this DAG with Mermaid, but there are limited styling options and there’s not really any good way to control the layout, so we’re pretty much stuck with this:</p>
 <div class="grid">
 <div class="g-col-6">
@@ -324,7 +290,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
+<p></p><figure class="figure"></figure><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR
   X([X]) --&gt; Y([Y])
@@ -332,7 +298,7 @@ window.Quarto = {
   Z([Z]) --&gt; Y([Y])
 </pre>
 </div>
-<p></p></figure><p></p>
+<p></p>
 </div>
 </div>
 </div>
@@ -358,60 +324,24 @@ window.Quarto = {
 <div class="cell" data-fig-width="3.5" data-fig-height="3" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
+<p></p><figure class="figure"></figure><p></p>
 <div>
-<svg width="336" height="288" viewbox="0.00 0.00 98.02 116.02" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112.02)">
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-112.02 94.02,-112.02 94.02,4 -4,4"></polygon>
-<!-- Z -->
-<g id="node1" class="node">
-<title>Z</title>
-<ellipse fill="none" stroke="black" cx="45.01" cy="-90.02" rx="18" ry="18"></ellipse>
-<text text-anchor="middle" x="45.01" y="-85.82" font-family="Times,serif" font-size="14.00">Z</text>
-</g>
-<!-- X -->
-<g id="node2" class="node">
-<title>X</title>
-<ellipse fill="none" stroke="black" cx="18.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse>
-<text text-anchor="middle" x="18.01" y="-13.81" font-family="Times,serif" font-size="14.00">X</text>
-</g>
-<!-- Z&#45;&gt;X -->
-<g id="edge2" class="edge">
-<title>Z-&gt;X</title>
-<path fill="none" stroke="black" d="M38.75,-72.78C35.51,-64.39 31.49,-53.95 27.84,-44.51"></path>
-<polygon fill="black" stroke="black" points="31.1,-43.23 24.24,-35.16 24.57,-45.75 31.1,-43.23"></polygon>
-</g>
-<!-- Y -->
-<g id="node3" class="node">
-<title>Y</title>
-<ellipse fill="none" stroke="black" cx="72.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse>
-<text text-anchor="middle" x="72.01" y="-13.81" font-family="Times,serif" font-size="14.00">Y</text>
-</g>
-<!-- Z&#45;&gt;Y -->
-<g id="edge3" class="edge">
-<title>Z-&gt;Y</title>
-<path fill="none" stroke="black" d="M51.27,-72.78C54.51,-64.39 58.54,-53.95 62.18,-44.51"></path>
-<polygon fill="black" stroke="black" points="65.45,-45.75 65.78,-35.16 58.92,-43.23 65.45,-45.75"></polygon>
-</g>
-<!-- X&#45;&gt;Y -->
-<g id="edge1" class="edge">
-<title>X-&gt;Y</title>
-<path fill="none" stroke="black" d="M36.15,-18.01C38.63,-18.01 41.12,-18.01 43.6,-18.01"></path>
-<polygon fill="black" stroke="black" points="43.8,-21.51 53.8,-18.01 43.8,-14.51 43.8,-21.51"></polygon>
-</g>
-</g>
-</svg>
+<svg width="336" height="288" viewbox="0.00 0.00 98.02 116.02" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112.02)"><polygon fill="white" stroke="transparent" points="-4,4 -4,-112.02 94.02,-112.02 94.02,4 -4,4"></polygon><!-- Z --><g id="node1" class="node"><title>Z</title>
+<ellipse fill="none" stroke="black" cx="45.01" cy="-90.02" rx="18" ry="18"></ellipse><text text-anchor="middle" x="45.01" y="-85.82" font-family="Times,serif" font-size="14.00">Z</text></g><!-- X --><g id="node2" class="node"><title>X</title>
+<ellipse fill="none" stroke="black" cx="18.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse><text text-anchor="middle" x="18.01" y="-13.81" font-family="Times,serif" font-size="14.00">X</text></g><!-- Z&#45;&gt;X --><g id="edge2" class="edge"><title>Z-&gt;X</title>
+<path fill="none" stroke="black" d="M38.75,-72.78C35.51,-64.39 31.49,-53.95 27.84,-44.51"></path><polygon fill="black" stroke="black" points="31.1,-43.23 24.24,-35.16 24.57,-45.75 31.1,-43.23"></polygon></g><!-- Y --><g id="node3" class="node"><title>Y</title>
+<ellipse fill="none" stroke="black" cx="72.01" cy="-18.01" rx="18.02" ry="18.02"></ellipse><text text-anchor="middle" x="72.01" y="-13.81" font-family="Times,serif" font-size="14.00">Y</text></g><!-- Z&#45;&gt;Y --><g id="edge3" class="edge"><title>Z-&gt;Y</title>
+<path fill="none" stroke="black" d="M51.27,-72.78C54.51,-64.39 58.54,-53.95 62.18,-44.51"></path><polygon fill="black" stroke="black" points="65.45,-45.75 65.78,-35.16 58.92,-43.23 65.45,-45.75"></polygon></g><!-- X&#45;&gt;Y --><g id="edge1" class="edge"><title>X-&gt;Y</title>
+<path fill="none" stroke="black" d="M36.15,-18.01C38.63,-18.01 41.12,-18.01 43.6,-18.01"></path><polygon fill="black" stroke="black" points="43.8,-21.51 53.8,-18.01 43.8,-14.51 43.8,-21.51"></polygon></g></g></svg>
 </div>
-<p></p></figure><p></p>
+<p></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <p>That’s all fine, but what if we want, like, control over these diagrams? Or math? Or typographic things like subscripts or superscripts? Good luck.</p>
-</section>
-<section id="nicer-diagrams-with-tikz" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="nicer-diagrams-with-tikz">Nicer diagrams with TikZ</h2>
+</section><section id="nicer-diagrams-with-tikz" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="nicer-diagrams-with-tikz">Nicer diagrams with TikZ</h2>
 <p><a href="https://en.wikipedia.org/wiki/PGF/TikZ">TikZ is very good at making diagrams</a>. It handles math. It handles fancy formatting. It’s also absolutely miserable to work with—you have to draw diagrams with a kinda-sorta-dialect of LaTeX. (Making initial TikZ diagrams is one area where LLMs are incredibly useful!). TikZ also converts exclusively to PDF,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> but you can convert those diagrams from PDF to other formats like SVG or PNG.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;<em>Technically</em> DVI, but whatever.</p></div></div><p>Here’s that same DAG as TikZ:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[&gt;={stealth}]</span>
@@ -425,13 +355,13 @@ window.Quarto = {
 <p>However, Quarto won’t render this as an image because it requires feeding it through LaTeX. <a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">As I show here</a>, it’s possible to use R Markdown with {knitr} in a special <code>tikz</code> chunk, which would appear as a nice diagram when rendering to PDF. With a bunch of extra setup, you can also get <code>tikz</code> chunks to appear as SVG when rendering to non-PDF formats.</p>
 <p><a href="https://www.andrewheiss.com/blog/2021/08/27/tikz-knitr-html-svg-fun/">My guide</a> still works with Quarto and you can just do that if you want to use TikZ chunks! I’ve been doing it for years! But Quarto re-renders and re-converts each diagram every time you render the document, which is excessive and slow. Getting all the special scaffolding set up is annoying too. It only works with R-based documents. You have to reinstall LaTeX with special extra settings on macOS. You have to create a special chunk template and then hook that into the <code>tikz</code> engine. And you have to do that every time. Oof.</p>
 <p>There’s an easier way though!</p>
-</section>
-<section id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram">Converting TikZ to both PDF and SVG with Quarto and <code>diagram</code></h2>
+</section><section id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="converting-tikz-to-both-pdf-and-svg-with-quarto-and-diagram">Converting TikZ to both PDF and SVG with Quarto and <code>diagram</code>
+</h2>
 <p>The pandoc team has an extension called <a href="https://github.com/pandoc-ext/diagram"><code>diagram</code></a> that is essentially a fancy Lua filter that will take code for several different diagram languages (including TikZ) and convert them into images.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> In 2023 they reorganized it to work as a Quarto extension, so installing it and using it is nice and straightforward. It’s language agnostic—you don’t have to use it only in an R document. You don’t have to recompile LaTeX on macOS or set any systemwide environment variables. It Just Works™.</p>
 <div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;There are two other Quarto extensions/filters that do something similar (<a href="https://github.com/dialoa/imagify"><code>imagify</code></a> and <a href="https://github.com/danmackinlay/quarto_tikz"><code>quarto_tikz</code></a>). I’m sure they work great too—albeit differently from <code>diagrams</code>. I super trust the pandoc people, so I’m happy to stick with <code>diagrams</code>.</p></div></div><p>Here’s what you have to do:</p>
 <ol type="1">
-<li><p><strong>Download and install Inkscape and tell your terminal that it exists</strong>. The <code>diagram</code> extension uses <a href="https://inkscape.org/">Inkscape</a>, an open source vector editor (like Adobe Illustrator, but free) to handle the PDF → SVG conversion. This is the only external piece of software you need to get this process to work, and you never really need to open it. You’ll install it and set it up once—after that, things will work normally.</p>
+<li>
+<p><strong>Download and install Inkscape and tell your terminal that it exists</strong>. The <code>diagram</code> extension uses <a href="https://inkscape.org/">Inkscape</a>, an open source vector editor (like Adobe Illustrator, but free) to handle the PDF → SVG conversion. This is the only external piece of software you need to get this process to work, and you never really need to open it. You’ll install it and set it up once—after that, things will work normally.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Putting `inkscape` in your PATH">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -446,24 +376,36 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Inkscape can be used from the terminal using the <code>inkscape</code> command, but that program lives in different places depending on your operating system. The diagram extension assumes that you can access it by running <code>inkscape</code> in your terminal, but this likely won’t work immediately.</p>
 <ul>
-<li><p><strong>For macOS</strong>: On macOS, <code>inkscape</code> lives in <code>/Applications/Inkscape.app/Contents/MacOS/inkscape</code>. You can symlink it to a more accessible location with this terminal command:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>For Windows</strong>: On Windows, <code>inkscape.exe</code> lives in the <code>bin</code> folder of wherever you installed Inkscape, likely somewhere like <code>C:\Program Files\Inkscape\bin</code>. You’ll need to add that to your PATH. You can do that by going to System Properties &gt; Environment Variables &gt; and append <code>C:\Program Files\Inkscape\bin</code> to the <code>PATH</code> variable, or you can run this in PowerShell:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">[</span>Environment<span class="op">]::</span>SetEnvironmentVariable<span class="op">(</span><span class="st">"Path"</span><span class="op">,</span> <span class="va">$env</span><span class="op">:</span><span class="va">Path</span> <span class="op">+</span> <span class="st">";C:\Program Files\Inkscape\bin"</span><span class="op">,</span> <span class="st">"Machine"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>For both</strong>: Once you’ve symlinked the program or added it to your path, you should be able to open a new terminal window and run this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">inkscape</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li>
+<p><strong>For macOS</strong>: On macOS, <code>inkscape</code> lives in <code>/Applications/Inkscape.app/Contents/MacOS/inkscape</code>. You can symlink it to a more accessible location with this terminal command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
+<li>
+<p><strong>For Windows</strong>: On Windows, <code>inkscape.exe</code> lives in the <code>bin</code> folder of wherever you installed Inkscape, likely somewhere like <code>C:\Program Files\Inkscape\bin</code>. You’ll need to add that to your PATH. You can do that by going to System Properties &gt; Environment Variables &gt; and append <code>C:\Program Files\Inkscape\bin</code> to the <code>PATH</code> variable, or you can run this in PowerShell:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">[</span>Environment<span class="op">]::</span>SetEnvironmentVariable<span class="op">(</span><span class="st">"Path"</span><span class="op">,</span> <span class="va">$env</span><span class="op">:</span><span class="va">Path</span> <span class="op">+</span> <span class="st">";C:\Program Files\Inkscape\bin"</span><span class="op">,</span> <span class="st">"Machine"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
+<li>
+<p><strong>For both</strong>: Once you’ve symlinked the program or added it to your path, you should be able to open a new terminal window and run this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">inkscape</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
 </ul>
 </div>
 </div>
-</div></li>
-<li><p><strong>Install the <code>diagram</code> extension in a Quarto project</strong>. Create a new Quarto project. From the terminal, run this to install the <code>diagram</code> extension:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension pandoc-ext/diagram</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Tell your document to use the extension</strong>. Add this to the YAML header of a Quarto document:</p>
+</div>
+</li>
+<li>
+<p><strong>Install the <code>diagram</code> extension in a Quarto project</strong>. Create a new Quarto project. From the terminal, run this to install the <code>diagram</code> extension:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension pandoc-ext/diagram</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
+<li>
+<p><strong>Tell your document to use the extension</strong>. Add this to the YAML header of a Quarto document:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> diagram</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Add a <code>.tikz</code> block to your document</strong>. Add a tikz code block to your document like this:</p>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
+<li>
+<p><strong>Add a <code>.tikz</code> block to your document</strong>. Add a tikz code block to your document like this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{.tikz}</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="in">\begin{tikzpicture}[&gt;={stealth}]</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="in">  \node (x) at (0,0) {$X_{t}$};</span></span>
@@ -473,16 +415,17 @@ window.Quarto = {
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="in">  \path[-&gt;] (z) edge (y);</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="in">  \path[-&gt;] (x) edge (y);</span></span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="in">\end{tikzpicture}</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Render!</strong> Render the document to PDF and you should see a diagram. Render it to HTML or .docx or Typst and it should use <code>inkscape</code> to convert it to SVG. Magic.</p>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</li>
+<li>
+<p><strong>Render!</strong> Render the document to PDF and you should see a diagram. Render it to HTML or .docx or Typst and it should use <code>inkscape</code> to convert it to SVG. Magic.</p>
 <div class="centered-tikz">
 <img src="index_files/mediabag/basic-example.svg" class="img-fluid" style="width:50.0%">
-</div></li>
+</div>
+</li>
 </ol>
 <p>That’s it! No weird LaTeX recompilation. No special R-only knitr templates and engine overrides. Quarto, pandoc, Lua, and Inkscape take care of everything automatically.</p>
-</section>
-<section id="extra-settings-and-complete-example" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="extra-settings-and-complete-example">Extra settings and complete example</h2>
+</section><section id="extra-settings-and-complete-example" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="extra-settings-and-complete-example">Extra settings and complete example</h2>
 <p>You can configure lots of other settings too—see <a href="https://github.com/pandoc-ext/diagram/blob/main/sample.md#tikz">the TikZ section of the documentation at <code>sample.md</code> here</a> or the extension’s <a href="https://github.com/pandoc-ext/diagram/blob/main/test/input-tikz.md">test file for tikz</a> for more details.</p>
 <p>For example, you can control the LaTeX engine that gets used, add LaTeX and TikZ packages and other preamble-y things, and enable caching so that figures don’t need to be recompiled every time. You can even use native Quarto cross referencing and captions, but you need to use <a href="https://quarto.org/docs/authoring/cross-references-divs.html">its cross-reference div syntax</a>.</p>
 <p>Here’s a complete mini example. Because we enabled caching, it won’t rebuild and re-convert each time you render, and because we gave it a filename, there will be a standalone SVG file in <code>example_files/mediabag/a-neat-dag.svg</code>. It also defines some custom colors and fonts.</p>
@@ -534,51 +477,43 @@ window.Quarto = {
 </div>
 <p>That will create a diagram like this:</p>
 <div id="fig-dag-thing" class="centered-tikz quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full"><div aria-describedby="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/mediabag/a-neat-dag.svg" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-dag-thing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Caption for the DAG
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 <hr>
 <p>This process works with any TikZ diagram (these came from <a href="https://github.com/ctesta01/tikz-examples">Christian Testa’s tikz examples</a>). There’s <em>no way</em> you can do stuff like this with Mermaid or Graphviz :)</p>
 <div id="fig-tikz-examples" class="quarto-layout-panel page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full"><div aria-describedby="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-tikz-examples" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="fig-cone" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/mediabag/cone.svg" class="img-fluid figure-img" style="width:100.0%" data-ref-parent="fig-tikz-examples">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-subfloat-caption quarto-subfloat-fig" id="fig-cone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) A cone with a height and radius (<a href="https://github.com/ctesta01/tikz-examples/blob/main/2023/cone/cone.tex">original</a>)
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 </div>
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-tikz-examples" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="fig-set" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/mediabag/set-belonging.svg" class="img-fluid figure-img" style="width:100.0%" data-ref-parent="fig-tikz-examples">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-subfloat-caption quarto-subfloat-fig" id="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Definition of an intersection (<a href="https://github.com/ctesta01/tikz-examples/blob/main/2023/intersection/intersection.tex">original</a>)
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-tikz-examples-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Some example TikZ diagrams
-</figcaption>
-</figure>
+</figcaption></figure>
 </div>
 <hr>
 <p>Here’s the Markdown to make <a href="#fig-cone" class="quarto-xref">Figure&nbsp;2 (a)</a> and <a href="#fig-set" class="quarto-xref">Figure&nbsp;2 (b)</a> in <a href="#fig-tikz-examples" class="quarto-xref">Figure&nbsp;2</a>:</p>
@@ -659,10 +594,7 @@ Figure&nbsp;2: Some example TikZ diagrams
 
 <!-- -->
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2026,
   author = {, Mèng},
   title = {How to Automatically Convert {TikZ} Images to {SVG} with
     {Quarto}},
@@ -674,8 +606,7 @@ Figure&nbsp;2: Some example TikZ diagrams
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2026" class="csl-entry quarto-appendix-citeas" role="listitem">
 Mèng. 2026. <span>“How to Automatically Convert TikZ Images to SVG with
 Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax35">https://doi.org/10.59350/5m018-qax35</a>.
-</div></div></section></div></main> <!-- /main -->
-<style>
+</div></div></section></div></main><!-- /main --><style>
 /* Visitor Flags css */
 
 /* 1. 主體容器佈局 */
@@ -882,17 +813,14 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
     }
 }
 </style>
-<script defer="" src="https://busuanzi.9420.ltd/js"></script>
-
-
-<table class="styled-table caption-top table">
-<thead>
-<tr class="header">
+<script defer="" src="https://busuanzi.9420.ltd/js"></script><table class="styled-table caption-top table">
+<thead><tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"><span class="fa-solid fa-handshake"></span></th>
-<th data-quarto-table-cell-role="th"><span class="fa-solid fa-users"></span> Visitors</th>
-<th data-quarto-table-cell-role="th"><span class="fa-solid fa-eye"></span> Views</th>
-</tr>
-</thead>
+<th data-quarto-table-cell-role="th">
+<span class="fa-solid fa-users"></span> Visitors</th>
+<th data-quarto-table-cell-role="th">
+<span class="fa-solid fa-eye"></span> Views</th>
+</tr></thead>
 <tbody>
 <tr class="active-row odd">
 <td style="text-align: left;">The Page</td>
@@ -1356,10 +1284,7 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
       }
     }
   });
-  </script>
-<input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="light">
-<script>
+  </script><input type="hidden" id="giscus-base-theme" value="light"><input type="hidden" id="giscus-alt-theme" value="light"><script>
   function loadGiscus() {
     // Function to get the theme based on body class
     const getTheme = () => {
@@ -1867,8 +1792,7 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2013–Now. Mèng. All content licensed under </span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> Creative Commons CC BY 4.0</a></span></p>
 </div>   
@@ -1880,8 +1804,6 @@ Quarto.”</span> February 25, 2026. <a href="https://doi.org/10.59350/5m018-qax
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

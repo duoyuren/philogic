@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>philogic&#39;s blog</title>
+<link>https://philogic.cn/atom.html</link>
+<atom:link href="https://philogic.cn/atom.xml" rel="self" type="application/rss+xml"/>
+<description>philogic&#39;s blog</description>
+<language>en</language>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 24 Feb 2026 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/blog/2026/02/25/tikz-quarto-svg-fun/index.html}</title>
+  <dc:creator>Mèng </dc:creator>
+  <link>https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/</link>
+  <description>{B4F502887207:/blog/2026/02/25/tikz-quarto-svg-fun/index.html}</description>
+  <category>quarto</category>
+  <category>tikz</category>
+  <guid>https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/</guid>
+  <pubDate>Tue, 24 Feb 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://philogic.cn/blog/2026/02/25/tikz-quarto-svg-fun/fancy-dag.png" medium="image" type="image/png" height="74" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/blog/2026/01/13/dsl-positron-workflow/index.html}</title>
+  <dc:creator>Mèng </dc:creator>
+  <link>https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/</link>
+  <description>{B4F502887207:/blog/2026/01/13/dsl-positron-workflow/index.html}</description>
+  <category>positron</category>
+  <category>automation</category>
+  <category>writing</category>
+  <category>data science</category>
+  <category>databases</category>
+  <category>duckdb</category>
+  <category>automator</category>
+  <guid>https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/</guid>
+  <pubDate>Mon, 12 Jan 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://philogic.cn/blog/2026/01/13/dsl-positron-workflow/img/dsl-header.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/blog/2025/07/03/open-files-external-programs-positron/index.html}</title>
+  <dc:creator>Mèng </dc:creator>
+  <link>https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/</link>
+  <description>{B4F502887207:/blog/2025/07/03/open-files-external-programs-positron/index.html}</description>
+  <category>positron</category>
+  <category>writing</category>
+  <category>data science</category>
+  <guid>https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/</guid>
+  <pubDate>Wed, 02 Jul 2025 16:00:00 GMT</pubDate>
+  <media:content url="https://philogic.cn/blog/2025/07/03/open-files-external-programs-positron/img/quarto-typora-side-by-side.png" medium="image" type="image/png" height="90" width="144"/>
+</item>
+</channel>
+</rss>
